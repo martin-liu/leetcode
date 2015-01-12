@@ -39,3 +39,4 @@ Leetcode solutions in Java
 |[Add Two Numbers](https://oj.leetcode.com/problems/add-two-numbers/)	|[code](./src/main/java/com/martinliu/add-two-numbers/Solution.java) |Easy|
 |[Longest Substring Without Repeating Characters](https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/)	|[code](./src/main/java/com/martinliu/longest-substring-without-repeating-characters/Solution.java) |Easy|
 |[Longest Palindromic Substring](https://oj.leetcode.com/problems/longest-palindromic-substring/)	|[code](./src/main/java/com/martinliu/longest-palindromic-substring/Solution.java) |Easy|
+|[String to Integer (atoi)](https://oj.leetcode.com/problems/string-to-integer-atoi/)	|[code](./src/main/java/com/martinliu/string-to-integer-atoi/Solution.java) |Easy|
