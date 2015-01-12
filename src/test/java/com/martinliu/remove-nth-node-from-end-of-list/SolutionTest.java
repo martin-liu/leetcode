@@ -1,7 +1,6 @@
 package com.martinliu.removenthnodefromendoflist;
 
 import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
 
 import java.util.*;
 import org.junit.Test;

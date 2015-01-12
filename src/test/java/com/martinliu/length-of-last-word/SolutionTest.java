@@ -1,7 +1,6 @@
 package com.martinliu.lengthoflastword;
 
 import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
 
 import java.util.*;
 import org.junit.Test;
