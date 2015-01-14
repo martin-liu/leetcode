@@ -34,9 +34,10 @@ Leetcode solutions in Java
 |[Count and Say](https://oj.leetcode.com/problems/count-and-say/)	|[code](./src/main/java/com/martinliu/count-and-say/Solution.java) |Easy|
 |[Add Binary](https://oj.leetcode.com/problems/add-binary/)	|[code](./src/main/java/com/martinliu/add-binary/Solution.java) |Easy|
 |[ZigZag Conversion](https://oj.leetcode.com/problems/zigzag-conversion/)	|[code](./src/main/java/com/martinliu/zigzag-conversion/Solution.java) |Easy|
-|[Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)	|[code](./src/main/java/com/martinliu/linked-list-cycle/Solution.java) |Easy|
+|[Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)	|[code](./src/main/java/com/martinliu/linked-list-cycle/Solution.java) |Medium|
 |[Excel Sheet Column Number](https://oj.leetcode.com/problems/excel-sheet-column-number/)	|[code](./src/main/java/com/martinliu/excel-sheet-column-number/Solution.java) |Easy|
-|[Add Two Numbers](https://oj.leetcode.com/problems/add-two-numbers/)	|[code](./src/main/java/com/martinliu/add-two-numbers/Solution.java) |Easy|
-|[Longest Substring Without Repeating Characters](https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/)	|[code](./src/main/java/com/martinliu/longest-substring-without-repeating-characters/Solution.java) |Easy|
-|[Longest Palindromic Substring](https://oj.leetcode.com/problems/longest-palindromic-substring/)	|[code](./src/main/java/com/martinliu/longest-palindromic-substring/Solution.java) |Easy|
+|[Add Two Numbers](https://oj.leetcode.com/problems/add-two-numbers/)	|[code](./src/main/java/com/martinliu/add-two-numbers/Solution.java) |Medium|
+|[Longest Substring Without Repeating Characters](https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/)	|[code](./src/main/java/com/martinliu/longest-substring-without-repeating-characters/Solution.java) |Medium|
+|[Longest Palindromic Substring](https://oj.leetcode.com/problems/longest-palindromic-substring/)	|[code](./src/main/java/com/martinliu/longest-palindromic-substring/Solution.java) |Medium|
 |[String to Integer (atoi)](https://oj.leetcode.com/problems/string-to-integer-atoi/)	|[code](./src/main/java/com/martinliu/string-to-integer-atoi/Solution.java) |Easy|
+|[Regular Expression Matching](https://oj.leetcode.com/problems/regular-expression-matching/)	|[code](./src/main/java/com/martinliu/regular-expression-matching/Solution.java) |Hard|
