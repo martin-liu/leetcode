@@ -15,6 +15,7 @@ import java.util.*;
 */
 public class Solution
 {
+    // Basic idea: find 2sum in rest of the array based on head
     public List<List<Integer>> threeSum(int[] num) {
         List<List<Integer>> list = new ArrayList<List<Integer>>();
         int len = num.length;
@@ -28,15 +29,15 @@ public class Solution
                     int sum = - num[i];
                     for (int j = i + 1; j < len; j++) {
                         Integer n = map.get(num[j]);
-                        int dif = sum - num[j];
-                        // outer loop will cover num[i], num[j] and dif
-                        if (visit.get(num[j]) == null && visit.get(dif) == null){
+                        int diff = sum - num[j];
+                        // outer loop will cover num[i], num[j] and diff
+                        if (visit.get(num[j]) == null && visit.get(diff) == null){
                             if (n == null) {
-                                map.put(dif, num[j]);
+                                map.put(diff, num[j]);
                             }
-                            // if not visit in this loop
+                            // if find and not visit in this loop
                             else if (null == v.get(num[j])){
-                                list.add(getList(num[i], n, num[j]));
+                                list.add(buildSolutionSet(num[i], n, num[j]));
                                 v.put(num[j], true);
                             }
                         }
@@ -49,7 +50,7 @@ public class Solution
         return list;
     }
 
-    private List<Integer> getList(int left, int mid, int right) {
+    private List<Integer> buildSolutionSet(int left, int mid, int right) {
         List<Integer> list = new ArrayList<Integer>();
         list.add(left);
         list.add(mid);
