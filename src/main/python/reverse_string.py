@@ -23,7 +23,7 @@ class Solution(object):
 # -----------------------------
 import unittest
 
-class TestReverseString(unittest.TestCase):
+class Test(unittest.TestCase):
     def test(self):
        s = Solution()
        self.assertEqual(s.reverseString(None), None)

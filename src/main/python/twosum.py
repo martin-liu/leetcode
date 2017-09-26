@@ -28,7 +28,7 @@ class Solution(object):
 # -----------------------------
 import unittest
 
-class TestTwoSum(unittest.TestCase):
+class Test(unittest.TestCase):
     def test(self):
         s = Solution()
         ar = [2, 7, 11, 15]
