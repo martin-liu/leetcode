@@ -25,13 +25,16 @@ class Solution(object):
     def doAddTwoNumbers(self, l1, l2, carry = 0):
         if l1 == None:
             if carry > 0:
+                # if carry, then need to add carry
                 return self.doAddTwoNumbers(ListNode(carry), l2)
             return l2
         if l2 == None:
             if carry > 0:
+                # if carry, then need to add carry
                 return self.doAddTwoNumbers(l1, ListNode(carry))
             return l1
 
+        # get quotient and remainder
         (q, r) = divmod(l1.val + l2.val + carry, 10)
         ret = ListNode(r)
         ret.next = self.doAddTwoNumbers(l1.next, l2.next, q)

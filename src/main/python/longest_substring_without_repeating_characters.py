@@ -22,8 +22,9 @@ class Solution(object):
         chars = []
 
         for i in range(length):
+            # when duplication found
             if s[i] in chars:
-                # reset from duplication index
+                # reset chars from duplication index + 1, as a new substring
                 newStart = chars.index(s[i]) + 1
                 chars = chars[newStart:]
 
