@@ -14,6 +14,8 @@
 
 # The median is (2 + 3)/2 = 2.5
 
+
+# Basic idea: Create an union array and then calculate the median
 class Solution(object):
     def findMedianSortedArrays(self, nums1, nums2):
         """
@@ -34,11 +36,8 @@ class Solution(object):
 
         # union no need to be full union, only need 0 ~ mid
         while i1 + i2 < mid + 1:
-            # if both length reach, means finished
-            if i1 == len1 and i2 == len2:
-                break
             # if i1 reach len1, then only add nums2's element to union
-            elif i1 == len1:
+            if i1 == len1:
                 union.append(nums2[i2])
                 i2 += 1
             # if i2 reach len2, then only add nums1's element to union

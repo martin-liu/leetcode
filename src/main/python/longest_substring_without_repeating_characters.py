@@ -8,6 +8,7 @@
 
 # Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
 
+# Basic idea: use an array to store chars, when found duplication, then reset chars to a substring that start from the duplicated char + 1
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
         """
