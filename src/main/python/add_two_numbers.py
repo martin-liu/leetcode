@@ -13,6 +13,7 @@ class ListNode(object):
         self.val = x
         self.next = None
 
+# Basic idea: Divide and conquer
 class Solution(object):
     def addTwoNumbers(self, l1, l2):
         """

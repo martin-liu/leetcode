@@ -31,7 +31,7 @@ class Solution(object):
 
             chars.append(s[i])
             length = len(chars)
-            maxLen = maxLen if maxLen > length else length
+            maxLen = max(maxLen, length)
 
         return maxLen
 
