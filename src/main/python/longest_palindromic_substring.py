@@ -14,6 +14,7 @@
 
 # Output: "bb"
 
+
 # Basic idea: insert `#` between each char, so that `bb` -> `#b#b#`, now there's only one pattern of palindrome
 class Solution(object):
     def longestPalindrome(self, s):
@@ -43,9 +44,12 @@ class Solution(object):
             j -= 1
 
             # s[n] -> chars[2 * n + 1], so that chars `index // 2` will come to `n`
+            # for example, `#!#a#b#a#?#` -> [2, 9) <=> `!aba?` -> [1, 4)
+            # for example, `#!#b#b#?#` -> [2, 7) <=> `!bb?` -> [1, 3)
             start = (i - j) // 2
             end = (i + j) // 2
             p = s[start:end]
+
             # save longest one
             ret = ret if len(ret) >= len(p) else p
 
