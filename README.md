@@ -17,7 +17,7 @@
 |6|[ZigZag Conversion](https://oj.leetcode.com/problems/zigzag-conversion/)    |[python](./src/main/python/zigzag_conversion.py), [java](./src/main/java/com/martinliu/zigzag-conversion/Solution.java) |Easy|
 |7|[Reverse Integer](https://oj.leetcode.com/problems/reverse-integer/)|[python](./src/main/python/reverse_integer.py), [java](./src/main/java/com/martinliu/reverseInteger/Solution.java) |Easy|
 |8|[String to Integer (atoi)](https://oj.leetcode.com/problems/string-to-integer-atoi/)    |[python](./src/main/python/string_to_integer_atoi.py), [java](./src/main/java/com/martinliu/string-to-integer-atoi/Solution.java) |Easy|
-|9|[Palindrome Number](https://oj.leetcode.com/problems/palindrome-number/)    |[java](./src/main/java/com/martinliu/palindrome-number/Solution.java) |Easy|
+|9|[Palindrome Number](https://oj.leetcode.com/problems/palindrome-number/)    |[python](./src/main/python/palindrome_number.py), [java](./src/main/java/com/martinliu/palindrome-number/Solution.java) |Easy|
 |10|[Regular Expression Matching](https://oj.leetcode.com/problems/regular-expression-matching/)    |[java](./src/main/java/com/martinliu/regular-expression-matching/Solution.java) |Hard|
 |11|[Container With Most Water](https://oj.leetcode.com/problems/container-with-most-water/)    |[java](./src/main/java/com/martinliu/container-with-most-water/Solution.java) |Medium|
 |12|[Integer to Roman](https://oj.leetcode.com/problems/integer-to-roman/)    |[java](./src/main/java/com/martinliu/integer-to-roman/Solution.java) |Medium|
