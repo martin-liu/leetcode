@@ -25,6 +25,8 @@ class Solution(object):
             else:
                 return [sumMap.get(num), i]
 
+
+
 # -----------------------------
 import unittest
 
