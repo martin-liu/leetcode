@@ -17,7 +17,9 @@
 # isMatch("ab", ".*") -> true
 # isMatch("aab", "c*a*b") -> true
 
-# Basic idea: match from right to left, use a match array to iterate and record match status
+# Basic idea: use a match array to iterate and record match state
+# 1. For `x*` style, from right to left, mark true as much as it can
+# 2. For `x` style, from left to right, find a match next to `True`, and mark it as True, mark non-match as False (this will overwrite some of True in #1, so that solved overlap issue)
 class Solution(object):
     def isMatch(self, s, p):
         """
@@ -38,18 +40,18 @@ class Solution(object):
         i = len(p) - 1
         while i >= 0:
             if p[i] == '*':
-                # in `*` mode, iterate `s` from right to left
+                # in `*` mode, iterate `s` from right to left, match as many as it can
                 for j in range(lenS - 1, -1, -1):
-                    # mark all match part as True in match array
-                    # if already matched, then don't check again. (`match[j] or`)
+                    # mark continuous match part as True in match array, until a False happen
                     match[j] = match[j] or (match[j + 1] and charMatch(s[j], p[i - 1]))
                 i -= 2
             else:
-                # iterate `s` from left to right
+                # in non `*` mode, iterate `s` from left to right, match the char step by step
                 for j in range(lenS):
                     match[j] = match[j + 1] and charMatch(s[j], p[i])
                 # mark last one as False when not in initial state,
-                # so that it will spread `False` from right to left (because every round it will do `and match[j + 1]`)
+                # so that it will spread `False` from right to left step by step, after at most `len(s)` times, it will mark all the match array as False,
+                # so when `s` travel finished while `p` is not, it will come to False
                 match[lenS] = False
                 i -= 1
 
@@ -62,15 +64,15 @@ import unittest
 class Test(unittest.TestCase):
     def test(self):
         s = Solution()
-        # self.assertTrue(s.isMatch("aa","aa"))
-        # self.assertFalse(s.isMatch("aa","aaa"))
-        # self.assertTrue(s.isMatch("aa", "a*"))
-        # self.assertTrue(s.isMatch("aaa", "a*a"))
-        # self.assertTrue(s.isMatch("aaa", "a*aaa"))
-        # self.assertTrue(s.isMatch("aaa", "a*aab*"))
-        # self.assertTrue(s.isMatch("aa", ".*"))
-        # self.assertTrue(s.isMatch("ab", ".*"))
-        # self.assertTrue(s.isMatch("aab", "c*a*b"))
-        # self.assertTrue(s.isMatch("aabcc", "c*a*bc*"))
-        # self.assertFalse(s.isMatch("aa","a"))
+        self.assertTrue(s.isMatch("aa","aa"))
+        self.assertFalse(s.isMatch("aa","aaa"))
+        self.assertTrue(s.isMatch("aa", "a*"))
+        self.assertTrue(s.isMatch("aaa", "a*a"))
+        self.assertTrue(s.isMatch("aaa", "a*aaa"))
+        self.assertTrue(s.isMatch("aaa", "a*aab*"))
+        self.assertTrue(s.isMatch("aa", ".*"))
+        self.assertTrue(s.isMatch("ab", ".*"))
+        self.assertTrue(s.isMatch("aab", "c*a*b"))
+        self.assertTrue(s.isMatch("aabcc", "c*a*bc*"))
+        self.assertFalse(s.isMatch("aa","a"))
         self.assertFalse(s.isMatch("aaa","aa"))
