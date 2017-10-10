@@ -21,9 +21,9 @@
 |10|[Regular Expression Matching](https://oj.leetcode.com/problems/regular-expression-matching/)    |[python](./src/main/python/regular_expression_matching.py), [java](./src/main/java/com/martinliu/regular-expression-matching/Solution.java) |Hard|
 |11|[Container With Most Water](https://oj.leetcode.com/problems/container-with-most-water/)    |[python](./src/main/python/container_with_most_water.py), [java](./src/main/java/com/martinliu/container-with-most-water/Solution.java) |Medium|
 |12|[Integer to Roman](https://oj.leetcode.com/problems/integer-to-roman/)    |[python](./src/main/python/integer_to_roman.py), [java](./src/main/java/com/martinliu/integer-to-roman/Solution.java)   |Medium|
-|13|[Roman to Integer](https://oj.leetcode.com/problems/roman-to-integer/)| [java](./src/main/java/com/martinliu/romanToInt/Solution.java) |Easy|
-|14|[Longest Common Prefix](https://oj.leetcode.com/problems/longest-common-prefix/)    |[java](./src/main/java/com/martinliu/longest-common-prefix/Solution.java) |Easy|
-|15|[3Sum](https://oj.leetcode.com/problems/3sum/)|[java](./src/main/java/com/martinliu/3sum/Solution.java) |Medium|
+|13|[Roman to Integer](https://oj.leetcode.com/problems/roman-to-integer/)|[python](./src/main/python/roman_to_integer.py),  [java](./src/main/java/com/martinliu/romanToInt/Solution.java) |Easy|
+|14|[Longest Common Prefix](https://oj.leetcode.com/problems/longest-common-prefix/)    |[python](./src/main/python/longest_common_prefix.py), [java](./src/main/java/com/martinliu/longest-common-prefix/Solution.java) |Easy|
+|15|[3Sum](https://oj.leetcode.com/problems/3sum/)|[python](./src/main/python/3sum.py), [java](./src/main/java/com/martinliu/3sum/Solution.java) |Medium|
 |16|[3Sum Closest](https://oj.leetcode.com/problems/3sum-closest/)    |[java](./src/main/java/com/martinliu/3sum-closest/Solution.java) |Medium|
 |19|[Remove Nth Node From End of List](https://oj.leetcode.com/problems/remove-nth-node-from-end-of-list/)    |[java](./src/main/java/com/martinliu/remove-nth-node-from-end-of-list/Solution.java) |Easy|
 |20|[Valid Parentheses](https://oj.leetcode.com/problems/valid-parentheses/)    |[java](./src/main/java/com/martinliu/valid-parentheses/Solution.java) |Easy|
