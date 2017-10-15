@@ -24,7 +24,8 @@
 |13|[Roman to Integer](https://oj.leetcode.com/problems/roman-to-integer/)|[python](./src/main/python/roman_to_integer.py),  [java](./src/main/java/com/martinliu/romanToInt/Solution.java) |Easy|
 |14|[Longest Common Prefix](https://oj.leetcode.com/problems/longest-common-prefix/)    |[python](./src/main/python/longest_common_prefix.py), [java](./src/main/java/com/martinliu/longest-common-prefix/Solution.java) |Easy|
 |15|[3Sum](https://oj.leetcode.com/problems/3sum/)|[python](./src/main/python/3sum.py), [java](./src/main/java/com/martinliu/3sum/Solution.java) |Medium|
-|16|[3Sum Closest](https://oj.leetcode.com/problems/3sum-closest/)    |[java](./src/main/java/com/martinliu/3sum-closest/Solution.java) |Medium|
+|16|[3Sum Closest](https://oj.leetcode.com/problems/3sum-closest/)    |[python](./src/main/python/3sum_closest.py), [java](./src/main/java/com/martinliu/3sum-closest/Solution.java) |Medium|
+|17|[Letter Combinations of a Phone Number](https://oj.leetcode.com/problems/letter-combinations-of-a-phone-number/)    |[python](./src/main/python/letter_combinations_of_a_phone_number.py) |Medium|
 |19|[Remove Nth Node From End of List](https://oj.leetcode.com/problems/remove-nth-node-from-end-of-list/)    |[java](./src/main/java/com/martinliu/remove-nth-node-from-end-of-list/Solution.java) |Easy|
 |20|[Valid Parentheses](https://oj.leetcode.com/problems/valid-parentheses/)    |[java](./src/main/java/com/martinliu/valid-parentheses/Solution.java) |Easy|
 |21|[Merge Two Sorted Lists](https://oj.leetcode.com/problems/merge-two-sorted-lists/)    |[java](./src/main/java/com/martinliu/mergeTwoLists/Solution.java) |Easy|
