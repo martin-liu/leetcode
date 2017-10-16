@@ -67,7 +67,7 @@ class Solution(object):
 
             # if already checked this num, then skip
             if i > 0 and nums[i] == nums[i - 1]:
-                continue
+                break
 
             target = 0 - nums[i]
             # find 2 sum of target
