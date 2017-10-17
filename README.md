@@ -27,7 +27,7 @@
 |16|[3Sum Closest](https://oj.leetcode.com/problems/3sum-closest/)    |[python](./src/main/python/3sum_closest.py), [java](./src/main/java/com/martinliu/3sum-closest/Solution.java) |Medium|
 |17|[Letter Combinations of a Phone Number](https://oj.leetcode.com/problems/letter-combinations-of-a-phone-number/)    |[python](./src/main/python/letter_combinations_of_a_phone_number.py) |Medium|
 |18|[4Sum](https://oj.leetcode.com/problems/4sum/)|[python](./src/main/python/4sum.py) |Medium|
-|19|[Remove Nth Node From End of List](https://oj.leetcode.com/problems/remove-nth-node-from-end-of-list/)    |[java](./src/main/java/com/martinliu/remove-nth-node-from-end-of-list/Solution.java) |Easy|
+|19|[Remove Nth Node From End of List](https://oj.leetcode.com/problems/remove-nth-node-from-end-of-list/)    |[python](./src/main/python/remove_nth_node_from_end_of_list.py), [java](./src/main/java/com/martinliu/remove-nth-node-from-end-of-list/Solution.java) |Easy|
 |20|[Valid Parentheses](https://oj.leetcode.com/problems/valid-parentheses/)    |[java](./src/main/java/com/martinliu/valid-parentheses/Solution.java) |Easy|
 |21|[Merge Two Sorted Lists](https://oj.leetcode.com/problems/merge-two-sorted-lists/)    |[java](./src/main/java/com/martinliu/mergeTwoLists/Solution.java) |Easy|
 |26|[Remove Duplicates from Sorted Array](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array/)|[java](./src/main/java/com/martinliu/removeDuplicates/Solution.java) |Easy|
