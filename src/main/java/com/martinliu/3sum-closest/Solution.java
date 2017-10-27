@@ -21,14 +21,11 @@ public class Solution
 
                     if (Math.abs(target - sum) < Math.abs(target - closest)) {
                         closest = sum;
-                        System.out.println(num[i] + ", " + num[j] + ", " + num[k]);
                     }
                 }
             }
 
         }
-
-        System.out.println(closest);
 
         return closest;
     }
