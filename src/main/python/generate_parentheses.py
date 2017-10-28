@@ -39,6 +39,9 @@ class Solution(object):
                         dp[i].append('(' + x + ')' + y)
         return dp[-1]
 
+
+
+
 # -----------------------------
 import unittest
 

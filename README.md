@@ -1,7 +1,7 @@
 # Leetcode solutions
 
 ## Testing instructions
-### Python
+### Python3
 `python test.py`
 
 ### Java
@@ -31,6 +31,7 @@
 |20|[Valid Parentheses](https://oj.leetcode.com/problems/valid-parentheses/)    |[python](./src/main/python/valid_parentheses.py), [java](./src/main/java/com/martinliu/valid-parentheses/Solution.java) |Easy|
 |21|[Merge Two Sorted Lists](https://oj.leetcode.com/problems/merge-two-sorted-lists/)    |[python](./src/main/python/merge_two_sorted_lists.py), [java](./src/main/java/com/martinliu/mergeTwoLists/Solution.java) |Easy|
 |22|[Generate Parentheses](https://oj.leetcode.com/problems/generate-parentheses/)    |[python](./src/main/python/generate_parentheses.py) | Medium |
+|23|[Merge k Sorted Lists](https://oj.leetcode.com/problems/merge-k-sorted-lists/)    |[python](./src/main/python/merge_k_sorted_lists.py) | Hard |
 |26|[Remove Duplicates from Sorted Array](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array/)|[java](./src/main/java/com/martinliu/removeDuplicates/Solution.java) |Easy|
 |27|[Remove Element](https://oj.leetcode.com/problems/remove-element/)    |[java](./src/main/java/com/martinliu/removeElement/Solution.java) |Easy|
 |36|[Valid Sudoku](https://oj.leetcode.com/problems/valid-sudoku/)    |[java](./src/main/java/com/martinliu/valid-sudoku/Solution.java) |Easy|
