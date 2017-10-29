@@ -36,6 +36,7 @@
 |25|[Reverse Nodes in k-Group](https://oj.leetcode.com/problems/reverse-nodes-in-k-group/)    |[python](./src/main/python/reverse_nodes_in_k_group.py) | Hard  |
 |26|[Remove Duplicates from Sorted Array](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array/)|[java](./src/main/java/com/martinliu/removeDuplicates/Solution.java) |Easy|
 |27|[Remove Element](https://oj.leetcode.com/problems/remove-element/)    |[java](./src/main/java/com/martinliu/removeElement/Solution.java) |Easy|
+|28|[Implement strStr()](https://oj.leetcode.com/problems/implement-strstr/)    |[java](./src/main/python/implement_strstr.py) |Easy|
 |36|[Valid Sudoku](https://oj.leetcode.com/problems/valid-sudoku/)    |[java](./src/main/java/com/martinliu/valid-sudoku/Solution.java) |Easy|
 |38|[Count and Say](https://oj.leetcode.com/problems/count-and-say/)    |[java](./src/main/java/com/martinliu/count-and-say/Solution.java) |Easy|
 |58|[Length of Last Word](https://oj.leetcode.com/problems/length-of-last-word/)    |[java](./src/main/java/com/martinliu/length-of-last-word/Solution.java) |Easy|
