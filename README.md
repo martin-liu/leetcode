@@ -37,7 +37,8 @@
 |26|[Remove Duplicates from Sorted Array](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array/)|[java](./src/main/java/com/martinliu/removeDuplicates/Solution.java) |Easy|
 |27|[Remove Element](https://oj.leetcode.com/problems/remove-element/)    |[java](./src/main/java/com/martinliu/removeElement/Solution.java) |Easy|
 |28|[Implement strStr()](https://oj.leetcode.com/problems/implement-strstr/)    |[java](./src/main/python/implement_strstr.py) |Easy|
-|29|[Divide Two Integers](https://oj.leetcode.com/problems/divide-two-integers/)    |[java](./src/main/python/divide_two_integers.py) |Medium|
+|29|[Divide Two Integers](https://oj.leetcode.com/problems/divide-two-integers/)    |[python](./src/main/python/divide_two_integers.py) |Medium|
+|30|[Substring with Concatenation of All Words](https://oj.leetcode.com/problems/substring-with-concatenation-of-all-words/)    |[python](./src/main/python/substring_with_concatenation_of_all_words.py) |Hard|
 |36|[Valid Sudoku](https://oj.leetcode.com/problems/valid-sudoku/)    |[java](./src/main/java/com/martinliu/valid-sudoku/Solution.java) |Easy|
 |38|[Count and Say](https://oj.leetcode.com/problems/count-and-say/)    |[java](./src/main/java/com/martinliu/count-and-say/Solution.java) |Easy|
 |58|[Length of Last Word](https://oj.leetcode.com/problems/length-of-last-word/)    |[java](./src/main/java/com/martinliu/length-of-last-word/Solution.java) |Easy|

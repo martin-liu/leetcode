@@ -39,6 +39,6 @@ class Test(unittest.TestCase):
     def test(self):
         s = Solution()
         self.assertEqual(s.strStr("abc", "b"), 1)
-        self.assertEqual(s.strStr("abc", ""), -1)
+        self.assertEqual(s.strStr("abc", ""), 0)
         self.assertEqual(s.strStr("abc", "bc"), 1)
         self.assertEqual(s.strStr("", ""), 0)
