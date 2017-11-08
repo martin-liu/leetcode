@@ -7,6 +7,10 @@
 # You should return the indices: [0,9].
 # (order does not matter).
 
+# Basic idea: check at most wordLength rounds, every round jump to check all words
+# e.g. s: "barfoothefoobarman", words: ["foo", "bar"]
+# starts with (`bar`, `arf`, `rfo`), jump 3 chars to check
+
 class Solution:
     def findSubstring(self, s, words):
         """
