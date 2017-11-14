@@ -4,6 +4,7 @@
 
 # Another example is ")()())", where the longest valid parentheses substring is "()()", which has length = 4.
 
+# Basic idea: store index of `(` in stack, so that when pop, we can use index deduction to get length
 class Solution(object):
     def longestValidParentheses(self, s):
         """
