@@ -19,11 +19,11 @@ class Solution(object):
         sumMap = {}
         for i in range(len(nums)):
             num = nums[i]
-            if (sumMap.get(num) == None):
+            if num not in sumMap:
                 # `target - num`
                 sumMap[target - num] = i
             else:
-                return [sumMap.get(num), i]
+                return [sumMap[num], i]
 
 
 

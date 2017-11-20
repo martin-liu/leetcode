@@ -41,6 +41,7 @@
 |30|[Substring with Concatenation of All Words](https://oj.leetcode.com/problems/substring-with-concatenation-of-all-words/)    |[python](./src/main/python/substring_with_concatenation_of_all_words.py) |Hard|
 |31|[Next Permutation](https://oj.leetcode.com/problems/next-permutation/)    |[python](./src/main/python/next_permutation.py) |Medium|
 |32|[Longest Valid Parentheses](https://oj.leetcode.com/problems/longest_valid_parentheses/)    |[python](./src/main/python/longest_valid_parentheses.py) |Hard|
+|33|[Search in Rotated Sorted Array](https://oj.leetcode.com/problems/search-in-rotated-sorted-array/)    |[python](./src/main/python/search_in_rotated_sorted_array.py) |Medium|
 |36|[Valid Sudoku](https://oj.leetcode.com/problems/valid-sudoku/)    |[java](./src/main/java/com/martinliu/valid-sudoku/Solution.java) |Easy|
 |38|[Count and Say](https://oj.leetcode.com/problems/count-and-say/)    |[java](./src/main/java/com/martinliu/count-and-say/Solution.java) |Easy|
 |58|[Length of Last Word](https://oj.leetcode.com/problems/length-of-last-word/)    |[java](./src/main/java/com/martinliu/length-of-last-word/Solution.java) |Easy|
