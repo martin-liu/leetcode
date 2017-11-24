@@ -8,7 +8,7 @@
 # Given [5, 7, 7, 8, 8, 10] and target value 8,
 # return [3, 4].
 
-
+# Basic idea: binary search, need to consider that there maybe very huge number of target value
 class Solution(object):
     def searchRange(self, nums, target):
         """
@@ -16,29 +16,34 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-
-        if len(nums) == 0:
-            return [-1, -1]
-
-        length = len(nums)
-        start, end = 0, length - 1
-
         ret = [-1, -1]
-        while start <= end:
-            mid = (start + end) // 2
-            if target == nums[mid]:
-                start = mid
-                end = mid
-                while start >= 0 and nums[start] == nums[mid]:
-                    start -= 1
-                while end <= length - 1 and nums[end] == nums[mid]:
-                    end += 1
-                return [start + 1, end - 1]
+        if not nums:
+            return ret
 
-            elif target > nums[mid]:
+        start, end = 0, len(nums) - 1
+
+        # find start of the target
+        while start < end:
+            mid = (start + end) // 2
+            if nums[mid] < target:
                 start = mid + 1
             else:
+                end = mid
+
+        if nums[start] != target:
+            return ret
+
+        ret[0] = start
+        end = len(nums) - 1
+
+        # find end of the target
+        while start < end:
+            mid = (start + end + 1) // 2
+            if nums[mid] > target:
                 end = mid - 1
+            else:
+                start = mid
+        ret[1] = end
 
         return ret
 
