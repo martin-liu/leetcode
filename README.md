@@ -44,7 +44,7 @@
 |33|[Search in Rotated Sorted Array](https://oj.leetcode.com/problems/search-in-rotated-sorted-array/)    |[python](./src/main/python/search_in_rotated_sorted_array.py) |Medium|
 |34|[Search for a Range](https://oj.leetcode.com/problems/search-for-a-range/)    |[python](./src/main/python/search_for_a_range.py) |Medium|
 |35|[Search Insert Position](https://oj.leetcode.com/problems/search-insert-position/)    |[python](./src/main/python/search_insert_position.py) |Easy |
-|36|[Valid Sudoku](https://oj.leetcode.com/problems/valid-sudoku/)    |[java](./src/main/java/com/martinliu/valid-sudoku/Solution.java) |Easy|
+|36|[Valid Sudoku](https://oj.leetcode.com/problems/valid-sudoku/)    |[python](./src/main/python/valid_sudoku.py), [java](./src/main/java/com/martinliu/valid-sudoku/Solution.java) |Easy|
 |38|[Count and Say](https://oj.leetcode.com/problems/count-and-say/)    |[java](./src/main/java/com/martinliu/count-and-say/Solution.java) |Easy|
 |58|[Length of Last Word](https://oj.leetcode.com/problems/length-of-last-word/)    |[java](./src/main/java/com/martinliu/length-of-last-word/Solution.java) |Easy|
 |66|[Plus One](https://oj.leetcode.com/problems/plus-one/)|[java](./src/main/java/com/martinliu/plusOne/Solution.java) |Easy|
