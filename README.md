@@ -46,7 +46,7 @@
 |35|[Search Insert Position](https://oj.leetcode.com/problems/search-insert-position/)    |[python](./src/main/python/search_insert_position.py) |Easy |
 |36|[Valid Sudoku](https://oj.leetcode.com/problems/valid-sudoku/)    |[python](./src/main/python/valid_sudoku.py), [java](./src/main/java/com/martinliu/valid-sudoku/Solution.java) |Medium|
 |37|[Sudoku Solver](https://oj.leetcode.com/problems/sudoku-solver/)    |[python](./src/main/python/sudoku_solver.py) |Hard|
-|38|[Count and Say](https://oj.leetcode.com/problems/count-and-say/)    |[java](./src/main/java/com/martinliu/count-and-say/Solution.java) |Easy|
+|38|[Count and Say](https://oj.leetcode.com/problems/count-and-say/)    |[python](./src/main/python/count_and_say.py), [java](./src/main/java/com/martinliu/count-and-say/Solution.java) |Easy|
 |58|[Length of Last Word](https://oj.leetcode.com/problems/length-of-last-word/)    |[java](./src/main/java/com/martinliu/length-of-last-word/Solution.java) |Easy|
 |66|[Plus One](https://oj.leetcode.com/problems/plus-one/)|[java](./src/main/java/com/martinliu/plusOne/Solution.java) |Easy|
 |67|[Add Binary](https://oj.leetcode.com/problems/add-binary/)    |[java](./src/main/java/com/martinliu/add-binary/Solution.java) |Easy|
