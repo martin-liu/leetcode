@@ -57,6 +57,7 @@
 |46 |[Permutations](https://leetcode.com/problems/permutations) |[python](./src/main/python/permutations.py) |Medium|
 |47 |[Permutations II](https://leetcode.com/problems/permutations-ii) |[python](./src/main/python/permutations-ii.py) |Medium|
 |48 |[Rotate Image](https://leetcode.com/problems/rotate-image) |[python](./src/main/python/rotate_image.py) |Medium|
+|49 |[Group Anagrams](https://leetcode.com/problems/group-anagrams) |[python](./src/main/python/group_anagrams.py) |Medium|
 |58|[Length of Last Word](https://oj.leetcode.com/problems/length-of-last-word/)    |[java](./src/main/java/com/martinliu/length-of-last-word/Solution.java) |Easy|
 |66|[Plus One](https://oj.leetcode.com/problems/plus-one/)|[java](./src/main/java/com/martinliu/plusOne/Solution.java) |Easy|
 |67|[Add Binary](https://oj.leetcode.com/problems/add-binary/)    |[java](./src/main/java/com/martinliu/add-binary/Solution.java) |Easy|
