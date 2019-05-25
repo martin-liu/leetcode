@@ -59,6 +59,8 @@
 |48 |[Rotate Image](https://leetcode.com/problems/rotate-image) |[python](./src/main/python/rotate_image.py) |Medium|
 |49 |[Group Anagrams](https://leetcode.com/problems/group-anagrams) |[python](./src/main/python/group_anagrams.py) |Medium|
 |50 |[Pow(x, n)](https://leetcode.com/problems/powx-n)|[python](./src/main/python/powx.py)  |Medium|
+|51 |[N-Queens](https://leetcode.com/problems/n-queens)         |[python](./src/main/python/n_queens.py)  |Hard  |
+|52 |[N-Queens II](https://leetcode.com/problems/n-queens-ii)      |[python](./src/main/python/n_queens_ii.py) |Hard  |
 |58|[Length of Last Word](https://oj.leetcode.com/problems/length-of-last-word/)    |[java](./src/main/java/com/martinliu/length-of-last-word/Solution.java) |Easy|
 |66|[Plus One](https://oj.leetcode.com/problems/plus-one/)|[java](./src/main/java/com/martinliu/plusOne/Solution.java) |Easy|
 |67|[Add Binary](https://oj.leetcode.com/problems/add-binary/)    |[java](./src/main/java/com/martinliu/add-binary/Solution.java) |Easy|
