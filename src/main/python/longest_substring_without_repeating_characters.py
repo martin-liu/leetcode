@@ -15,14 +15,13 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        if s == None:
+        if not s:
             return 0
 
-        length = len(s)
         maxLen = 0
         chars = []
 
-        for i in range(length):
+        for i in range(len(s)):
             # when duplication found
             if s[i] in chars:
                 # reset chars from duplication index + 1, as a new substring
@@ -42,6 +41,8 @@ import unittest
 class Test(unittest.TestCase):
     def test(self):
         s = Solution()
+        self.assertEqual(s.lengthOfLongestSubstring(None), 0)
+        self.assertEqual(s.lengthOfLongestSubstring(""), 0)
         self.assertEqual(s.lengthOfLongestSubstring("abcabcbb"), 3)
         self.assertEqual(s.lengthOfLongestSubstring("bbb"), 1)
         self.assertEqual(s.lengthOfLongestSubstring("pwwkew"), 3)
