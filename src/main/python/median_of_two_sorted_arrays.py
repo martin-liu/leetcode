@@ -23,6 +23,8 @@ class Solution(object):
         :type nums2: List[int]
         :rtype: float
         """
+        if not nums1 and not nums2:
+            return 0
 
         len1 = len(nums1)
         len2 = len(nums2)
@@ -66,5 +68,8 @@ import unittest
 class Test(unittest.TestCase):
     def test(self):
         s = Solution()
+        self.assertEqual(s.findMedianSortedArrays([], [2]), 2.0)
+        self.assertEqual(s.findMedianSortedArrays([], []), 0)
+        self.assertEqual(s.findMedianSortedArrays([1], [2]), 1.5)
         self.assertEqual(s.findMedianSortedArrays([1, 3], [2]), 2.0)
         self.assertEqual(s.findMedianSortedArrays([1, 2], [3, 4]), 2.5)
