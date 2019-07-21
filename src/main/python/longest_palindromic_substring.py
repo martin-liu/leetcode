@@ -37,6 +37,7 @@ class Solution(object):
         for i in range(charsLen):
             j = 0
             # s[i] as central, go check left and right until they are not equal
+            # don't use `< charsLen - 1`, otherwise `chars[i-j]==chars[i+j]` will not check when `i+j==charsLen-1`
             while i - j >= 0 and i + j < charsLen and chars[i - j] == chars[i + j]:
                 j += 1
 
