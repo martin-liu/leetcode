@@ -7,7 +7,7 @@
 ### Java
 `mvn test`
 
-| # | Title | Code | Difficulty |
+| Topic | Title | Code | Difficulty |
 |---|-------|------|------------|
 |1|[Two Sum](https://oj.leetcode.com/problems/two-sum/)    |[python](./src/main/python/twosum.py), [java](./src/main/java/com/martinliu/twosum/Solution.java)  |Medium|
 |2|[Add Two Numbers](https://oj.leetcode.com/problems/add-two-numbers/)    |[python](./src/main/python/add_two_numbers.py), [java](./src/main/java/com/martinliu/add-two-numbers/Solution.java) |Medium|
@@ -61,6 +61,8 @@
 |50 |[Pow(x, n)](https://leetcode.com/problems/powx-n)|[python](./src/main/python/powx.py)  |Medium|
 |51 |[N-Queens](https://leetcode.com/problems/n-queens)         |[python](./src/main/python/n_queens.py)  |Hard  |
 |52 |[N-Queens II](https://leetcode.com/problems/n-queens-ii)      |[python](./src/main/python/n_queens_ii.py) |Hard  |
+|53 |[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) |[python](./src/main/python/maximum_subarray.py) |Easy |
+|54 |[Spiral Matrix](https://leetcode.com/problems/spiral-matrix) |[python](./src/main/python/sprial_matrix.py) |Medium |
 |58|[Length of Last Word](https://oj.leetcode.com/problems/length-of-last-word/)    |[java](./src/main/java/com/martinliu/length-of-last-word/Solution.java) |Easy|
 |66|[Plus One](https://oj.leetcode.com/problems/plus-one/)|[java](./src/main/java/com/martinliu/plusOne/Solution.java) |Easy|
 |67|[Add Binary](https://oj.leetcode.com/problems/add-binary/)    |[java](./src/main/java/com/martinliu/add-binary/Solution.java) |Easy|
