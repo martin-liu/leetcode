@@ -7,11 +7,11 @@
 ### Java
 `mvn test`
 
-| Topic | Title | Code | Difficulty |
-|---|-------|------|------------|
-|1|[Two Sum](https://oj.leetcode.com/problems/two-sum/)    |[python](./src/main/python/twosum.py), [java](./src/main/java/com/martinliu/twosum/Solution.java)  |Medium|
+| Topic | Title | Code | Difficulty | Topic |
+|---|-------|------|------------|------|
+|1|[Two Sum](https://oj.leetcode.com/problems/two-sum/)    |[python](./src/main/python/twosum.py), [java](./src/main/java/com/martinliu/twosum/Solution.java)  |Medium| Hash Map |
 |2|[Add Two Numbers](https://oj.leetcode.com/problems/add-two-numbers/)    |[python](./src/main/python/add_two_numbers.py), [java](./src/main/java/com/martinliu/add-two-numbers/Solution.java) |Medium|
-|3|[Longest Substring Without Repeating Characters](https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/)    |[python](./src/main/python/longest_substring_without_repeating_characters.py), [java](./src/main/java/com/martinliu/longest-substring-without-repeating-characters/Solution.java) |Medium|
+|3|[Longest Substring Without Repeating Characters](https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/)    |[python](./src/main/python/longest_substring_without_repeating_characters.py), [java](./src/main/java/com/martinliu/longest-substring-without-repeating-characters/Solution.java) |Medium| Hash Map, |
 |4|[Median of Two Sorted Arrays](https://oj.leetcode.com/problems/median-of-two-sorted-arrays/)    |[python](./src/main/python/median_of_two_sorted_arrays.py), [java](./src/main/java/com/martinliu/medianSortedArrays/Solution.java) |Hard|
 |5|[Longest Palindromic Substring](https://oj.leetcode.com/problems/longest-palindromic-substring/)    |[python](./src/main/python/longest_palindromic_substring.py), [java](./src/main/java/com/martinliu/longest-palindromic-substring/Solution.java) |Medium|
 |6|[ZigZag Conversion](https://oj.leetcode.com/problems/zigzag-conversion/)    |[python](./src/main/python/zigzag_conversion.py), [java](./src/main/java/com/martinliu/zigzag-conversion/Solution.java) |Easy|
@@ -62,8 +62,12 @@
 |51 |[N-Queens](https://leetcode.com/problems/n-queens)         |[python](./src/main/python/n_queens.py)  |Hard  |
 |52 |[N-Queens II](https://leetcode.com/problems/n-queens-ii)      |[python](./src/main/python/n_queens_ii.py) |Hard  |
 |53 |[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) |[python](./src/main/python/maximum_subarray.py) |Easy |
-|54 |[Spiral Matrix](https://leetcode.com/problems/spiral-matrix) |[python](./src/main/python/sprial_matrix.py) |Medium |
+|54 |[Spiral Matrix](https://leetcode.com/problems/spiral-matrix) |[python](./src/main/python/sprial_matrix.py) |Medium | Array |
+|55 |[Jump Game](https://leetcode.com/problems/jump-game) |[python](./src/main/python/jump_game.py) |Medium | Array, Greedy |
+|56 |[Merge Intervals](https://leetcode.com/problems/merge-intervals) |[python](./src/main/python/merge_intervals.py) |Medium | Array, Sort |
+|57 |[Insert Intervals](https://leetcode.com/problems/insert-interval) |[python](./src/main/python/insert_intervals.py) |Hard | Array, Sort |
 |58|[Length of Last Word](https://oj.leetcode.com/problems/length-of-last-word/)    |[java](./src/main/java/com/martinliu/length-of-last-word/Solution.java) |Easy|
+|59 |[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii) |[python](./src/main/python/sprial_matrix_ii.py) |Medium | Array |
 |66|[Plus One](https://oj.leetcode.com/problems/plus-one/)|[java](./src/main/java/com/martinliu/plusOne/Solution.java) |Easy|
 |67|[Add Binary](https://oj.leetcode.com/problems/add-binary/)    |[java](./src/main/java/com/martinliu/add-binary/Solution.java) |Easy|
 |70|[Climbing Stairs](https://oj.leetcode.com/problems/climbing-stairs/)|[java](./src/main/java/com/martinliu/climb-stairs/Solution.java) |Easy|

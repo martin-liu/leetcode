@@ -43,19 +43,26 @@ vector rotate 90 deg `(x,y) -> (y,-x)`: (0, 1) -> (1, 0) -> (0, -1) -> (-1, 0)
         ret = []
 
         while x >= rowMin and x <= rowMax and y >= colMin and y <= colMax:
+            # add current position
             ret.append(matrix[x][y])
 
+            # prepare next position
             if dx == 1 and x == rowMax:
                 colMax -= 1
-                dx, dy = dy, -dx
+                rotate = True
             elif dy == 1 and y == colMax:
                 rowMin += 1
-                dx, dy = dy, -dx
+                rotate = True
             elif dx == -1 and x == rowMin:
                 colMin += 1
-                dx, dy = dy, -dx
+                rotate = True
             elif dy == -1 and y == colMin:
                 rowMax -= 1
+                rotate = True
+            else:
+                rotate = False
+
+            if rotate:
                 dx, dy = dy, -dx
 
             # move
