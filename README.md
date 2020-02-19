@@ -68,6 +68,10 @@
 |57 |[Insert Intervals](https://leetcode.com/problems/insert-interval) |[python](./src/main/python/insert_intervals.py) |Hard | Array, Sort |
 |58|[Length of Last Word](https://oj.leetcode.com/problems/length-of-last-word/)    |[java](./src/main/java/com/martinliu/length-of-last-word/Solution.java) |Easy|
 |59 |[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii) |[python](./src/main/python/sprial_matrix_ii.py) |Medium | Array |
+|60 |[Permutation Sequence](https://leetcode.com/problems/permutation-sequence) |[python](./src/main/python/permutation_sequence.py) |Medium | Math, Backtracking |
+|61 |[Rotate List](https://leetcode.com/problems/rotate-list) |[python](./src/main/python/rotate_list.py) |Medium | Linked List, Two Pointers |
+|62 |[Unique Paths](https://leetcode.com/problems/unique-paths) |[python](./src/main/python/unique_paths.py) |Medium | Array, Dynamic Programming |
+|63 |[Unique Paths II](https://leetcode.com/problems/unique-paths-ii) |[python](./src/main/python/unique_paths_ii.py) |Medium | Array, Dynamic Programming |
 |66|[Plus One](https://oj.leetcode.com/problems/plus-one/)|[java](./src/main/java/com/martinliu/plusOne/Solution.java) |Easy|
 |67|[Add Binary](https://oj.leetcode.com/problems/add-binary/)    |[java](./src/main/java/com/martinliu/add-binary/Solution.java) |Easy|
 |70|[Climbing Stairs](https://oj.leetcode.com/problems/climbing-stairs/)|[java](./src/main/java/com/martinliu/climb-stairs/Solution.java) |Easy|
