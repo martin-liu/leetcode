@@ -79,6 +79,10 @@
 |68|[Text Justification](https://leetcode.com/problems/text-justification) |[python](./src/main/python/text_justification.py) |Hard| String |
 |69|[Sqrt(x)](https://leetcode.com/problems/sqrtx) |[python](./src/main/python/sqrtx.py) |Easy| Math, Binary Search |
 |70|[Climbing Stairs](https://oj.leetcode.com/problems/climbing-stairs/)|[java](./src/main/java/com/martinliu/climb-stairs/Solution.java) |Easy|
+|71|[Simplify Path](https://leetcode.com/problems/simplify-path) |[python](./src/main/python/simplify_path.py) |Medium| String, Stack |
+|72|[Edit Distance](https://leetcode.com/problems/edit-distance) |[python](./src/main/python/edit_distance.py) |Hard| String, Dynamic Programming |
+|73|[Set Matrix Zero](https://leetcode.com/problems/set-matrix-zeroes) |[python](./src/main/python/set_matrix_zeroes.py) |Medium| Array |
+|74|[Search a 2d matrix](https://leetcode.com/problems/search-a-2d-matrix) |[python](./src/main/python/search_a_2d_matrix.py) |Medium| Array, Binary Search |
 |83|[Remove Duplicates from Sorted List](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list/)| [java](./src/main/java/com/martinliu/removeDuplicates/Solution.java) |Easy|
 |88|[Merge Sorted Array](https://oj.leetcode.com/problems/merge-sorted-array/)    |[java](./src/main/java/com/martinliu/mergesortedarray/Solution.java) |Easy|
 |100|[Same Tree](https://oj.leetcode.com/problems/same-tree/)| [java](./src/main/java/com/martinliu/isSameTree/Solution.java) |Easy|
