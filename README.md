@@ -83,6 +83,10 @@
 |72|[Edit Distance](https://leetcode.com/problems/edit-distance) |[python](./src/main/python/edit_distance.py) |Hard| String, Dynamic Programming |
 |73|[Set Matrix Zero](https://leetcode.com/problems/set-matrix-zeroes) |[python](./src/main/python/set_matrix_zeroes.py) |Medium| Array |
 |74|[Search a 2d matrix](https://leetcode.com/problems/search-a-2d-matrix) |[python](./src/main/python/search_a_2d_matrix.py) |Medium| Array, Binary Search |
+|75|[Sort Colors](https://leetcode.com/problems/sort-colors) |[python](./src/main/python/sort_colors.py) |Medium| Array, Two Pointers, Sort |
+|76|[Minimal Window Substring](https://leetcode.com/problems/minimum-window-substring) |[python](./src/main/python/minimum_window_substring.py) |Hard| Hash Table, Two Pointers, String, Sliding Window|
+|77|[Combinations](https://leetcode.com/problems/combinations) |[python](./src/main/python/combinations.py) |Medium| Backtracking|
+|78|[Subsets](https://leetcode.com/problems/subsets) |[python](./src/main/python/subsets.py) |Medium| Array, Backtracking, Bit Manipulation|
 |83|[Remove Duplicates from Sorted List](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list/)| [java](./src/main/java/com/martinliu/removeDuplicates/Solution.java) |Easy|
 |88|[Merge Sorted Array](https://oj.leetcode.com/problems/merge-sorted-array/)    |[java](./src/main/java/com/martinliu/mergesortedarray/Solution.java) |Easy|
 |100|[Same Tree](https://oj.leetcode.com/problems/same-tree/)| [java](./src/main/java/com/martinliu/isSameTree/Solution.java) |Easy|
