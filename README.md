@@ -87,8 +87,12 @@
 |76|[Minimal Window Substring](https://leetcode.com/problems/minimum-window-substring) |[python](./src/main/python/minimum_window_substring.py) |Hard| Hash Table, Two Pointers, String, Sliding Window|
 |77|[Combinations](https://leetcode.com/problems/combinations) |[python](./src/main/python/combinations.py) |Medium| Backtracking|
 |78|[Subsets](https://leetcode.com/problems/subsets) |[python](./src/main/python/subsets.py) |Medium| Array, Backtracking, Bit Manipulation|
+|79|[Word Search](https://leetcode.com/problems/word-search) |[python](./src/main/python/word_search.py) |Medium| Array, Backtracking|
+|80|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii) |[python](./src/main/python/remove_duplicates_from_sorted_array_ii.py) |Medium| Array, Two Pointers |
+|81|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii) |[python](./src/main/python/search_in_rotated_sorted_array_ii.py) |Medium| Array, Binary Search |
 |83|[Remove Duplicates from Sorted List](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list/)| [java](./src/main/java/com/martinliu/removeDuplicates/Solution.java) |Easy|
 |88|[Merge Sorted Array](https://oj.leetcode.com/problems/merge-sorted-array/)    |[java](./src/main/java/com/martinliu/mergesortedarray/Solution.java) |Easy|
+|89|[Grap Code](https://leetcode.com/problems/gray-code) |[python](./src/main/python/gray_code.py) |Medium| Backtracking|
 |100|[Same Tree](https://oj.leetcode.com/problems/same-tree/)| [java](./src/main/java/com/martinliu/isSameTree/Solution.java) |Easy|
 |101|[Symmetric Tree](https://oj.leetcode.com/problems/symmetric-tree/)    |[java](./src/main/java/com/martinliu/symmetric/Solution.java) |Easy|
 |102|[ry Tree Level Order Traversal](https://oj.leetcode.com/problems/binary-tree-level-order-traversal/)    |[java](./src/main/java/com/martinliu/binary-tree-level-order-traversal/Solution.java) |Easy|
