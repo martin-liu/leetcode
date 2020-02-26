@@ -66,7 +66,7 @@
 |55 |[Jump Game](https://leetcode.com/problems/jump-game) |[python](./src/main/python/jump_game.py) |Medium | Array, Greedy |
 |56 |[Merge Intervals](https://leetcode.com/problems/merge-intervals) |[python](./src/main/python/merge_intervals.py) |Medium | Array, Sort |
 |57 |[Insert Intervals](https://leetcode.com/problems/insert-interval) |[python](./src/main/python/insert_intervals.py) |Hard | Array, Sort |
-|58|[Length of Last Word](https://oj.leetcode.com/problems/length-of-last-word/)    |[java](./src/main/java/com/martinliu/length-of-last-word/Solution.java) |Easy|
+|58|[Length of Last Word](https://oj.leetcode.com/problems/length-of-last-word/)    |[python](./src/main/python/length_of_last_word.py), [java](./src/main/java/com/martinliu/length-of-last-word/Solution.java) |Easy| String |
 |59 |[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii) |[python](./src/main/python/sprial_matrix_ii.py) |Medium | Array |
 |60 |[Permutation Sequence](https://leetcode.com/problems/permutation-sequence) |[python](./src/main/python/permutation_sequence.py) |Medium | Math, Backtracking |
 |61 |[Rotate List](https://leetcode.com/problems/rotate-list) |[python](./src/main/python/rotate_list.py) |Medium | Linked List, Two Pointers |
@@ -74,11 +74,11 @@
 |63 |[Unique Paths II](https://leetcode.com/problems/unique-paths-ii) |[python](./src/main/python/unique_paths_ii.py) |Medium | Array, Dynamic Programming |
 |64 |[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum) |[python](./src/main/python/minimum_path_sum.py) |Medium | Array, Dynamic Programming |
 |65 |[Valid Number](https://leetcode.com/problems/valid-number) |[python](./src/main/python/valid_number.py) |Hard | Math, String |
-|66|[Plus One](https://oj.leetcode.com/problems/plus-one/)|[java](./src/main/java/com/martinliu/plusOne/Solution.java) |Easy|
-|67|[Add Binary](https://oj.leetcode.com/problems/add-binary/)    |[java](./src/main/java/com/martinliu/add-binary/Solution.java) |Easy|
+|66|[Plus One](https://oj.leetcode.com/problems/plus-one/)|[python](./src/main/python/plus_one.py), [java](./src/main/java/com/martinliu/plusOne/Solution.java) |Easy|
+|67|[Add Binary](https://oj.leetcode.com/problems/add-binary/)    |[python](./src/main/python/add_binary.py),[java](./src/main/java/com/martinliu/add-binary/Solution.java) |Easy|
 |68|[Text Justification](https://leetcode.com/problems/text-justification) |[python](./src/main/python/text_justification.py) |Hard| String |
 |69|[Sqrt(x)](https://leetcode.com/problems/sqrtx) |[python](./src/main/python/sqrtx.py) |Easy| Math, Binary Search |
-|70|[Climbing Stairs](https://oj.leetcode.com/problems/climbing-stairs/)|[java](./src/main/java/com/martinliu/climb-stairs/Solution.java) |Easy|
+|70|[Climbing Stairs](https://oj.leetcode.com/problems/climbing-stairs/)|[python](./src/main/python/climbing_stairs.py),[java](./src/main/java/com/martinliu/climb-stairs/Solution.java) |Easy|
 |71|[Simplify Path](https://leetcode.com/problems/simplify-path) |[python](./src/main/python/simplify_path.py) |Medium| String, Stack |
 |72|[Edit Distance](https://leetcode.com/problems/edit-distance) |[python](./src/main/python/edit_distance.py) |Hard| String, Dynamic Programming |
 |73|[Set Matrix Zero](https://leetcode.com/problems/set-matrix-zeroes) |[python](./src/main/python/set_matrix_zeroes.py) |Medium| Array |
@@ -90,7 +90,8 @@
 |79|[Word Search](https://leetcode.com/problems/word-search) |[python](./src/main/python/word_search.py) |Medium| Array, Backtracking|
 |80|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii) |[python](./src/main/python/remove_duplicates_from_sorted_array_ii.py) |Medium| Array, Two Pointers |
 |81|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii) |[python](./src/main/python/search_in_rotated_sorted_array_ii.py) |Medium| Array, Binary Search |
-|83|[Remove Duplicates from Sorted List](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list/)| [java](./src/main/java/com/martinliu/removeDuplicates/Solution.java) |Easy|
+|82|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii) |[python](./src/main/python/remove_duplicates_from_sorted_list_ii.py) |Medium| Linked List |
+|83|[Remove Duplicates from Sorted List](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list/)|[python](./src/main/python/remove_duplicates_from_sorted_list.py),[java](./src/main/java/com/martinliu/removeDuplicates/Solution.java) |Easy|
 |88|[Merge Sorted Array](https://oj.leetcode.com/problems/merge-sorted-array/)    |[java](./src/main/java/com/martinliu/mergesortedarray/Solution.java) |Easy|
 |89|[Grap Code](https://leetcode.com/problems/gray-code) |[python](./src/main/python/gray_code.py) |Medium| Backtracking|
 |100|[Same Tree](https://oj.leetcode.com/problems/same-tree/)| [java](./src/main/java/com/martinliu/isSameTree/Solution.java) |Easy|
