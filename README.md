@@ -96,9 +96,11 @@
 |85|[Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle) |[python](./src/main/python/maximal_rectangle.py) |Hard|Array, Stack, Hash Table, Dynamic Programming |
 |86|[Partition List](https://leetcode.com/problems/partition-list) |[python](./src/main/python/partition_list.py) |Medium|Linked List, Two Pointers|
 |87|[Scramble String](https://leetcode.com/problems/scramble-string) |[python](./src/main/python/scramble_string.py) |Hard|String, Dynamic Programming|
-|88|[Merge Sorted Array](https://oj.leetcode.com/problems/merge-sorted-array/)    |[java](./src/main/java/com/martinliu/mergesortedarray/Solution.java) |Easy|
-|88|[Merge Sorted Array](https://oj.leetcode.com/problems/merge-sorted-array/)    |[java](./src/main/java/com/martinliu/mergesortedarray/Solution.java) |Easy|
+|88|[Merge Sorted Array](https://oj.leetcode.com/problems/merge-sorted-array/)    |[python](./src/main/python/merge_sorted_array.py),[java](./src/main/java/com/martinliu/mergesortedarray/Solution.java) |Easy|Array, Two Pointers |
 |89|[Grap Code](https://leetcode.com/problems/gray-code) |[python](./src/main/python/gray_code.py) |Medium| Backtracking|
+|90|[Subsets II](https://leetcode.com/problems/subsets-ii) |[python](./src/main/python/subsets_ii.py) |Medium| Array, Backtracking|
+|91|[Decode Ways](https://leetcode.com/problems/decode-ways) |[python](./src/main/python/decode_ways.py) |Medium| String, Dynamic Programming|
+|92|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii) |[python](./src/main/python/reverse_linked_list_ii.py) |Medium| Linked List|
 |100|[Same Tree](https://oj.leetcode.com/problems/same-tree/)| [java](./src/main/java/com/martinliu/isSameTree/Solution.java) |Easy|
 |101|[Symmetric Tree](https://oj.leetcode.com/problems/symmetric-tree/)    |[java](./src/main/java/com/martinliu/symmetric/Solution.java) |Easy|
 |102|[ry Tree Level Order Traversal](https://oj.leetcode.com/problems/binary-tree-level-order-traversal/)    |[java](./src/main/java/com/martinliu/binary-tree-level-order-traversal/Solution.java) |Easy|

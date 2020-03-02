@@ -24,7 +24,7 @@ Output:
 ]
 
 ---
-Basic idea: f([first, *rest]) = rest + [[first] + a for a in f(rest)]
+Basic idea: f([first, *rest]) = f(rest) + [[first] + a for a in f(rest)]
         """
 
         if not nums:
