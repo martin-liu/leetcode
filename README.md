@@ -92,6 +92,11 @@
 |81|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii) |[python](./src/main/python/search_in_rotated_sorted_array_ii.py) |Medium| Array, Binary Search |
 |82|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii) |[python](./src/main/python/remove_duplicates_from_sorted_list_ii.py) |Medium| Linked List |
 |83|[Remove Duplicates from Sorted List](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list/)|[python](./src/main/python/remove_duplicates_from_sorted_list.py),[java](./src/main/java/com/martinliu/removeDuplicates/Solution.java) |Easy|
+|84|[Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram) |[python](./src/main/python/largest_rectangle_in_histogram.py) |Hard|Array, Stack |
+|85|[Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle) |[python](./src/main/python/maximal_rectangle.py) |Hard|Array, Stack, Hash Table, Dynamic Programming |
+|86|[Partition List](https://leetcode.com/problems/partition-list) |[python](./src/main/python/partition_list.py) |Medium|Linked List, Two Pointers|
+|87|[Scramble String](https://leetcode.com/problems/scramble-string) |[python](./src/main/python/scramble_string.py) |Hard|String, Dynamic Programming|
+|88|[Merge Sorted Array](https://oj.leetcode.com/problems/merge-sorted-array/)    |[java](./src/main/java/com/martinliu/mergesortedarray/Solution.java) |Easy|
 |88|[Merge Sorted Array](https://oj.leetcode.com/problems/merge-sorted-array/)    |[java](./src/main/java/com/martinliu/mergesortedarray/Solution.java) |Easy|
 |89|[Grap Code](https://leetcode.com/problems/gray-code) |[python](./src/main/python/gray_code.py) |Medium| Backtracking|
 |100|[Same Tree](https://oj.leetcode.com/problems/same-tree/)| [java](./src/main/java/com/martinliu/isSameTree/Solution.java) |Easy|
