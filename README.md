@@ -101,6 +101,10 @@
 |90|[Subsets II](https://leetcode.com/problems/subsets-ii) |[python](./src/main/python/subsets_ii.py) |Medium| Array, Backtracking|
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways) |[python](./src/main/python/decode_ways.py) |Medium| String, Dynamic Programming|
 |92|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii) |[python](./src/main/python/reverse_linked_list_ii.py) |Medium| Linked List|
+|93|[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses) |[python](./src/main/python/restore_ip_addresses.py) |Medium|String, Backtracking|
+|94|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) |[python](./src/main/python/binary_tree_inorder_traversal.py) |Medium|Hash Table, Stack, Tree|
+|95|[Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii) |[python](./src/main/python/unique_binary_search_trees_ii.py) |Medium|Dynamic Programming, Tree|
+|96|[Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees) |[python](./src/main/python/unique_binary_search_trees.py) |Medium|Dynamic Programming, Tree|
 |100|[Same Tree](https://oj.leetcode.com/problems/same-tree/)| [java](./src/main/java/com/martinliu/isSameTree/Solution.java) |Easy|
 |101|[Symmetric Tree](https://oj.leetcode.com/problems/symmetric-tree/)    |[java](./src/main/java/com/martinliu/symmetric/Solution.java) |Easy|
 |102|[ry Tree Level Order Traversal](https://oj.leetcode.com/problems/binary-tree-level-order-traversal/)    |[java](./src/main/java/com/martinliu/binary-tree-level-order-traversal/Solution.java) |Easy|
