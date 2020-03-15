@@ -1,3 +1,4 @@
+from .ds import ListNode
 # Given a linked list, reverse the nodes of a linked list k at a time and return its modified list.
 
 # k is a positive integer and is less than or equal to the length of the linked list. If the number of nodes is not a multiple of k then left-out nodes in the end should remain as it is.
@@ -12,12 +13,6 @@
 # For k = 2, you should return: 2->1->4->3->5
 
 # For k = 3, you should return: 3->2->1->4->5
-
-# Definition for singly-linked list.
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
 
 # Basic idea: use an array to keep k nodes
 class Solution:

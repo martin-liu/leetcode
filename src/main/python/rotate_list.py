@@ -1,30 +1,5 @@
 import unittest
-
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
-
-    def toList(self):
-        curr = self
-        ret = [curr.val]
-        while curr.next:
-            ret.append(curr.next.val)
-            curr = curr.next
-        return ret
-
-    @staticmethod
-    def fromList(l):
-        curr = None
-        head = None
-        for v in l:
-            if not curr:
-                curr = ListNode(v)
-                head = curr
-            else:
-                curr.next = ListNode(v)
-                curr = curr.next
-        return head
+from .ds import ListNode
 
 class Solution(unittest.TestCase):
     def rotateRight(self, head: ListNode, k: int) -> ListNode:

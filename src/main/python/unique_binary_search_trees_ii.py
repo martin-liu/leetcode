@@ -1,29 +1,6 @@
 import unittest
 from typing import List
-
-# Definition for a binary tree node.
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-    # BFS
-    def toList(self):
-        queue = [self]
-        ret = []
-        while queue:
-            tree = queue.pop(0)
-            ret.append(tree.val if tree else None)
-            if tree:
-                queue.append(tree.left)
-                queue.append(tree.right)
-
-        i = 1
-        while not ret[-i]:
-            i += 1
-
-        return ret[:-i+1]
+from .ds import TreeNode
 
 class Solution(unittest.TestCase):
     def generateTrees(self, n: int) -> List[TreeNode]:

@@ -1,3 +1,4 @@
+from .ds import ListNode
 # Given a linked list, remove the nth node from the end of list and return its head.
 
 # For example,
@@ -8,12 +9,6 @@
 # Note:
 # Given n will always be valid.
 # Try to do this in one pass.
-
-# Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.next = None
 
 # Basic idea: use 2 variable to store start and end (distance n)
 class Solution(object):
