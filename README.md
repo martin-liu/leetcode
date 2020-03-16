@@ -110,8 +110,11 @@
 |99|[Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree) |[python](./src/main/python/recover_binary_search_tree.py) |Hard|Tree, DFS|
 |100|[Same Tree](https://oj.leetcode.com/problems/same-tree/)|[python](./src/main/python/same_tree.py), [java](./src/main/java/com/martinliu/isSameTree/Solution.java) |Easy|
 |101|[Symmetric Tree](https://oj.leetcode.com/problems/symmetric-tree/)    |[python](./src/main/python/symmetric_tree.py),[java](./src/main/java/com/martinliu/symmetric/Solution.java) |Easy|
-|102|[ry Tree Level Order Traversal](https://oj.leetcode.com/problems/binary-tree-level-order-traversal/)    |[python](./src/main/python/binary_tree_level_order_traversal.py),[java](./src/main/java/com/martinliu/binary-tree-level-order-traversal/Solution.java) |Easy|
-|104|[Maximum Depth of Binary Tree](https://oj.leetcode.com/problems/maximum-depth-of-binary-tree/)| [java](./src/main/java/com/martinliu/maxDepth/Solution.java) |Easy|
+|102|[binary Tree Level Order Traversal](https://oj.leetcode.com/problems/binary-tree-level-order-traversal/) |[python](./src/main/python/binary_tree_level_order_traversal.py),[java](./src/main/java/com/martinliu/binary-tree-level-order-traversal/Solution.java) |Easy|
+|103|[Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal) |[python](./src/main/python/binary_tree_zigzag_level_order_traversal.py) |Medium|Stack, Tree, BFS|
+|104|[Maximum Depth of Binary Tree](https://oj.leetcode.com/problems/maximum-depth-of-binary-tree/)|[python](./src/main/python/maximum_depth_of_binary_tree.py),[java](./src/main/java/com/martinliu/maxDepth/Solution.java) |Easy|
+|105|[Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal)|[python](./src/main/python/construct_binary_tree_from_preorder_and_inorder.py) |Medium|Array, Tree, DFS|
+|106|[Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal)|[python](./src/main/python/construct_binary_tree_from_inorder_and_postorder.py) |Medium|Array, Tree, DFS|
 |107|[Binary Tree Level Order Traversal II](https://oj.leetcode.com/problems/binary-tree-level-order-traversal-ii/)    |[java](./src/main/java/com/martinliu/levelOrderBottom/Solution.java) |Easy|
 |110|[Balanced Binary Tree](https://oj.leetcode.com/problems/balanced-binary-tree/)    |[java](./src/main/java/com/martinliu/isBalanced/Solution.java) |Easy|
 |111|[Minimum Depth of Binary Tree](https://oj.leetcode.com/problems/minimum-depth-of-binary-tree/)    |[java](./src/main/java/com/martinliu/minimum-depth-of-binary-tree/Solution.java) |Easy|
