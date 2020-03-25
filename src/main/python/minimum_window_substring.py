@@ -1,5 +1,7 @@
 import unittest
 
+class Solution(unittest.TestCase):
+    def minWindow2(self, s: str, t: str) -> str:
         """
 Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n).
 
@@ -60,6 +62,35 @@ Basic idea: use an array to store each index of matched char, use a map to store
                         start, end = matches[matchStart], matches[-1]
                         length = currLen
         return s[start:end+1]
+
+    # use windowing way, use 2 map to check matches, then move right until match, then move left until not match, repeat
+    def minWindow(self, s: str, t: str) -> str:
+        if not s or not t or len(s) < len(t):
+            return ""
+        # each character need how many times
+        need = {}
+        for c in t:
+            need[c] = (need.get(c) or 0) + 1
+
+        l, r, minL, minR = 0, 0, 0, -1
+        meet = {}
+        matches = 0
+        while r < len(s):
+            if s[r] in need:
+                meet[s[r]] = (meet.get(s[r]) or 0) + 1
+                if meet[s[r]] <= need[s[r]]:
+                    matches += 1
+            r += 1
+            while matches == len(t):
+                if minR == -1 or minR-minL > r-l:
+                    minL, minR = l, r
+                if s[l] in need:
+                    meet[s[l]] -= 1
+                    if meet[s[l]] < need[s[l]]:
+                        matches -= 1
+                l += 1
+
+        return "" if minR == -1 else s[minL:minR]
 
     def testMinWindow(self):
         self.assertEqual(self.minWindow("", "ABC"), "")
