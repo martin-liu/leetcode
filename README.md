@@ -70,9 +70,9 @@
 |59 |[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii) |[python](./src/main/python/sprial_matrix_ii.py) |Medium | Array |
 |60 |[Permutation Sequence](https://leetcode.com/problems/permutation-sequence) |[python](./src/main/python/permutation_sequence.py) |Medium | Math, Backtracking |
 |61 |[Rotate List](https://leetcode.com/problems/rotate-list) |[python](./src/main/python/rotate_list.py) |Medium | Linked List, Two Pointers |
-|62 |[Unique Paths](https://leetcode.com/problems/unique-paths) |[python](./src/main/python/unique_paths.py) |Medium | Array, Dynamic Programming |
-|63 |[Unique Paths II](https://leetcode.com/problems/unique-paths-ii) |[python](./src/main/python/unique_paths_ii.py) |Medium | Array, Dynamic Programming |
-|64 |[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum) |[python](./src/main/python/minimum_path_sum.py) |Medium | Array, Dynamic Programming |
+|62 |[Unique Paths](https://leetcode.com/problems/unique-paths) |[python](./src/main/python/unique_paths.py) |Medium | Array, DP |
+|63 |[Unique Paths II](https://leetcode.com/problems/unique-paths-ii) |[python](./src/main/python/unique_paths_ii.py) |Medium | Array, DP |
+|64 |[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum) |[python](./src/main/python/minimum_path_sum.py) |Medium | Array, DP |
 |65 |[Valid Number](https://leetcode.com/problems/valid-number) |[python](./src/main/python/valid_number.py) |Hard | Math, String |
 |66|[Plus One](https://oj.leetcode.com/problems/plus-one/)|[python](./src/main/python/plus_one.py), [java](./src/main/java/com/martinliu/plusOne/Solution.java) |Easy|
 |67|[Add Binary](https://oj.leetcode.com/problems/add-binary/)    |[python](./src/main/python/add_binary.py),[java](./src/main/java/com/martinliu/add-binary/Solution.java) |Easy|
@@ -80,7 +80,7 @@
 |69|[Sqrt(x)](https://leetcode.com/problems/sqrtx) |[python](./src/main/python/sqrtx.py) |Easy| Math, Binary Search |
 |70|[Climbing Stairs](https://oj.leetcode.com/problems/climbing-stairs/)|[python](./src/main/python/climbing_stairs.py),[java](./src/main/java/com/martinliu/climb-stairs/Solution.java) |Easy|
 |71|[Simplify Path](https://leetcode.com/problems/simplify-path) |[python](./src/main/python/simplify_path.py) |Medium| String, Stack |
-|72|[Edit Distance](https://leetcode.com/problems/edit-distance) |[python](./src/main/python/edit_distance.py) |Hard| String, Dynamic Programming |
+|72|[Edit Distance](https://leetcode.com/problems/edit-distance) |[python](./src/main/python/edit_distance.py) |Hard| String, DP |
 |73|[Set Matrix Zero](https://leetcode.com/problems/set-matrix-zeroes) |[python](./src/main/python/set_matrix_zeroes.py) |Medium| Array |
 |74|[Search a 2d matrix](https://leetcode.com/problems/search-a-2d-matrix) |[python](./src/main/python/search_a_2d_matrix.py) |Medium| Array, Binary Search |
 |75|[Sort Colors](https://leetcode.com/problems/sort-colors) |[python](./src/main/python/sort_colors.py) |Medium| Array, Two Pointers, Sort |
@@ -93,19 +93,19 @@
 |82|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii) |[python](./src/main/python/remove_duplicates_from_sorted_list_ii.py) |Medium| Linked List |
 |83|[Remove Duplicates from Sorted List](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list/)|[python](./src/main/python/remove_duplicates_from_sorted_list.py),[java](./src/main/java/com/martinliu/removeDuplicates/Solution.java) |Easy|
 |84|[Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram) |[python](./src/main/python/largest_rectangle_in_histogram.py) |Hard|Array, Stack |
-|85|[Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle) |[python](./src/main/python/maximal_rectangle.py) |Hard|Array, Stack, Hash Table, Dynamic Programming |
+|85|[Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle) |[python](./src/main/python/maximal_rectangle.py) |Hard|Array, Stack, Hash Table, DP |
 |86|[Partition List](https://leetcode.com/problems/partition-list) |[python](./src/main/python/partition_list.py) |Medium|Linked List, Two Pointers|
-|87|[Scramble String](https://leetcode.com/problems/scramble-string) |[python](./src/main/python/scramble_string.py) |Hard|String, Dynamic Programming|
+|87|[Scramble String](https://leetcode.com/problems/scramble-string) |[python](./src/main/python/scramble_string.py) |Hard|String, DP|
 |88|[Merge Sorted Array](https://oj.leetcode.com/problems/merge-sorted-array/)    |[python](./src/main/python/merge_sorted_array.py),[java](./src/main/java/com/martinliu/mergesortedarray/Solution.java) |Easy|Array, Two Pointers |
 |89|[Grap Code](https://leetcode.com/problems/gray-code) |[python](./src/main/python/gray_code.py) |Medium| Backtracking|
 |90|[Subsets II](https://leetcode.com/problems/subsets-ii) |[python](./src/main/python/subsets_ii.py) |Medium| Array, Backtracking|
-|91|[Decode Ways](https://leetcode.com/problems/decode-ways) |[python](./src/main/python/decode_ways.py) |Medium| String, Dynamic Programming|
+|91|[Decode Ways](https://leetcode.com/problems/decode-ways) |[python](./src/main/python/decode_ways.py) |Medium| String, DP|
 |92|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii) |[python](./src/main/python/reverse_linked_list_ii.py) |Medium| Linked List|
 |93|[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses) |[python](./src/main/python/restore_ip_addresses.py) |Medium|String, Backtracking|
 |94|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) |[python](./src/main/python/binary_tree_inorder_traversal.py) |Medium|Hash Table, Stack, Tree|
-|95|[Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii) |[python](./src/main/python/unique_binary_search_trees_ii.py) |Medium|Dynamic Programming, Tree|
-|96|[Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees) |[python](./src/main/python/unique_binary_search_trees.py) |Medium|Dynamic Programming, Tree|
-|97|[Interleaving String](https://leetcode.com/problems/interleaving-string) |[python](./src/main/python/interleaving_string.py) |Hard|Dynamic Programming, String|
+|95|[Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii) |[python](./src/main/python/unique_binary_search_trees_ii.py) |Medium|DP, Tree|
+|96|[Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees) |[python](./src/main/python/unique_binary_search_trees.py) |Medium|DP, Tree|
+|97|[Interleaving String](https://leetcode.com/problems/interleaving-string) |[python](./src/main/python/interleaving_string.py) |Hard|DP, String|
 |98|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) |[python](./src/main/python/validate_binary_search_tree.py) |Medium|Tree, DFS|
 |99|[Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree) |[python](./src/main/python/recover_binary_search_tree.py) |Hard|Tree, DFS|
 |100|[Same Tree](https://oj.leetcode.com/problems/same-tree/)|[python](./src/main/python/same_tree.py), [java](./src/main/java/com/martinliu/isSameTree/Solution.java) |Easy|
@@ -121,8 +121,13 @@
 |110|[Balanced Binary Tree](https://oj.leetcode.com/problems/balanced-binary-tree/)    |[python](./src/main/python/balanced_binary_tree.py),[java](./src/main/java/com/martinliu/isBalanced/Solution.java) |Easy|
 |111|[Minimum Depth of Binary Tree](https://oj.leetcode.com/problems/minimum-depth-of-binary-tree/)    |[python](./src/main/python/minimum_depth_of_binary_tree.py),[java](./src/main/java/com/martinliu/minimum-depth-of-binary-tree/Solution.java) |Easy|
 |112|[Path Sum](https://oj.leetcode.com/problems/path-sum/)    |[python](./src/main/python/path_sum.py),[java](./src/main/java/com/martinliu/path-sum/Solution.java) |Easy|
-|118|[Pascal's Triangle](https://oj.leetcode.com/problems/pascals-triangle/)    |[java](./src/main/java/com/martinliu/pascals-triangle/Solution.java) |Easy|
-|119|[Pascal's Triangle II](https://oj.leetcode.com/problems/pascals-triangle-ii/)    |[java](./src/main/java/com/martinliu/pascals-triangle-ii/Solution.java) |Easy|
+|113|[Path Sum II](https://oj.leetcode.com/problems/path-sum-ii/) |[python](./src/main/python/path_sum_ii.py) |Medium|Tree, DFS|
+|114|[Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list) |[python](./src/main/python/flatten-binary-tree-to-linked-list.py) |Medium|Tree, DFS|
+|115|[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences) |[python](./src/main/python/distinct_subsequences.py) |Hard|String, DP|
+|116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node) |[python](./src/main/python/populating_next_right_pointers_in_each_node.py) |Medium|Tree, DFS|
+|117|[Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii) |[python](./src/main/python/populating_next_right_pointers_in_each_node_ii.py) |Medium|Tree, DFS|
+|118|[Pascal's Triangle](https://oj.leetcode.com/problems/pascals-triangle/)    |[python](./src/main/python/pascals_triangle.py),[java](./src/main/java/com/martinliu/pascals-triangle/Solution.java) |Easy|
+|119|[Pascal's Triangle II](https://oj.leetcode.com/problems/pascals-triangle-ii/)    |[python](./src/main/python/pascals_triangle_ii.py),[java](./src/main/java/com/martinliu/pascals-triangle-ii/Solution.java) |Easy|
 |122|[Best Time to Buy and Sell Stock II](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)| [java](./src/main/java/com/martinliu/maxProfit/Solution.java) |Medium|
 |136|[Single Number](https://oj.leetcode.com/problems/single-number/)| [java](./src/main/java/com/martinliu/singleNumber/Solution.java) |Medium|
 |141|[Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)    |[java](./src/main/java/com/martinliu/linked-list-cycle/Solution.java) |Medium|

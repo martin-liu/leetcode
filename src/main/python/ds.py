@@ -69,3 +69,31 @@ class TreeNode:
                 l[i] = node
 
         return l[0]
+
+class Node:
+    def __init__(self, val: int = 0, left: 'Node' = None, right: 'Node' = None, next: 'Node' = None):
+        self.val = val
+        self.left = left
+        self.right = right
+        self.next = next
+
+    @staticmethod
+    def fromList(l):
+        if not l:
+            return None
+        length = len(l)
+
+        for i, n in enumerate(l):
+            if n is not None:
+                node = Node(n)
+                q, r = divmod(i - 1, 2)
+
+                if q >= 0:
+                    if r == 0:
+                        l[q].left = node
+                    else:
+                        l[q].right = node
+
+                l[i] = node
+
+        return l[0]
