@@ -1,5 +1,7 @@
 ### Data Structures for leetcode ###
 ###------------------------------###
+from queue import Queue
+
 class ListNode:
     def __init__(self, x):
         self.val = x
@@ -34,14 +36,15 @@ class TreeNode:
         self.right = None
     # BFS
     def toList(self):
-        queue = [self]
+        queue = Queue()
+        queue.put(self)
         ret = []
-        while queue:
-            tree = queue.pop(0)
+        while not queue.empty():
+            tree = queue.get()
             ret.append(tree.val if tree else None)
             if tree:
-                queue.append(tree.left)
-                queue.append(tree.right)
+                queue.put(tree.left)
+                queue.put(tree.right)
 
         i = 1
         while not ret[-i]:
@@ -55,20 +58,22 @@ class TreeNode:
             return None
         length = len(l)
 
-        for i, n in enumerate(l):
-            if n is not None:
-                node = TreeNode(n)
-                q, r = divmod(i - 1, 2)
+        root = TreeNode(l[0])
+        queue = Queue()
+        queue.put(root)
+        i = 1
+        while not queue.empty() and i < length:
+            curr = queue.get()
+            if l[i]:
+                curr.left = TreeNode(l[i])
+                queue.put(curr.left)
+            i += 1
+            if i < length and l[i]:
+                curr.right = TreeNode(l[i])
+                queue.put(curr.right)
+            i += 1
 
-                if q >= 0:
-                    if r == 0:
-                        l[q].left = node
-                    else:
-                        l[q].right = node
-
-                l[i] = node
-
-        return l[0]
+        return root
 
 class Node:
     def __init__(self, val: int = 0, left: 'Node' = None, right: 'Node' = None, next: 'Node' = None):

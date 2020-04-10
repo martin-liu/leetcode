@@ -40,4 +40,4 @@ Return:
         return left + right
 
     def testPathSum(self):
-        self.assertEqual([[5,4,11,2], [5,8,4,5]], self.pathSum(TreeNode.fromList([5,4,8,11,None,13,4,7,2,None,None,None,None,5,1]), 22))
+        self.assertEqual([[5,4,11,2], [5,8,4,5]], self.pathSum(TreeNode.fromList([5,4,8,11,None,13,4,7,2,None,None,5,1]), 22))

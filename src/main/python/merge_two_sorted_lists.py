@@ -45,6 +45,6 @@ class Test(unittest.TestCase):
         l2.next = ListNode(5)
 
         l = s.mergeTwoLists(l1, l2)
-        self.assertEquals(l.next.val, 2)
-        self.assertEquals(l.next.next.val, 3)
-        self.assertEquals(l.next.next.next.val, 5)
+        self.assertEqual(l.next.val, 2)
+        self.assertEqual(l.next.next.val, 3)
+        self.assertEqual(l.next.next.next.val, 5)

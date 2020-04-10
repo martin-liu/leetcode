@@ -91,6 +91,6 @@ class Test(unittest.TestCase):
     def test(self):
         s = Solution()
 
-        self.assertEquals(s.solveNQueens(1), [['Q']])
-        self.assertEquals(s.solveNQueens(2), [])
-        self.assertEquals(s.solveNQueens(4), [['.Q..', '...Q', 'Q...', '..Q.'], ['..Q.', 'Q...', '...Q', '.Q..']])
+        self.assertEqual(s.solveNQueens(1), [['Q']])
+        self.assertEqual(s.solveNQueens(2), [])
+        self.assertEqual(s.solveNQueens(4), [['.Q..', '...Q', 'Q...', '..Q.'], ['..Q.', 'Q...', '...Q', '.Q..']])

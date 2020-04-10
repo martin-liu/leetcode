@@ -2,7 +2,7 @@
 
 ## Testing instructions
 ### Python3
-`python test.py`
+`./test.sh`
 
 ### Java
 `mvn test`
@@ -128,9 +128,14 @@
 |117|[Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii) |[python](./src/main/python/populating_next_right_pointers_in_each_node_ii.py) |Medium|Tree, DFS|
 |118|[Pascal's Triangle](https://oj.leetcode.com/problems/pascals-triangle/)    |[python](./src/main/python/pascals_triangle.py),[java](./src/main/java/com/martinliu/pascals-triangle/Solution.java) |Easy|
 |119|[Pascal's Triangle II](https://oj.leetcode.com/problems/pascals-triangle-ii/)    |[python](./src/main/python/pascals_triangle_ii.py),[java](./src/main/java/com/martinliu/pascals-triangle-ii/Solution.java) |Easy|
-|122|[Best Time to Buy and Sell Stock II](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)| [java](./src/main/java/com/martinliu/maxProfit/Solution.java) |Medium|
+|120|[Triangle](https://leetcode.com/problems/triangle) |[python](./src/main/python/triangle.py) |Medium|Array, DP|
+|121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) |[python](./src/main/python/best_time_to_buy_and_sell_stock.py) |Easy|Array, DP|
+|122|[Best Time to Buy and Sell Stock II](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)|[python](./src/main/python/best_time_to_buy_and_sell_stock_ii.py), [java](./src/main/java/com/martinliu/maxProfit/Solution.java) |Medium|Array, DP|
+|123|[Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) |[python](./src/main/python/best_time_to_buy_and_sell_stock_iii.py) |Hard|Array, DP|
+|124|[Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) |[python](./src/main/python/binary_tree_maximum_path_sum.py) |Hard|Tree, DFS|
 |136|[Single Number](https://oj.leetcode.com/problems/single-number/)| [java](./src/main/java/com/martinliu/singleNumber/Solution.java) |Medium|
 |141|[Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)    |[java](./src/main/java/com/martinliu/linked-list-cycle/Solution.java) |Medium|
 |160|[Intersection of Two Linked Lists](https://oj.leetcode.com/problems/intersection-of-two-linked-lists/)    |[java](./src/main/java/com/martinliu/intersection-of-two-linked-lists/Solution.java) |Easy|
 |171|[Excel Sheet Column Number](https://oj.leetcode.com/problems/excel-sheet-column-number/)    |[java](./src/main/java/com/martinliu/excel-sheet-column-number/Solution.java) |Easy|
+|188|[Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) |[python](./src/main/python/best_time_to_buy_and_sell_stock_iv.py) |Hard|DP|
 |344|[Reverse String](https://oj.leetcode.com/problems/reverse-string/)|[python](./src/main/python/reverse_string.py)       |Easy|

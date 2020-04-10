@@ -43,4 +43,4 @@ class Test(unittest.TestCase):
     def test(self):
         s = Solution()
 
-        self.assertEquals(s.groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]), [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']])
+        self.assertEqual(s.groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]), [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']])

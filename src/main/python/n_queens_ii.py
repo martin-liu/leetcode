@@ -53,8 +53,8 @@ class Test(unittest.TestCase):
     def test(self):
         s = Solution()
 
-        self.assertEquals(s.totalNQueens(1), 1)
-        self.assertEquals(s.totalNQueens(2), 0)
-        self.assertEquals(s.totalNQueens(3), 0)
-        self.assertEquals(s.totalNQueens(4), 2)
-        self.assertEquals(s.totalNQueens(8), 92)
+        self.assertEqual(s.totalNQueens(1), 1)
+        self.assertEqual(s.totalNQueens(2), 0)
+        self.assertEqual(s.totalNQueens(3), 0)
+        self.assertEqual(s.totalNQueens(4), 2)
+        self.assertEqual(s.totalNQueens(8), 92)
