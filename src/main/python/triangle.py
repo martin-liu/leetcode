@@ -43,9 +43,7 @@ Bonus point if you are able to do this using only O(n) extra space, where n is t
                 for i, n in enumerate(triangle[len(track)]):
                     index = track[-1][0] if len(track) > 0 else 0
                     if i == index or i == index + 1:
-                        track = track + [(i, n)]
-                        backtrack(track)
-                        track = track[:-1]
+                        backtrack(track + [(i, n)])
         backtrack([])
         return ret
 

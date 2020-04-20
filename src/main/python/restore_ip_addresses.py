@@ -40,9 +40,7 @@ Output: ["255.255.11.135", "255.255.111.35"]
                 num = int(s[trackSum:trackSum+n] or '0')
                 if num > 255:
                     continue
-                track.append(n)
-                backtrack(track[:])
-                track = track[:-1]
+                backtrack(track + [n])
 
         backtrack([])
 

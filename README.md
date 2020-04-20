@@ -133,6 +133,10 @@
 |122|[Best Time to Buy and Sell Stock II](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)|[python](./src/main/python/best_time_to_buy_and_sell_stock_ii.py), [java](./src/main/java/com/martinliu/maxProfit/Solution.java) |Medium|Array, DP|
 |123|[Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) |[python](./src/main/python/best_time_to_buy_and_sell_stock_iii.py) |Hard|Array, DP|
 |124|[Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) |[python](./src/main/python/binary_tree_maximum_path_sum.py) |Hard|Tree, DFS|
+|125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome) |[python](./src/main/python/valid_palindrome.py) |Easy|String, Two Pointers|
+|126|[Word Ladder II](https://leetcode.com/problems/word-ladder-ii/) |[python](./src/main/python/word_ladder_ii.py) |Hard|Array, String, Backtracking, BFS|
+|127|[Word Ladder](https://leetcode.com/problems/word-ladder/) |[python](./src/main/python/word_ladder.py) |Medium|BFS|
+|128|[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) |[python](./src/main/python/longest_consecutive_sequence.py) |Hard|Array, Union Find|
 |136|[Single Number](https://oj.leetcode.com/problems/single-number/)| [java](./src/main/java/com/martinliu/singleNumber/Solution.java) |Medium|
 |141|[Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)    |[java](./src/main/java/com/martinliu/linked-list-cycle/Solution.java) |Medium|
 |160|[Intersection of Two Linked Lists](https://oj.leetcode.com/problems/intersection-of-two-linked-lists/)    |[java](./src/main/java/com/martinliu/intersection-of-two-linked-lists/Solution.java) |Easy|
