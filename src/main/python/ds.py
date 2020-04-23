@@ -64,11 +64,11 @@ class TreeNode:
         i = 1
         while not queue.empty() and i < length:
             curr = queue.get()
-            if l[i]:
+            if l[i] is not None:
                 curr.left = TreeNode(l[i])
                 queue.put(curr.left)
             i += 1
-            if i < length and l[i]:
+            if i < length and l[i] is not None:
                 curr.right = TreeNode(l[i])
                 queue.put(curr.right)
             i += 1

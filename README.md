@@ -137,6 +137,10 @@
 |126|[Word Ladder II](https://leetcode.com/problems/word-ladder-ii/) |[python](./src/main/python/word_ladder_ii.py) |Hard|Array, String, Backtracking, BFS|
 |127|[Word Ladder](https://leetcode.com/problems/word-ladder/) |[python](./src/main/python/word_ladder.py) |Medium|BFS|
 |128|[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) |[python](./src/main/python/longest_consecutive_sequence.py) |Hard|Array, Union Find|
+|129|[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) |[python](./src/main/python/sum_root_to_leaf_numbers.py) |Medium|Tree, DFS|
+|130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) |[python](./src/main/python/surrounded_regions.py) |Medium|DFS, BFS, Union Find|
+|131|[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) |[python](./src/main/python/palindrome_partitioning.py) |Medium|Backtracking|
+|132|[Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/) |[python](./src/main/python/palindrome_partitioning_ii.py) |Hard|DP|
 |136|[Single Number](https://oj.leetcode.com/problems/single-number/)| [java](./src/main/java/com/martinliu/singleNumber/Solution.java) |Medium|
 |141|[Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)    |[java](./src/main/java/com/martinliu/linked-list-cycle/Solution.java) |Medium|
 |160|[Intersection of Two Linked Lists](https://oj.leetcode.com/problems/intersection-of-two-linked-lists/)    |[java](./src/main/java/com/martinliu/intersection-of-two-linked-lists/Solution.java) |Easy|
