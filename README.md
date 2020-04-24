@@ -141,7 +141,10 @@
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) |[python](./src/main/python/surrounded_regions.py) |Medium|DFS, BFS, Union Find|
 |131|[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) |[python](./src/main/python/palindrome_partitioning.py) |Medium|Backtracking|
 |132|[Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/) |[python](./src/main/python/palindrome_partitioning_ii.py) |Hard|DP|
-|136|[Single Number](https://oj.leetcode.com/problems/single-number/)| [java](./src/main/java/com/martinliu/singleNumber/Solution.java) |Medium|
+|133|[Clone Graph](https://leetcode.com/problems/clone-graph/) |[python](./src/main/python/clone_graph.py) |Medium|DFS,BFS,Graph|
+|134|[Gas Station](https://leetcode.com/problems/gas-station) |[python](./src/main/python/gas_station.py) |Medium|Greedy|
+|135|[Candy](https://leetcode.com/problems/candy) |[python](./src/main/python/candy.py) |Hard|Greedy|
+|136|[Single Number](https://oj.leetcode.com/problems/single-number/)|[python](./src/main/python/single_number.py), [java](./src/main/java/com/martinliu/singleNumber/Solution.java) |Medium|
 |141|[Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)    |[java](./src/main/java/com/martinliu/linked-list-cycle/Solution.java) |Medium|
 |160|[Intersection of Two Linked Lists](https://oj.leetcode.com/problems/intersection-of-two-linked-lists/)    |[java](./src/main/java/com/martinliu/intersection-of-two-linked-lists/Solution.java) |Easy|
 |171|[Excel Sheet Column Number](https://oj.leetcode.com/problems/excel-sheet-column-number/)    |[java](./src/main/java/com/martinliu/excel-sheet-column-number/Solution.java) |Easy|
