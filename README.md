@@ -145,6 +145,10 @@
 |134|[Gas Station](https://leetcode.com/problems/gas-station) |[python](./src/main/python/gas_station.py) |Medium|Greedy|
 |135|[Candy](https://leetcode.com/problems/candy) |[python](./src/main/python/candy.py) |Hard|Greedy|
 |136|[Single Number](https://oj.leetcode.com/problems/single-number/)|[python](./src/main/python/single_number.py), [java](./src/main/java/com/martinliu/singleNumber/Solution.java) |Medium|
+|137|[Single Number II](https://oj.leetcode.com/problems/single-number-ii/)|[python](./src/main/python/single_number_ii.py) |Medium|Bit|
+|138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)|[python](./src/main/python/copy_list_with_random_pointer.py) |Medium|Hash Table, Linked List|
+|139|[Word Break](https://leetcode.com/problems/word-break/)|[python](./src/main/python/word_break.py) |Medium|DP|
+|140|[Word Break II](https://leetcode.com/problems/word-break-ii/)|[python](./src/main/python/word_break_ii.py) |Hard|DP, Backtracking|
 |141|[Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)    |[java](./src/main/java/com/martinliu/linked-list-cycle/Solution.java) |Medium|
 |160|[Intersection of Two Linked Lists](https://oj.leetcode.com/problems/intersection-of-two-linked-lists/)    |[java](./src/main/java/com/martinliu/intersection-of-two-linked-lists/Solution.java) |Easy|
 |171|[Excel Sheet Column Number](https://oj.leetcode.com/problems/excel-sheet-column-number/)    |[java](./src/main/java/com/martinliu/excel-sheet-column-number/Solution.java) |Easy|
