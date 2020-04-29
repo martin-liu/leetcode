@@ -149,7 +149,12 @@
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)|[python](./src/main/python/copy_list_with_random_pointer.py) |Medium|Hash Table, Linked List|
 |139|[Word Break](https://leetcode.com/problems/word-break/)|[python](./src/main/python/word_break.py) |Medium|DP|
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii/)|[python](./src/main/python/word_break_ii.py) |Hard|DP, Backtracking|
-|141|[Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)    |[java](./src/main/java/com/martinliu/linked-list-cycle/Solution.java) |Medium|
+|141|[Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)    |[python](./src/main/python/linked_list_cycle.py),[java](./src/main/java/com/martinliu/linked-list-cycle/Solution.java) |Medium|Two Pointers|
+|142|[Linked List Cycle II](https://oj.leetcode.com/problems/linked-list-cycle-ii/) |[python](./src/main/python/linked_list_cycle_ii.py) |Medium|Two Pointers|
+|143|[Reorder List](https://leetcode.com/problems/reorder-list/) |[python](./src/main/python/reorder_list.py) |Medium|Linked List|
+|144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) |[python](./src/main/python/binary_tree_preorder_traversal.py) |Medium|Stack, Tree|
+|145|[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) |[python](./src/main/python/binary_tree_postorder_traversal.py) |Hard|Stack, Tree|
+|146|[LRU Cache](https://leetcode.com/problems/lru-cache/) |[python](./src/main/python/lru_cache.py) |Medium|Design|
 |160|[Intersection of Two Linked Lists](https://oj.leetcode.com/problems/intersection-of-two-linked-lists/)    |[java](./src/main/java/com/martinliu/intersection-of-two-linked-lists/Solution.java) |Easy|
 |171|[Excel Sheet Column Number](https://oj.leetcode.com/problems/excel-sheet-column-number/)    |[java](./src/main/java/com/martinliu/excel-sheet-column-number/Solution.java) |Easy|
 |188|[Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) |[python](./src/main/python/best_time_to_buy_and_sell_stock_iv.py) |Hard|DP|
