@@ -155,6 +155,10 @@
 |144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) |[python](./src/main/python/binary_tree_preorder_traversal.py) |Medium|Stack, Tree|
 |145|[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) |[python](./src/main/python/binary_tree_postorder_traversal.py) |Hard|Stack, Tree|
 |146|[LRU Cache](https://leetcode.com/problems/lru-cache/) |[python](./src/main/python/lru_cache.py) |Medium|Design|
+|147|[Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/) |[python](./src/main/python/insertion_sort_list.py) |Medium|Linked List, Sort|
+|148|[Sort List](https://leetcode.com/problems/sort-list/) |[python](./src/main/python/sort_list.py) |Medium|Linked List, Sort|
+|149|[Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/) |[python](./src/main/python/max_points_on_a_line.py) |Hard|Hash Table, Math|
+|150|[Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) |[python](./src/main/python/evaluate_reverse_polish_notation.py) |Hard|Stack|
 |160|[Intersection of Two Linked Lists](https://oj.leetcode.com/problems/intersection-of-two-linked-lists/)    |[java](./src/main/java/com/martinliu/intersection-of-two-linked-lists/Solution.java) |Easy|
 |171|[Excel Sheet Column Number](https://oj.leetcode.com/problems/excel-sheet-column-number/)    |[java](./src/main/java/com/martinliu/excel-sheet-column-number/Solution.java) |Easy|
 |188|[Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) |[python](./src/main/python/best_time_to_buy_and_sell_stock_iv.py) |Hard|DP|
