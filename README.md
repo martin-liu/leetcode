@@ -159,7 +159,12 @@
 |148|[Sort List](https://leetcode.com/problems/sort-list/) |[python](./src/main/python/sort_list.py) |Medium|Linked List, Sort|
 |149|[Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/) |[python](./src/main/python/max_points_on_a_line.py) |Hard|Hash Table, Math|
 |150|[Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) |[python](./src/main/python/evaluate_reverse_polish_notation.py) |Hard|Stack|
-|160|[Intersection of Two Linked Lists](https://oj.leetcode.com/problems/intersection-of-two-linked-lists/)    |[java](./src/main/java/com/martinliu/intersection-of-two-linked-lists/Solution.java) |Easy|
+|151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) |[python](./src/main/python/reverse_words_in_a_string.py) |Medium|String|
+|152|[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) |[python](./src/main/python/maximum_product_subarray.py) |Medium|Array, DP|
+|153|[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) |[python](./src/main/python/find_minimum_in_rotated_sorted_array.py) |Medium|Array, Binary Search|
+|154|[Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) |[python](./src/main/python/find_minimum_in_rotated_sorted_array_ii.py) |Hard|Array, Binary Search|
+|155|[Min Stack](https://leetcode.com/problems/min-stack/) |[python](./src/main/python/min_stack.py) |Easy|Stack, Design|
+|160|[Intersection of Two Linked Lists](https://oj.leetcode.com/problems/intersection-of-two-linked-lists/)    |[python](./src/main/python/intersection_of_two_linked_list.py),[java](./src/main/java/com/martinliu/intersection-of-two-linked-lists/Solution.java) |Easy|
 |171|[Excel Sheet Column Number](https://oj.leetcode.com/problems/excel-sheet-column-number/)    |[java](./src/main/java/com/martinliu/excel-sheet-column-number/Solution.java) |Easy|
 |188|[Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) |[python](./src/main/python/best_time_to_buy_and_sell_stock_iv.py) |Hard|DP|
 |344|[Reverse String](https://oj.leetcode.com/problems/reverse-string/)|[python](./src/main/python/reverse_string.py)       |Easy|
