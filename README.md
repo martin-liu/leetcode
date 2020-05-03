@@ -165,6 +165,10 @@
 |154|[Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) |[python](./src/main/python/find_minimum_in_rotated_sorted_array_ii.py) |Hard|Array, Binary Search|
 |155|[Min Stack](https://leetcode.com/problems/min-stack/) |[python](./src/main/python/min_stack.py) |Easy|Stack, Design|
 |160|[Intersection of Two Linked Lists](https://oj.leetcode.com/problems/intersection-of-two-linked-lists/)    |[python](./src/main/python/intersection_of_two_linked_list.py),[java](./src/main/java/com/martinliu/intersection-of-two-linked-lists/Solution.java) |Easy|
+|162|[Find Peak Element](https://leetcode.com/problems/find-peak-element/) |[python](./src/main/python/find_peak_element.py) |Medium|Array, Binary Search|
+|164|[Maximum Gap](https://leetcode.com/problems/maximum-gap/) |[python](./src/main/python/maximum_gap.py) |Hard|Sort|
+|165|[Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/) |[python](./src/main/python/compare_version_numbers.py) |Medium|String|
+|166|[Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/) |[python](./src/main/python/fraction_to_recurring_decimal.py) |Medium|Hash Table, Math|
 |171|[Excel Sheet Column Number](https://oj.leetcode.com/problems/excel-sheet-column-number/)    |[java](./src/main/java/com/martinliu/excel-sheet-column-number/Solution.java) |Easy|
 |188|[Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) |[python](./src/main/python/best_time_to_buy_and_sell_stock_iv.py) |Hard|DP|
 |344|[Reverse String](https://oj.leetcode.com/problems/reverse-string/)|[python](./src/main/python/reverse_string.py)       |Easy|
