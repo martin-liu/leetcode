@@ -169,6 +169,13 @@
 |164|[Maximum Gap](https://leetcode.com/problems/maximum-gap/) |[python](./src/main/python/maximum_gap.py) |Hard|Sort|
 |165|[Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/) |[python](./src/main/python/compare_version_numbers.py) |Medium|String|
 |166|[Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/) |[python](./src/main/python/fraction_to_recurring_decimal.py) |Medium|Hash Table, Math|
-|171|[Excel Sheet Column Number](https://oj.leetcode.com/problems/excel-sheet-column-number/)    |[java](./src/main/java/com/martinliu/excel-sheet-column-number/Solution.java) |Easy|
+|167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) |[python](./src/main/python/two_sum_ii.py) |Easy|Array, Two Pointers, Binary Search|
+|168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/) |[python](./src/main/python/excel_sheet_column_title.py) |Easy|Math|
+|169|[Majority Element](https://leetcode.com/problems/majority-element/) |[python](./src/main/python/majority_element.py) |Easy|Array, Bit Operation|
+|171|[Excel Sheet Column Number](https://oj.leetcode.com/problems/excel-sheet-column-number/)    |[python](./src/main/python/excel_sheet_column_number.py),[java](./src/main/java/com/martinliu/excel-sheet-column-number/Solution.java) |Easy|
+|172|[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) |[python](./src/main/python/factorial_trailing_zeroes.py) |Easy|Math|
+|173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) |[python](./src/main/python/binary_search_tree_iterator.py) |Medium|Stack,Tree,Design|
+|174|[Dungeon Game](https://leetcode.com/problems/dungeon-game/) |[python](./src/main/python/dungeon_game.py) |Hard|Binary Search, DP|
+|175|[Combine Two Tables](https://leetcode.com/problems/combine-two-tables/) |[sql](./src/main/sql/combine_two_tables.sql) |Easy|
 |188|[Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) |[python](./src/main/python/best_time_to_buy_and_sell_stock_iv.py) |Hard|DP|
 |344|[Reverse String](https://oj.leetcode.com/problems/reverse-string/)|[python](./src/main/python/reverse_string.py)       |Easy|

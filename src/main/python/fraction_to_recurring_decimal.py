@@ -23,18 +23,18 @@ Output: "0.(6)"
 ---
 Basic idea: divmod, if r repeat, means repeat
 """
-        # deal with minus case
-        minus = (numerator < 0 and denominator > 0) or (numerator > 0 and denominator < 0)
+        # deal with negative case
+        negative = (numerator < 0 and denominator > 0) or (numerator > 0 and denominator < 0)
         numerator, denominator = abs(numerator), abs(denominator)
 
         q, r = divmod(numerator, denominator)
-        prefix = '-' if minus else ''
+        prefix = '-' if negative else ''
 
         if r == 0:
             return prefix + str(q)
 
         prefix += str(q) + '.'
-        rMap = {}
+        rMap = {} # store start position of repeat part
         tail = ""
         while r != 0:
             if r in rMap:
