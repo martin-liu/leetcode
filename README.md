@@ -145,7 +145,7 @@
 |134|[Gas Station](https://leetcode.com/problems/gas-station) |[python](./src/main/python/gas_station.py) |Medium|Greedy|
 |135|[Candy](https://leetcode.com/problems/candy) |[python](./src/main/python/candy.py) |Hard|Greedy|
 |136|[Single Number](https://oj.leetcode.com/problems/single-number/)|[python](./src/main/python/single_number.py), [java](./src/main/java/com/martinliu/singleNumber/Solution.java) |Medium|
-|137|[Single Number II](https://oj.leetcode.com/problems/single-number-ii/)|[python](./src/main/python/single_number_ii.py) |Medium|Bit|
+|137|[Single Number II](https://oj.leetcode.com/problems/single-number-ii/)|[python](./src/main/python/single_number_ii.py) |Medium|Bit Manipulation|
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)|[python](./src/main/python/copy_list_with_random_pointer.py) |Medium|Hash Table, Linked List|
 |139|[Word Break](https://leetcode.com/problems/word-break/)|[python](./src/main/python/word_break.py) |Medium|DP|
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii/)|[python](./src/main/python/word_break_ii.py) |Hard|DP, Backtracking|
@@ -171,11 +171,21 @@
 |166|[Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/) |[python](./src/main/python/fraction_to_recurring_decimal.py) |Medium|Hash Table, Math|
 |167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) |[python](./src/main/python/two_sum_ii.py) |Easy|Array, Two Pointers, Binary Search|
 |168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/) |[python](./src/main/python/excel_sheet_column_title.py) |Easy|Math|
-|169|[Majority Element](https://leetcode.com/problems/majority-element/) |[python](./src/main/python/majority_element.py) |Easy|Array, Bit Operation|
+|169|[Majority Element](https://leetcode.com/problems/majority-element/) |[python](./src/main/python/majority_element.py) |Easy|Array, Bit Manipulation|
 |171|[Excel Sheet Column Number](https://oj.leetcode.com/problems/excel-sheet-column-number/)    |[python](./src/main/python/excel_sheet_column_number.py),[java](./src/main/java/com/martinliu/excel-sheet-column-number/Solution.java) |Easy|
 |172|[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) |[python](./src/main/python/factorial_trailing_zeroes.py) |Easy|Math|
 |173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) |[python](./src/main/python/binary_search_tree_iterator.py) |Medium|Stack,Tree,Design|
 |174|[Dungeon Game](https://leetcode.com/problems/dungeon-game/) |[python](./src/main/python/dungeon_game.py) |Hard|Binary Search, DP|
-|175|[Combine Two Tables](https://leetcode.com/problems/combine-two-tables/) |[sql](./src/main/sql/combine_two_tables.sql) |Easy|
+|175|[Combine Two Tables](https://leetcode.com/problems/combine-two-tables/) |[sql](./src/main/sql/combine_two_tables.sql) |Easy|SQL|
+|176|[Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) |[sql](./src/main/sql/second_highest_salary.sql) |Easy|SQL|
+|177|[Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/) |[sql](./src/main/sql/nth_highest_salary.sql) |Medium|SQL|
+|179|[Largest Number](https://leetcode.com/problems/largest-number/) |[python](./src/main/python/largest_number.py) |Medium|Sort|
+|187|[Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/) |[python](./src/main/python/repeated_dna_sequences.py) |Medium|Hash Table, Bit Manipulation|
 |188|[Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) |[python](./src/main/python/best_time_to_buy_and_sell_stock_iv.py) |Hard|DP|
+|189|[Rotate Array](https://leetcode.com/problems/rotate-array/) |[python](./src/main/python/rotate_array.py) |Easy|Array|
+|190|[Reverse Bits](https://leetcode.com/problems/reverse-bits/) |[python](./src/main/python/reverse_bits.py) |EasyBit Manipulation|
+|191|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) |[python](./src/main/python/number_of_one_bits.py) |Easy|Bit Manipulation|
+|198|[House Robber](https://leetcode.com/problems/house-robber/) |[python](./src/main/python/house_robber.py) |Easy|DP|
+|199|[Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) |[python](./src/main/python/binary_tree_right_side_view.py) |Medium|Tree, DFS, BFS|
+|200|[Number of Islands](https://leetcode.com/problems/number-of-islands/) |[python](./src/main/python/number_of_islands.py) |Medium|Union Find, DFS, BFS|
 |344|[Reverse String](https://oj.leetcode.com/problems/reverse-string/)|[python](./src/main/python/reverse_string.py)       |Easy|

@@ -19,9 +19,11 @@ Write a function to determine the knight's minimum initial health so that he is 
 For example, given the dungeon below, the initial health of the knight must be at least 7 if he follows the optimal path RIGHT-> RIGHT -> DOWN -> DOWN.
 
 ---
-Basic Idea: DP from right bottom -> left top, because needed HP is determined by it.
-state: position (x, y), min HP
+Basic Idea: DP from right bottom -> left top, because needed HP is determined by next step, means netx step need to calculate first.
+
+state: position (x, y)
 choice: left or top
+result: min HP
 """
         rows = len(dungeon)
         cols = len(dungeon[0])
