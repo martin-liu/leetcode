@@ -11,7 +11,7 @@
 |---|-------|------|------------|------|
 |1|[Two Sum](https://oj.leetcode.com/problems/two-sum/)    |[python](./src/main/python/twosum.py), [java](./src/main/java/com/martinliu/twosum/Solution.java)  |Medium| Hash Map |
 |2|[Add Two Numbers](https://oj.leetcode.com/problems/add-two-numbers/)    |[python](./src/main/python/add_two_numbers.py), [java](./src/main/java/com/martinliu/add-two-numbers/Solution.java) |Medium|
-|3|[Longest Substring Without Repeating Characters](https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/)    |[python](./src/main/python/longest_substring_without_repeating_characters.py), [java](./src/main/java/com/martinliu/longest-substring-without-repeating-characters/Solution.java) |Medium| Hash Map, |
+|3|[Longest Substring Without Repeating Characters](https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/)    |[python](./src/main/python/longest_substring_without_repeating_characters.py), [java](./src/main/java/com/martinliu/longest-substring-without-repeating-characters/Solution.java) |Medium| Hash Map, Sliding Window|
 |4|[Median of Two Sorted Arrays](https://oj.leetcode.com/problems/median-of-two-sorted-arrays/)    |[python](./src/main/python/median_of_two_sorted_arrays.py), [java](./src/main/java/com/martinliu/medianSortedArrays/Solution.java) |Hard|
 |5|[Longest Palindromic Substring](https://oj.leetcode.com/problems/longest-palindromic-substring/)    |[python](./src/main/python/longest_palindromic_substring.py), [java](./src/main/java/com/martinliu/longest-palindromic-substring/Solution.java) |Medium|
 |6|[ZigZag Conversion](https://oj.leetcode.com/problems/zigzag-conversion/)    |[python](./src/main/python/zigzag_conversion.py), [java](./src/main/java/com/martinliu/zigzag-conversion/Solution.java) |Easy|
@@ -84,7 +84,7 @@
 |73|[Set Matrix Zero](https://leetcode.com/problems/set-matrix-zeroes) |[python](./src/main/python/set_matrix_zeroes.py) |Medium| Array |
 |74|[Search a 2d matrix](https://leetcode.com/problems/search-a-2d-matrix) |[python](./src/main/python/search_a_2d_matrix.py) |Medium| Array, Binary Search |
 |75|[Sort Colors](https://leetcode.com/problems/sort-colors) |[python](./src/main/python/sort_colors.py) |Medium| Array, Two Pointers, Sort |
-|76|[Minimal Window Substring](https://leetcode.com/problems/minimum-window-substring) |[python](./src/main/python/minimum_window_substring.py) |Hard| Hash Table, Two Pointers, String, Sliding Window|
+|76|[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) |[python](./src/main/python/minimum_window_substring.py) |Hard| Hash Table, Two Pointers, String, Sliding Window|
 |77|[Combinations](https://leetcode.com/problems/combinations) |[python](./src/main/python/combinations.py) |Medium| Backtracking|
 |78|[Subsets](https://leetcode.com/problems/subsets) |[python](./src/main/python/subsets.py) |Medium| Array, Backtracking, Bit Manipulation|
 |79|[Word Search](https://leetcode.com/problems/word-search) |[python](./src/main/python/word_search.py) |Medium| Array, Backtracking|
@@ -188,4 +188,11 @@
 |198|[House Robber](https://leetcode.com/problems/house-robber/) |[python](./src/main/python/house_robber.py) |Easy|DP|
 |199|[Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) |[python](./src/main/python/binary_tree_right_side_view.py) |Medium|Tree, DFS, BFS|
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/) |[python](./src/main/python/number_of_islands.py) |Medium|Union Find, DFS, BFS|
+|209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) |[python](./src/main/python/minimum_size_subarray_sum.py) |Medium|Array, Two Pointers, Sliding Window, Binary Search|
+|239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) |[python](./src/main/python/sliding_window_maximum.py) |Hard|Heap, Sliding Window|
 |344|[Reverse String](https://oj.leetcode.com/problems/reverse-string/)|[python](./src/main/python/reverse_string.py)       |Easy|
+|424|[Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) |[python](./src/main/python/longest-repeating-character-replacement.py) |Medium|Two Pointers, Sliding Window|
+|567|[Permutation in String](https://leetcode.com/problems/permutation-in-string/) |[python](./src/main/python/permutation_in_string.py) |Medium|Two Pointers, Sliding Window|
+|828|[Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/) |[python](./src/main/python/count_unique_characters_of_all_substrings_of_a_given_string.py) |Hard|Two Pointers, DP|
+|904|[Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/) |[python](./src/main/python/fruit_into_baskets.py) |Medium|Two Pointers, Sliding Window|
+|995|[Minimum Number of K Consecutive Bit Flips](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/) |[python](./src/main/python/minimum_number_of_k_consecutive_bit_flips.py) |Hard|Greedy, Sliding Window|

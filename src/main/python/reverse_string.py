@@ -10,15 +10,16 @@ class Solution(object):
         :type s: str
         :rtype: str
         """
-        if s == None:
-            return None
-        else:
-            ret = []
-            length = len(s)
-            for i in range(length - 1, -1, -1):
-                ret.append(s[i])
-            return "".join(ret)
+        if not s:
+            return s
+        l, r = 0, len(s)-1
 
+        ls = list(s)
+        while l < r:
+            ls[l], ls[r] = ls[r], ls[l]
+            l += 1
+            r -= 1
+        return "".join(ls)
 
 # -----------------------------
 import unittest

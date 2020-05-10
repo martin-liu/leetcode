@@ -11,8 +11,32 @@
 # e.g. s: "barfoothefoobarman", words: ["foo", "bar"]
 # starts with (`bar`, `arf`, `rfo`), jump 3 chars to check
 
+from collections import Counter
 class Solution:
     def findSubstring(self, s, words):
+        if not s or not words:
+            return []
+
+        wordL = len(words[0])
+        substrL = wordL * len(words)
+        need = Counter(words)
+
+        ret = []
+        for i in range(len(s)-substrL+1):
+            meet = Counter()
+            for j in range(len(words)):
+                start = i + j * wordL
+                subS = s[start:start+wordL]
+                if subS in need:
+                    meet[subS] += 1
+                else:
+                    break
+            if meet == need:
+                ret.append(i)
+        return ret
+
+
+    def findSubstring2(self, s, words):
         """
         :type s: str
         :type words: List[str]
