@@ -22,7 +22,7 @@ First, iterate the array counting number of 0's, 1's, and 2's, then overwrite ar
 Could you come up with a one-pass algorithm using only constant space?
 
 ---
-Basic idea: 3 pointers (l: 0, curr: iterate, r: 2)
+Basic idea: 3 pointers (l: 0, curr: iterate, r: 2), swap 0 to l, swap 2 to r
             """
         if not nums:
             return
@@ -33,13 +33,13 @@ Basic idea: 3 pointers (l: 0, curr: iterate, r: 2)
             if nums[curr] == 0:
                 nums[curr], nums[l] = nums[l], nums[curr]
                 l += 1
-                # curr come from left, so that any 2 will already swapped to end, do +1
+                # curr come from left, so that any 2(blue) will already swapped to end, do +1
                 curr += 1
             elif nums[curr] == 2:
                 nums[curr], nums[r] = nums[r], nums[curr]
                 r -= 1
-                # curr will not +1 because it can be 0 after swap
-            else:
+                # curr will not +1 because it can be 0(red) after swap
+            elif nums[curr] == 1:
                 # case 1
                 curr += 1
 

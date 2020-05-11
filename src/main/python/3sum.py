@@ -12,7 +12,7 @@
 
 # Basic idea: sort the nums, then for each num, found 2sum.
 class Solution(object):
-    def threeSum(self, nums):
+    def threeSum2(self, nums):
         counter = {}
         # fill counter with `num -> count`
         for num in nums:
@@ -46,7 +46,7 @@ class Solution(object):
                         ret.append([n, p, target])
         return ret
 
-    def threeSum2(self, nums):
+    def threeSum(self, nums):
         """
         :type nums: List[int]
         :rtype: List[List[int]]
@@ -60,14 +60,14 @@ class Solution(object):
         nums.sort()
         # set to record those already checked nums
         ret = []
-        for i in range(length):
+        for i in range(length-2):
             # nums already sorted, so that when nums[i] > 0, there's no solution after `nums[i]`
             if nums[i] > 0:
-                continue
+                break
 
             # if already checked this num, then skip
-            if i > 0 and nums[i] == nums[i - 1]:
-                break
+            if i > 0 and nums[i] == nums[i-1]:
+                continue
 
             target = 0 - nums[i]
             # find 2 sum of target
