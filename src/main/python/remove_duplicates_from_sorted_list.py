@@ -23,11 +23,10 @@ Output: 1->2->3
 
         while curr:
             if curr.val == pre.val:
-                pre.next = curr.next
+                pre.next, curr = curr.next, curr.next
             else:
-                pre = curr
+                pre, curr = curr, curr.next
 
-            curr = curr.next
         return head
 
     def testDeleteDuplicates(self):

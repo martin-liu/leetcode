@@ -15,7 +15,31 @@ Given 1->2->3->4, reorder it to 1->4->2->3.
 Example 2:
 
 Given 1->2->3->4->5, reorder it to 1->5->2->4->3.
+
+---
+Basic Idea (O(n) time, O(1) space): reverse second half of list, then use 2 pointer to swap
 """
+        if not head or not head.next:
+            return
+
+        fast, slow = head, head
+
+        # find mid node (slow)
+        while fast and fast.next:
+            slow, fast = slow.next, fast.next.next
+
+        # reverse second half
+        slow.next, curr = None, slow.next
+        pre = None
+        while curr:
+            pre, curr.next, curr = curr, pre, curr.next
+
+        # concat
+        p1, p2 = head, pre
+        while p1 and p2:
+            p1.next, p1, p2.next, p2 = p2, p1.next, p1.next, p2.next
+
+    def reorderList2(self, head: ListNode) -> None:
         if not head:
             return
 

@@ -10,6 +10,24 @@ from .ds import ListNode
 # Basic idea: Divide and conquer
 class Solution(object):
     def addTwoNumbers(self, l1, l2):
+        p1, p2, carry = l1, l2, 0
+        curr = sentry = ListNode(0)
+        # when any one exists, need to add new node
+        while p1 or p2 or carry:
+            add = 0
+            if p1:
+                add += p1.val
+                p1 = p1.next
+            if p2:
+                add += p2.val
+                p2 = p2.next
+            carry, val = divmod(add + carry, 10)
+            curr.next = ListNode(val)
+            curr = curr.next
+
+        return sentry.next
+
+    def addTwoNumbers2(self, l1, l2):
         """
         :type l1: ListNode
         :type l2: ListNode
@@ -56,3 +74,5 @@ class Test(unittest.TestCase):
         self.assertEqual(ret.val, 7)
         self.assertEqual(ret.next.val, 0)
         self.assertEqual(ret.next.next.val, 8)
+
+        self.assertEqual([0,1], s.addTwoNumbers(ListNode.fromList([5]), ListNode.fromList([5])).toList())
