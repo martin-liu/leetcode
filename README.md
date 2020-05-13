@@ -1,4 +1,7 @@
 # Leetcode solutions
+Useful resourecs:
+* https://github.com/labuladong/fucking-algorithm
+* https://github.com/SeanPrashad/leetcode-patterns
 
 ## Testing instructions
 ### Python3
@@ -65,7 +68,7 @@
 |53 |[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) |[python](./src/main/python/maximum_subarray.py) |Easy |
 |54 |[Spiral Matrix](https://leetcode.com/problems/spiral-matrix) |[python](./src/main/python/sprial_matrix.py) |Medium | Array |
 |55 |[Jump Game](https://leetcode.com/problems/jump-game) |[python](./src/main/python/jump_game.py) |Medium | Array, Greedy |
-|56 |[Merge Intervals](https://leetcode.com/problems/merge-intervals) |[python](./src/main/python/merge_intervals.py) |Medium | Array, Sort |
+|56 |[Merge Intervals](https://leetcode.com/problems/merge-intervals) |[python](./src/main/python/merge_intervals.py) |Medium|Merge Intervals|
 |57 |[Insert Intervals](https://leetcode.com/problems/insert-interval) |[python](./src/main/python/insert_intervals.py) |Hard | Array, Sort |
 |58|[Length of Last Word](https://oj.leetcode.com/problems/length-of-last-word/)    |[python](./src/main/python/length_of_last_word.py), [java](./src/main/java/com/martinliu/length-of-last-word/Solution.java) |Easy| String |
 |59 |[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii) |[python](./src/main/python/sprial_matrix_ii.py) |Medium | Array |
@@ -195,11 +198,15 @@
 |239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) |[python](./src/main/python/sliding_window_maximum.py) |Hard|Heap, Sliding Window|
 |344|[Reverse String](https://oj.leetcode.com/problems/reverse-string/)|[python](./src/main/python/reverse_string.py)       |Easy|
 |424|[Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) |[python](./src/main/python/longest-repeating-character-replacement.py) |Medium|Sliding Window|
+|435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) |[python](./src/main/python/non_overlapping_intervals.py) |Medium|Merge Intervals|
+|452|[Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) |[python](./src/main/python/minimum_number_of_arrows_to_burst_balloons.py) |Medium|Merge Intervals|
 |567|[Permutation in String](https://leetcode.com/problems/permutation-in-string/) |[python](./src/main/python/permutation_in_string.py) |Medium|Sliding Window|
+|621|[Task Scheduler](https://leetcode.com/problems/task-scheduler/) |[python](./src/main/python/task_scheduler.py) |Medium|Merge Intervals|
 |713|[Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/) |[python](./src/main/python/subarray_product_less_than_k.py) |Medium|Two Pointers|
 |828|[Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/) |[python](./src/main/python/count_unique_characters_of_all_substrings_of_a_given_string.py) |Hard|Two Pointers, DP|
 |844|[Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) |[python](./src/main/python/backspace_string_compare.py) |Easy|Two Pointers|
 |876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) |[python](./src/main/python/middle_of_the_linked_list.py) |Easy|Fast & Slow Pointers|
 |904|[Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/) |[python](./src/main/python/fruit_into_baskets.py) |Medium|Sliding Window|
 |977|[Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) |[python](./src/main/python/squares_of_a_sorted_array.py) |Easy|Array, Two Pointers|
+|986|[Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) |[python](./src/main/python/interval_list_intersections.py) |Medium|Merge Intervals|
 |995|[Minimum Number of K Consecutive Bit Flips](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/) |[python](./src/main/python/minimum_number_of_k_consecutive_bit_flips.py) |Hard|Greedy, Sliding Window|
