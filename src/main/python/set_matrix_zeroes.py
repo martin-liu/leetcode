@@ -43,7 +43,8 @@ A simple improvement uses O(m + n) space, but still not the best solution.
 Could you devise a constant space solution?
 
 ---
-Basic idea: use 2 set to store which row and col need to be zero, then iterate and set zero
+Basic idea: 2 pass. use first row and first column to store state, then iterate from bottom right (so that will not set first row/colmn and impact others) and set zero
+        O(1) space
         """
         if not matrix or not matrix[0]:
             return
@@ -51,16 +52,14 @@ Basic idea: use 2 set to store which row and col need to be zero, then iterate a
         row = len(matrix)
         col = len(matrix[0])
 
-        zeroRows = set([])
-        zeroCols = set([])
         for i in range(row):
             for j in range(col):
                 if matrix[i][j] == 0:
-                    zeroRows.add(i)
-                    zeroCols.add(j)
-        for i in range(row):
-            for j in range(col):
-                if i in zeroRows or j in zeroCols:
+                    matrix[0][j] = 0
+                    matrix[i][0] = 0
+        for i in range(row-1,-1,-1):
+            for j in range(col-1,-1,-1):
+                if matrix[0][j] == 0 or matrix[i][0] == 0:
                     matrix[i][j] = 0
 
     def testSetZeros(self):

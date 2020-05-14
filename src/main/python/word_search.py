@@ -30,16 +30,6 @@ Basic idea: backtracking(DFS). Try each direction via `or`, so that if one direc
         row = len(board)
         col = len(board[0])
 
-        freqMap = {}
-        for i in range(row):
-            for j in range(col):
-                freqMap[board[i][j]] = (freqMap.get(board[i][j]) or 0) + 1
-        for c in word:
-            if c not in freqMap or freqMap[c] < 1:
-                return False
-            else:
-                freqMap[c] -= 1
-
         def travel(word, pos):
             if not word:
                 return True

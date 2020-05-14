@@ -2,6 +2,7 @@
 Useful resourecs:
 * https://github.com/labuladong/fucking-algorithm
 * https://github.com/SeanPrashad/leetcode-patterns
+  - pattern problems have tag prefix `P``:`, e.g. `P``:Arrays`
 
 ## Testing instructions
 ### Python3
@@ -11,11 +12,11 @@ Useful resourecs:
 `mvn test`
 
 ## Solutions
-| Topic | Title | Code | Difficulty | Topic |
+| Number | Title | Code | Difficulty | Tag |
 |---|-------|------|------------|------|
-|1|[Two Sum](https://oj.leetcode.com/problems/two-sum/)    |[python](./src/main/python/twosum.py), [java](./src/main/java/com/martinliu/twosum/Solution.java)  |Medium|Hash Map, Two Pointers|
-|2|[Add Two Numbers](https://oj.leetcode.com/problems/add-two-numbers/)    |[python](./src/main/python/add_two_numbers.py), [java](./src/main/java/com/martinliu/add-two-numbers/Solution.java) |Medium|Fast & Slow Pointers|
-|3|[Longest Substring Without Repeating Characters](https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/)    |[python](./src/main/python/longest_substring_without_repeating_characters.py), [java](./src/main/java/com/martinliu/longest-substring-without-repeating-characters/Solution.java) |Medium|Hash Map, Sliding Window|
+|1|[Two Sum](https://oj.leetcode.com/problems/two-sum/)    |[python](./src/main/python/twosum.py), [java](./src/main/java/com/martinliu/twosum/Solution.java)  |Medium|Hash Map, P:Two Pointers|
+|2|[Add Two Numbers](https://oj.leetcode.com/problems/add-two-numbers/)    |[python](./src/main/python/add_two_numbers.py), [java](./src/main/java/com/martinliu/add-two-numbers/Solution.java) |Medium|P:Fast & Slow Pointers|
+|3|[Longest Substring Without Repeating Characters](https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/)    |[python](./src/main/python/longest_substring_without_repeating_characters.py), [java](./src/main/java/com/martinliu/longest-substring-without-repeating-characters/Solution.java) |Medium|Hash Map, P:Sliding Window|
 |4|[Median of Two Sorted Arrays](https://oj.leetcode.com/problems/median-of-two-sorted-arrays/)    |[python](./src/main/python/median_of_two_sorted_arrays.py), [java](./src/main/java/com/martinliu/medianSortedArrays/Solution.java) |Hard|
 |5|[Longest Palindromic Substring](https://oj.leetcode.com/problems/longest-palindromic-substring/)    |[python](./src/main/python/longest_palindromic_substring.py), [java](./src/main/java/com/martinliu/longest-palindromic-substring/Solution.java) |Medium|
 |6|[ZigZag Conversion](https://oj.leetcode.com/problems/zigzag-conversion/)    |[python](./src/main/python/zigzag_conversion.py), [java](./src/main/java/com/martinliu/zigzag-conversion/Solution.java) |Easy|
@@ -23,15 +24,15 @@ Useful resourecs:
 |8|[String to Integer (atoi)](https://oj.leetcode.com/problems/string-to-integer-atoi/)    |[python](./src/main/python/string_to_integer_atoi.py), [java](./src/main/java/com/martinliu/string-to-integer-atoi/Solution.java) |Easy|
 |9|[Palindrome Number](https://oj.leetcode.com/problems/palindrome-number/)    |[python](./src/main/python/palindrome_number.py), [java](./src/main/java/com/martinliu/palindrome-number/Solution.java) |Easy|
 |10|[Regular Expression Matching](https://oj.leetcode.com/problems/regular-expression-matching/)    |[python](./src/main/python/regular_expression_matching.py), [java](./src/main/java/com/martinliu/regular-expression-matching/Solution.java) |Hard|
-|11|[Container With Most Water](https://oj.leetcode.com/problems/container-with-most-water/)    |[python](./src/main/python/container_with_most_water.py), [java](./src/main/java/com/martinliu/container-with-most-water/Solution.java) |Medium|Two Pointers|
+|11|[Container With Most Water](https://oj.leetcode.com/problems/container-with-most-water/)    |[python](./src/main/python/container_with_most_water.py), [java](./src/main/java/com/martinliu/container-with-most-water/Solution.java) |Medium|P:Two Pointers|
 |12|[Integer to Roman](https://oj.leetcode.com/problems/integer-to-roman/)    |[python](./src/main/python/integer_to_roman.py), [java](./src/main/java/com/martinliu/integer-to-roman/Solution.java)   |Medium|
 |13|[Roman to Integer](https://oj.leetcode.com/problems/roman-to-integer/)|[python](./src/main/python/roman_to_integer.py),  [java](./src/main/java/com/martinliu/romanToInt/Solution.java) |Easy|
 |14|[Longest Common Prefix](https://oj.leetcode.com/problems/longest-common-prefix/)    |[python](./src/main/python/longest_common_prefix.py), [java](./src/main/java/com/martinliu/longest-common-prefix/Solution.java) |Easy|
-|15|[3Sum](https://oj.leetcode.com/problems/3sum/)|[python](./src/main/python/3sum.py), [java](./src/main/java/com/martinliu/3sum/Solution.java) |Medium|Two Pointers|
-|16|[3Sum Closest](https://oj.leetcode.com/problems/3sum-closest/)    |[python](./src/main/python/3sum_closest.py), [java](./src/main/java/com/martinliu/3sum-closest/Solution.java) |Medium|Two Pointers|
+|15|[3Sum](https://oj.leetcode.com/problems/3sum/)|[python](./src/main/python/3sum.py), [java](./src/main/java/com/martinliu/3sum/Solution.java) |Medium|P:Two Pointers|
+|16|[3Sum Closest](https://oj.leetcode.com/problems/3sum-closest/)    |[python](./src/main/python/3sum_closest.py), [java](./src/main/java/com/martinliu/3sum-closest/Solution.java) |Medium|P:Two Pointers|
 |17|[Letter Combinations of a Phone Number](https://oj.leetcode.com/problems/letter-combinations-of-a-phone-number/)    |[python](./src/main/python/letter_combinations_of_a_phone_number.py) |Medium|
 |18|[4Sum](https://oj.leetcode.com/problems/4sum/)|[python](./src/main/python/4sum.py) |Medium|
-|19|[Remove Nth Node From End of List](https://oj.leetcode.com/problems/remove-nth-node-from-end-of-list/)    |[python](./src/main/python/remove_nth_node_from_end_of_list.py), [java](./src/main/java/com/martinliu/remove-nth-node-from-end-of-list/Solution.java) |Easy|Fast & Slow Pointers|
+|19|[Remove Nth Node From End of List](https://oj.leetcode.com/problems/remove-nth-node-from-end-of-list/)    |[python](./src/main/python/remove_nth_node_from_end_of_list.py), [java](./src/main/java/com/martinliu/remove-nth-node-from-end-of-list/Solution.java) |Easy|P:Fast & Slow Pointers|
 |20|[Valid Parentheses](https://oj.leetcode.com/problems/valid-parentheses/)    |[python](./src/main/python/valid_parentheses.py), [java](./src/main/java/com/martinliu/valid-parentheses/Solution.java) |Easy|
 |21|[Merge Two Sorted Lists](https://oj.leetcode.com/problems/merge-two-sorted-lists/)    |[python](./src/main/python/merge_two_sorted_lists.py), [java](./src/main/java/com/martinliu/mergeTwoLists/Solution.java) |Easy|
 |22|[Generate Parentheses](https://oj.leetcode.com/problems/generate-parentheses/)    |[python](./src/main/python/generate_parentheses.py) | Medium |
@@ -42,7 +43,7 @@ Useful resourecs:
 |27|[Remove Element](https://oj.leetcode.com/problems/remove-element/)    |[python](./src/main/python/remove_element.py),[java](./src/main/java/com/martinliu/removeElement/Solution.java) |Easy|
 |28|[Implement strStr()](https://oj.leetcode.com/problems/implement-strstr/)    |[python](./src/main/python/implement_strstr.py) |Easy|
 |29|[Divide Two Integers](https://oj.leetcode.com/problems/divide-two-integers/)    |[python](./src/main/python/divide_two_integers.py) |Medium|
-|30|[Substring with Concatenation of All Words](https://oj.leetcode.com/problems/substring-with-concatenation-of-all-words/)    |[python](./src/main/python/substring_with_concatenation_of_all_words.py) |Hard|Sliding Window|
+|30|[Substring with Concatenation of All Words](https://oj.leetcode.com/problems/substring-with-concatenation-of-all-words/)    |[python](./src/main/python/substring_with_concatenation_of_all_words.py) |Hard|P:Sliding Window|
 |31|[Next Permutation](https://oj.leetcode.com/problems/next-permutation/)    |[python](./src/main/python/next_permutation.py) |Medium|
 |32|[Longest Valid Parentheses](https://oj.leetcode.com/problems/longest_valid_parentheses/)    |[python](./src/main/python/longest_valid_parentheses.py) |Hard|
 |33|[Search in Rotated Sorted Array](https://oj.leetcode.com/problems/search-in-rotated-sorted-array/)    |[python](./src/main/python/search_in_rotated_sorted_array.py) |Medium|
@@ -54,7 +55,7 @@ Useful resourecs:
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum/)    |[python](./src/main/python/combination_sum.py) |Medium|
 |40 |[Combination Sum II](https://leetcode.com/problems/combination-sum-ii) |[python](./src/main/python/combination_sum_ii.py) |Medium|
 |41 |[First Missing Positive](https://leetcode.com/problems/first-missing-positive) |[python](./src/main/python/first_missing_positive.py) |Hard|
-|42 |[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) |[python](./src/main/python/trapping_rain_water.py) |Hard|Two Pointers|
+|42 |[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) |[python](./src/main/python/trapping_rain_water.py) |Hard|P:Two Pointers|
 |43 |[Multiply Strings](https://leetcode.com/problems/multiply-strings) |[python](./src/main/python/multiply_strings.py) |Medium|
 |44 |[Wildcard Matching](https://leetcode.com/problems/wildcard-matching) |[python](./src/main/python/wildcard_matching.py) |Hard|
 |45 |[Jump Game II](https://leetcode.com/problems/jump-game-ii) |[python](./src/main/python/jump_game_ii.py) |Hard|
@@ -68,8 +69,8 @@ Useful resourecs:
 |53 |[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) |[python](./src/main/python/maximum_subarray.py) |Easy |
 |54 |[Spiral Matrix](https://leetcode.com/problems/spiral-matrix) |[python](./src/main/python/sprial_matrix.py) |Medium | Array |
 |55 |[Jump Game](https://leetcode.com/problems/jump-game) |[python](./src/main/python/jump_game.py) |Medium | Array, Greedy |
-|56 |[Merge Intervals](https://leetcode.com/problems/merge-intervals) |[python](./src/main/python/merge_intervals.py) |Medium|Merge Intervals|
-|57 |[Insert Intervals](https://leetcode.com/problems/insert-interval) |[python](./src/main/python/insert_intervals.py) |Hard | Array, Sort |
+|56 |[Merge Intervals](https://leetcode.com/problems/merge-intervals) |[python](./src/main/python/merge_intervals.py) |Medium|P:Merge Intervals|
+|57 |[Insert Intervals](https://leetcode.com/problems/insert-interval) |[python](./src/main/python/insert_intervals.py) |Hard |P:Merge Intervals, Array, Sort |
 |58|[Length of Last Word](https://oj.leetcode.com/problems/length-of-last-word/)    |[python](./src/main/python/length_of_last_word.py), [java](./src/main/java/com/martinliu/length-of-last-word/Solution.java) |Easy| String |
 |59 |[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii) |[python](./src/main/python/sprial_matrix_ii.py) |Medium | Array |
 |60 |[Permutation Sequence](https://leetcode.com/problems/permutation-sequence) |[python](./src/main/python/permutation_sequence.py) |Medium | Math, Backtracking |
@@ -85,17 +86,17 @@ Useful resourecs:
 |70|[Climbing Stairs](https://oj.leetcode.com/problems/climbing-stairs/)|[python](./src/main/python/climbing_stairs.py),[java](./src/main/java/com/martinliu/climb-stairs/Solution.java) |Easy|
 |71|[Simplify Path](https://leetcode.com/problems/simplify-path) |[python](./src/main/python/simplify_path.py) |Medium| String, Stack |
 |72|[Edit Distance](https://leetcode.com/problems/edit-distance) |[python](./src/main/python/edit_distance.py) |Hard| String, DP |
-|73|[Set Matrix Zero](https://leetcode.com/problems/set-matrix-zeroes) |[python](./src/main/python/set_matrix_zeroes.py) |Medium| Array |
+|73|[Set Matrix Zero](https://leetcode.com/problems/set-matrix-zeroes) |[python](./src/main/python/set_matrix_zeroes.py) |Medium|P:Arrays|
 |74|[Search a 2d matrix](https://leetcode.com/problems/search-a-2d-matrix) |[python](./src/main/python/search_a_2d_matrix.py) |Medium| Array, Binary Search |
-|75|[Sort Colors](https://leetcode.com/problems/sort-colors) |[python](./src/main/python/sort_colors.py) |Medium| Array, Two Pointers, Sort |
-|76|[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) |[python](./src/main/python/minimum_window_substring.py) |Hard| Hash Table, String, Sliding Window|
+|75|[Sort Colors](https://leetcode.com/problems/sort-colors) |[python](./src/main/python/sort_colors.py) |Medium| Array, P:Two Pointers, Sort |
+|76|[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) |[python](./src/main/python/minimum_window_substring.py) |Hard| Hash Table, String, P:Sliding Window, P:Two Pointers|
 |77|[Combinations](https://leetcode.com/problems/combinations) |[python](./src/main/python/combinations.py) |Medium| Backtracking|
 |78|[Subsets](https://leetcode.com/problems/subsets) |[python](./src/main/python/subsets.py) |Medium| Array, Backtracking, Bit Manipulation|
 |79|[Word Search](https://leetcode.com/problems/word-search) |[python](./src/main/python/word_search.py) |Medium| Array, Backtracking|
 |80|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii) |[python](./src/main/python/remove_duplicates_from_sorted_array_ii.py) |Medium| Array, Two Pointers |
 |81|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii) |[python](./src/main/python/search_in_rotated_sorted_array_ii.py) |Medium| Array, Binary Search |
 |82|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii) |[python](./src/main/python/remove_duplicates_from_sorted_list_ii.py) |Medium| Linked List |
-|83|[Remove Duplicates from Sorted List](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list/)|[python](./src/main/python/remove_duplicates_from_sorted_list.py),[java](./src/main/java/com/martinliu/removeDuplicates/Solution.java) |Easy|Two Pointers, Fast & Slow Pointers|
+|83|[Remove Duplicates from Sorted List](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list/)|[python](./src/main/python/remove_duplicates_from_sorted_list.py),[java](./src/main/java/com/martinliu/removeDuplicates/Solution.java) |Easy|P:Two Pointers, P:Fast & Slow Pointers|
 |84|[Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram) |[python](./src/main/python/largest_rectangle_in_histogram.py) |Hard|Array, Stack |
 |85|[Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle) |[python](./src/main/python/maximal_rectangle.py) |Hard|Array, Stack, Hash Table, DP |
 |86|[Partition List](https://leetcode.com/problems/partition-list) |[python](./src/main/python/partition_list.py) |Medium|Linked List, Two Pointers|
@@ -148,19 +149,19 @@ Useful resourecs:
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph/) |[python](./src/main/python/clone_graph.py) |Medium|DFS,BFS,Graph|
 |134|[Gas Station](https://leetcode.com/problems/gas-station) |[python](./src/main/python/gas_station.py) |Medium|Greedy|
 |135|[Candy](https://leetcode.com/problems/candy) |[python](./src/main/python/candy.py) |Hard|Greedy|
-|136|[Single Number](https://oj.leetcode.com/problems/single-number/)|[python](./src/main/python/single_number.py), [java](./src/main/java/com/martinliu/singleNumber/Solution.java) |Medium|
+|136|[Single Number](https://oj.leetcode.com/problems/single-number/)|[python](./src/main/python/single_number.py), [java](./src/main/java/com/martinliu/singleNumber/Solution.java) |Medium|P:Arrays, Bit Manipulation|
 |137|[Single Number II](https://oj.leetcode.com/problems/single-number-ii/)|[python](./src/main/python/single_number_ii.py) |Medium|Bit Manipulation|
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)|[python](./src/main/python/copy_list_with_random_pointer.py) |Medium|Hash Table, Linked List|
 |139|[Word Break](https://leetcode.com/problems/word-break/)|[python](./src/main/python/word_break.py) |Medium|DP|
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii/)|[python](./src/main/python/word_break_ii.py) |Hard|DP, Backtracking|
-|141|[Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)    |[python](./src/main/python/linked_list_cycle.py),[java](./src/main/java/com/martinliu/linked-list-cycle/Solution.java) |Medium|Two Pointers, Fast & Slow Pointers|
-|142|[Linked List Cycle II](https://oj.leetcode.com/problems/linked-list-cycle-ii/) |[python](./src/main/python/linked_list_cycle_ii.py) |Medium|Two Pointers, Fast & Slow Pointer|
-|143|[Reorder List](https://leetcode.com/problems/reorder-list/) |[python](./src/main/python/reorder_list.py) |Medium|Linked List|
+|141|[Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)    |[python](./src/main/python/linked_list_cycle.py),[java](./src/main/java/com/martinliu/linked-list-cycle/Solution.java) |Medium|Two Pointers, P:Fast & Slow Pointers|
+|142|[Linked List Cycle II](https://oj.leetcode.com/problems/linked-list-cycle-ii/) |[python](./src/main/python/linked_list_cycle_ii.py) |Medium|Two Pointers, P:Fast & Slow Pointer|
+|143|[Reorder List](https://leetcode.com/problems/reorder-list/) |[python](./src/main/python/reorder_list.py) |Medium|P:Fast & Slow Pointers|
 |144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) |[python](./src/main/python/binary_tree_preorder_traversal.py) |Medium|Stack, Tree|
 |145|[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) |[python](./src/main/python/binary_tree_postorder_traversal.py) |Hard|Stack, Tree|
 |146|[LRU Cache](https://leetcode.com/problems/lru-cache/) |[python](./src/main/python/lru_cache.py) |Medium|Design|
 |147|[Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/) |[python](./src/main/python/insertion_sort_list.py) |Medium|Linked List, Sort|
-|148|[Sort List](https://leetcode.com/problems/sort-list/) |[python](./src/main/python/sort_list.py) |Medium|Linked List, Sort|
+|148|[Sort List](https://leetcode.com/problems/sort-list/) |[python](./src/main/python/sort_list.py) |Medium|P:Fast & Slow Pointers, Linked List, Sort|
 |149|[Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/) |[python](./src/main/python/max_points_on_a_line.py) |Hard|Hash Table, Math|
 |150|[Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) |[python](./src/main/python/evaluate_reverse_polish_notation.py) |Hard|Stack|
 |151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) |[python](./src/main/python/reverse_words_in_a_string.py) |Medium|String|
@@ -192,21 +193,27 @@ Useful resourecs:
 |198|[House Robber](https://leetcode.com/problems/house-robber/) |[python](./src/main/python/house_robber.py) |Easy|DP|
 |199|[Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) |[python](./src/main/python/binary_tree_right_side_view.py) |Medium|Tree, DFS, BFS|
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/) |[python](./src/main/python/number_of_islands.py) |Medium|Union Find, DFS, BFS|
-|203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) |[python](./src/main/python/remove_linked_list_elements.py) |Easy|Fast & Slow Pointers|
-|209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) |[python](./src/main/python/minimum_size_subarray_sum.py) |Medium|Array, Sliding Window, Binary Search|
-|234|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) |[python](./src/main/python/palindrome_linked_list.py) |Easy|Fast & Slow Pointers|
-|239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) |[python](./src/main/python/sliding_window_maximum.py) |Hard|Heap, Sliding Window|
+|203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) |[python](./src/main/python/remove_linked_list_elements.py) |Easy|P:Fast & Slow Pointers|
+|209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) |[python](./src/main/python/minimum_size_subarray_sum.py) |Medium|Array, P:Sliding Window, Binary Search|
+|217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) |[python](./src/main/python/contains_duplicate.py) |Easy|P:Arrays|
+|234|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) |[python](./src/main/python/palindrome_linked_list.py) |Easy|P:Fast & Slow Pointers|
+|238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) |[python](./src/main/python/product_of_array_except_self.py) |Easy|P:Arrays|
+|239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) |[python](./src/main/python/sliding_window_maximum.py) |Hard|Heap, P:Sliding Window|
+|268|[Missing Number](https://leetcode.com/problems/missing-number/) |[python](./src/main/python/missing_number.py) |Medium|P:Arrays|
+|287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) |[python](./src/main/python/find_the_duplicate_number.py) |Medium|P:Arrays|
 |344|[Reverse String](https://oj.leetcode.com/problems/reverse-string/)|[python](./src/main/python/reverse_string.py)       |Easy|
-|424|[Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) |[python](./src/main/python/longest-repeating-character-replacement.py) |Medium|Sliding Window|
-|435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) |[python](./src/main/python/non_overlapping_intervals.py) |Medium|Merge Intervals|
-|452|[Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) |[python](./src/main/python/minimum_number_of_arrows_to_burst_balloons.py) |Medium|Merge Intervals|
-|567|[Permutation in String](https://leetcode.com/problems/permutation-in-string/) |[python](./src/main/python/permutation_in_string.py) |Medium|Sliding Window|
-|621|[Task Scheduler](https://leetcode.com/problems/task-scheduler/) |[python](./src/main/python/task_scheduler.py) |Medium|Merge Intervals|
-|713|[Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/) |[python](./src/main/python/subarray_product_less_than_k.py) |Medium|Two Pointers|
-|828|[Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/) |[python](./src/main/python/count_unique_characters_of_all_substrings_of_a_given_string.py) |Hard|Two Pointers, DP|
-|844|[Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) |[python](./src/main/python/backspace_string_compare.py) |Easy|Two Pointers|
-|876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) |[python](./src/main/python/middle_of_the_linked_list.py) |Easy|Fast & Slow Pointers|
-|904|[Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/) |[python](./src/main/python/fruit_into_baskets.py) |Medium|Sliding Window|
-|977|[Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) |[python](./src/main/python/squares_of_a_sorted_array.py) |Easy|Array, Two Pointers|
-|986|[Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) |[python](./src/main/python/interval_list_intersections.py) |Medium|Merge Intervals|
-|995|[Minimum Number of K Consecutive Bit Flips](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/) |[python](./src/main/python/minimum_number_of_k_consecutive_bit_flips.py) |Hard|Greedy, Sliding Window|
+|424|[Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) |[python](./src/main/python/longest-repeating-character-replacement.py) |Medium|P:Sliding Window|
+|435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) |[python](./src/main/python/non_overlapping_intervals.py) |Medium|P:Merge Intervals|
+|442|[Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) |[python](./src/main/python/find_all_duplicates_in_an_array.py) |Medium|P:Arrays|
+|448|[Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) |[python](./src/main/python/find_all_numbers_disappeared_in_an_array.py) |Easy|P:Arrays|
+|452|[Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) |[python](./src/main/python/minimum_number_of_arrows_to_burst_balloons.py) |Medium|P:Merge Intervals|
+|567|[Permutation in String](https://leetcode.com/problems/permutation-in-string/) |[python](./src/main/python/permutation_in_string.py) |Medium|P:Sliding Window|
+|621|[Task Scheduler](https://leetcode.com/problems/task-scheduler/) |[python](./src/main/python/task_scheduler.py) |Medium|P:Merge Intervals|
+|713|[Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/) |[python](./src/main/python/subarray_product_less_than_k.py) |Medium|P:Two Pointers|
+|828|[Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/) |[python](./src/main/python/count_unique_characters_of_all_substrings_of_a_given_string.py) |Hard|P:Sliding Windows, Two Pointers, DP|
+|844|[Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) |[python](./src/main/python/backspace_string_compare.py) |Easy|P:Two Pointers|
+|876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) |[python](./src/main/python/middle_of_the_linked_list.py) |Easy|P:Fast & Slow Pointers|
+|904|[Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/) |[python](./src/main/python/fruit_into_baskets.py) |Medium|P:Sliding Window|
+|977|[Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) |[python](./src/main/python/squares_of_a_sorted_array.py) |Easy|Array, P:Two Pointers|
+|986|[Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) |[python](./src/main/python/interval_list_intersections.py) |Medium|P:Merge Intervals|
+|995|[Minimum Number of K Consecutive Bit Flips](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/) |[python](./src/main/python/minimum_number_of_k_consecutive_bit_flips.py) |Hard|Greedy, P:Sliding Window|
