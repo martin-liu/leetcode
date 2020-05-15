@@ -1,59 +1,36 @@
+import unittest
 from .ds import ListNode
-# Given a linked list, swap every two adjacent nodes and return its head.
 
-# For example,
-# Given 1->2->3->4, you should return the list as 2->1->4->3.
-
-# Your algorithm should use only constant space. You may not modify the values in the list, only nodes itself can be changed.
-
-# Basic idea: keep previous rounds tail node, and connect it with new swapped 2 nodes
-class Solution:
+class Solution(unittest.TestCase):
     def swapPairs(self, head):
         """
-        :type head: ListNode
-        :rtype: ListNode
+Given a linked list, swap every two adjacent nodes and return its head.
+
+For example,
+Given 1->2->3->4, you should return the list as 2->1->4->3.
+
+Your algorithm should use only constant space. You may not modify the values in the list, only nodes itself can be changed.
+
+Basic idea: keep previous rounds tail node, and connect it with new swapped 2 nodes
         """
 
-        if head == None or head.next == None:
+        if not head or not head.next:
             return head
 
-        point = head
-        ret = preTail = ListNode(0)
+        sentry = ListNode(None)
+        sentry.next = head
 
-        # point will be first node of every pair
-        while point != None and point.next != None:
-            # swap point and second node of current pair
-            second = point.next
-            point.next = second.next
-            second.next = point
+        pre, curr = sentry, head
+        while curr and curr.next:
+            # pre = curr, because curr will move to curr.next, so that it's like pre = curr.next
+            pre.next, curr.next.next, curr.next, pre, curr = \
+                curr.next, curr, curr.next.next, curr, curr.next.next
 
-            # connect previous tail node with second node (now first node)
-            preTail.next = second
+        return sentry.next
 
-            # point now is the second node, so set previous tail node as point
-            preTail = point
-
-            # point already swap to second one, so only need go to next node for next round
-            point = point.next
-
-        return ret.next
-
-# -----------------------------
-import unittest
-
-class Test(unittest.TestCase):
     def test(self):
-        s = Solution()
-
-        l1 = ListNode(2)
-        l1.next = ListNode(3)
-        l1.next.next = ListNode(7)
-        l1.next.next.next = ListNode(8)
-
-        ll = s.swapPairs(l1)
-        arr = []
-        while ll != None:
-            arr.append(ll.val)
-            ll = ll.next
-
-        self.assertEqual(arr, [3, 2, 8, 7])
+        self.assertEqual([3], self.swapPairs(ListNode.fromList([3])).toList())
+        self.assertEqual([3,2], self.swapPairs(ListNode.fromList([2,3])).toList())
+        self.assertEqual([3,2,8,7], self.swapPairs(ListNode.fromList([2,3,7,8])).toList())
+        self.assertEqual([2,1,4,3], self.swapPairs(ListNode.fromList([1,2,3,4])).toList())
+        self.assertEqual([2,1,4,3,5], self.swapPairs(ListNode.fromList([1,2,3,4,5])).toList())

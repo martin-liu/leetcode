@@ -2,7 +2,7 @@
 Useful resourecs:
 * https://github.com/labuladong/fucking-algorithm
 * https://github.com/SeanPrashad/leetcode-patterns
-  - pattern problems have tag prefix `P``:`, e.g. `P``:Arrays`
+  - pattern problems have tag prefix `P`**:**, e.g. `P`**:**`Arrays`
 
 ## Testing instructions
 ### Python3
@@ -37,8 +37,8 @@ Useful resourecs:
 |21|[Merge Two Sorted Lists](https://oj.leetcode.com/problems/merge-two-sorted-lists/)    |[python](./src/main/python/merge_two_sorted_lists.py), [java](./src/main/java/com/martinliu/mergeTwoLists/Solution.java) |Easy|
 |22|[Generate Parentheses](https://oj.leetcode.com/problems/generate-parentheses/)    |[python](./src/main/python/generate_parentheses.py) | Medium |
 |23|[Merge k Sorted Lists](https://oj.leetcode.com/problems/merge-k-sorted-lists/)    |[python](./src/main/python/merge_k_sorted_lists.py) | Hard |
-|24|[Swap Nodes in Pairs](https://oj.leetcode.com/problems/swap-nodes-in-pairs/)    |[python](./src/main/python/swap_nodes_in_pairs.py) | Medium  |
-|25|[Reverse Nodes in k-Group](https://oj.leetcode.com/problems/reverse-nodes-in-k-group/)    |[python](./src/main/python/reverse_nodes_in_k_group.py) | Hard  |
+|24|[Swap Nodes in Pairs](https://oj.leetcode.com/problems/swap-nodes-in-pairs/)    |[python](./src/main/python/swap_nodes_in_pairs.py) | Medium  |P:Reverse Linked List|
+|25|[Reverse Nodes in k-Group](https://oj.leetcode.com/problems/reverse-nodes-in-k-group/)    |[python](./src/main/python/reverse_nodes_in_k_group.py) |Hard|P:Reverse Linked List|
 |26|[Remove Duplicates from Sorted Array](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array/)|[python](./src/main/python/remove_duplicates_from_sorted_array.py), [java](./src/main/java/com/martinliu/removeDuplicates/Solution.java) |Easy|
 |27|[Remove Element](https://oj.leetcode.com/problems/remove-element/)    |[python](./src/main/python/remove_element.py),[java](./src/main/java/com/martinliu/removeElement/Solution.java) |Easy|
 |28|[Implement strStr()](https://oj.leetcode.com/problems/implement-strstr/)    |[python](./src/main/python/implement_strstr.py) |Easy|
@@ -105,7 +105,7 @@ Useful resourecs:
 |89|[Grap Code](https://leetcode.com/problems/gray-code) |[python](./src/main/python/gray_code.py) |Medium| Backtracking|
 |90|[Subsets II](https://leetcode.com/problems/subsets-ii) |[python](./src/main/python/subsets_ii.py) |Medium| Array, Backtracking|
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways) |[python](./src/main/python/decode_ways.py) |Medium| String, DP|
-|92|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii) |[python](./src/main/python/reverse_linked_list_ii.py) |Medium| Linked List|
+|92|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii) |[python](./src/main/python/reverse_linked_list_ii.py) |Medium| Linked List|P:Reverse Linked List|
 |93|[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses) |[python](./src/main/python/restore_ip_addresses.py) |Medium|String, Backtracking|
 |94|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) |[python](./src/main/python/binary_tree_inorder_traversal.py) |Medium|Hash Table, Stack, Tree|
 |95|[Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii) |[python](./src/main/python/unique_binary_search_trees_ii.py) |Medium|DP, Tree|
@@ -194,6 +194,7 @@ Useful resourecs:
 |199|[Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) |[python](./src/main/python/binary_tree_right_side_view.py) |Medium|Tree, DFS, BFS|
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/) |[python](./src/main/python/number_of_islands.py) |Medium|Union Find, DFS, BFS|
 |203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) |[python](./src/main/python/remove_linked_list_elements.py) |Easy|P:Fast & Slow Pointers|
+|206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) |[python](./src/main/python/reverse_linked_list.py) |Easy|P:Reverse Linked List|
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) |[python](./src/main/python/minimum_size_subarray_sum.py) |Medium|Array, P:Sliding Window, Binary Search|
 |217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) |[python](./src/main/python/contains_duplicate.py) |Easy|P:Arrays|
 |234|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) |[python](./src/main/python/palindrome_linked_list.py) |Easy|P:Fast & Slow Pointers|
@@ -201,6 +202,7 @@ Useful resourecs:
 |239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) |[python](./src/main/python/sliding_window_maximum.py) |Hard|Heap, P:Sliding Window|
 |268|[Missing Number](https://leetcode.com/problems/missing-number/) |[python](./src/main/python/missing_number.py) |Medium|P:Arrays|
 |287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) |[python](./src/main/python/find_the_duplicate_number.py) |Medium|P:Arrays|
+|328|[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) |[python](./src/main/python/odd_even_linked_list.py) |Medium|P:Reverse Linked List|
 |344|[Reverse String](https://oj.leetcode.com/problems/reverse-string/)|[python](./src/main/python/reverse_string.py)       |Easy|
 |424|[Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) |[python](./src/main/python/longest-repeating-character-replacement.py) |Medium|P:Sliding Window|
 |435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) |[python](./src/main/python/non_overlapping_intervals.py) |Medium|P:Merge Intervals|

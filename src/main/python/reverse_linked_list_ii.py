@@ -17,12 +17,11 @@ Output: 1->4->3->2->5->NULL
             return head
 
         # add one temp head node
-        newHead = ListNode(-1)
-        newHead.next = head
-        head = newHead
+        sentry = ListNode(None)
+        sentry.next = head
 
         i = 0
-        pre, curr = None, head
+        pre, curr = None, sentry
         start = None
         while curr:
             next = curr.next
@@ -37,8 +36,9 @@ Output: 1->4->3->2->5->NULL
 
             pre, curr = curr, next
             i += 1
-        return head.next
+        return sentry.next
 
     def testReverseBetween(self):
+        self.assertEqual(self.reverseBetween(ListNode.fromList([1,2,3,4,5]), 1, 2).toList(), [2,1,3,4,5])
         self.assertEqual(self.reverseBetween(ListNode.fromList([1,2,3,4,5]), 2, 2).toList(), [1,2,3,4,5])
         self.assertEqual(self.reverseBetween(ListNode.fromList([1,2,3,4,5]), 2, 4).toList(), [1,4,3,2,5])

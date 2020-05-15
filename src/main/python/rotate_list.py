@@ -27,41 +27,33 @@ rotate 3 steps to the right: 0->1->2->NULL
 rotate 4 steps to the right: 2->0->1->NULL
 
 ---
-Basic idea:
+Basic idea: fast & slow pointer, fast go k step first (if tail then cycle to head), then move togother with slow, when fast is tail, slow.next is new head
         """
-        if not head or k == 0:
+        if not head or not head.next or k == 0:
             return head
+        slow, fast = head, head
+        i = 1
+        while i <= k:
+            fast = fast.next
+            if not fast:
+                # cycle, length is i
+                i = k - (k % i)
+                if i == k:
+                    return head
+                fast = head
+            i += 1
 
-        # find length and tail node
-        length = 1
-        tail = head
-        while tail.next:
-            length += 1
-            tail = tail.next
+        while fast.next:
+            slow, fast = slow.next, fast.next
 
-        # calculate real rotation number
-        rotate = k % length
-        if rotate == 0:
-            return head
+        # slow.next is new head, fast is tail
+        newHead, slow.next, fast.next = slow.next, None, head
 
-        # find new start and end node
-        start = head
-        end = None # end will be previous one of start
-        for i in range(length - rotate - 1):
-            if not end:
-                end = start
-            else:
-                end = end.next
-            start = start.next
-
-        end.next = None
-        tail.next = head # connect with head
-
-        return start
+        return newHead
 
     def testRotateRight(self):
         l = ListNode.fromList([1,2,3,4,5])
-        self.assertCountEqual(self.rotateRight(l, 2).toList(), [4,5,1,2,3])
+        self.assertEqual(self.rotateRight(l, 7).toList(), [4,5,1,2,3])
 
         l = ListNode.fromList([0,1,2])
-        self.assertCountEqual(self.rotateRight(l, 4).toList(), [2,0,1])
+        self.assertEqual(self.rotateRight(l, 4).toList(), [2,0,1])
