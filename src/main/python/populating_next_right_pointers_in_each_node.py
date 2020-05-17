@@ -42,6 +42,25 @@ The number of nodes in the given tree is less than 4096.
 
         """
         if not root:
+            return root
+        q = Queue()
+        q.put((root, 0))
+        pre = None
+        while not q.empty():
+            node, lvl = curr = q.get()
+            if pre and pre[1] == lvl:
+                pre[0].next = node
+            pre = curr
+
+            if node.left:
+                q.put((node.left, lvl+1))
+            if node.right:
+                q.put((node.right, lvl+1))
+
+        return root
+
+    def connect2(self, root: Node) -> Node:
+        if not root:
             return None
         curr = root
         next = curr.left

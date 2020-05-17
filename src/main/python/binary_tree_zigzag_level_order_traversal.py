@@ -1,5 +1,6 @@
 import unittest
 from typing import List
+from queue import Queue
 from .ds import TreeNode
 
 class Solution(unittest.TestCase):
@@ -25,6 +26,27 @@ return its zigzag level order traversal as:
         """
         if not root:
             return []
+        q = Queue()
+        q.put((root, 0))
+        res = []
+        while not q.empty():
+            node, lvl = q.get()
+            if len(res) == lvl:
+                res.append([])
+            res[lvl].append(node.val)
+            if node.left:
+                q.put((node.left, lvl+1))
+            if node.right:
+                q.put((node.right, lvl+1))
+
+        for i, l in enumerate(res):
+            if i% 2 == 1:
+                res[i] = res[i][::-1]
+        return res
+
+    def zigzagLevelOrder2(self, root: TreeNode) -> List[List[int]]:
+        if not root:
+            return []
 
         ret = []
         level = [root]
@@ -45,3 +67,4 @@ return its zigzag level order traversal as:
 
     def testZigZag(self):
         self.assertEqual(self.zigzagLevelOrder(TreeNode.fromList([3,9,20,None,None,15,7])), [[3], [20,9], [15,7]])
+        self.assertEqual(self.zigzagLevelOrder2(TreeNode.fromList([3,9,20,None,None,15,7])), [[3], [20,9], [15,7]])

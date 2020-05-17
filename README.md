@@ -115,22 +115,22 @@ Useful resourecs:
 |99|[Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree) |[python](./src/main/python/recover_binary_search_tree.py) |Hard|Tree, DFS|
 |100|[Same Tree](https://oj.leetcode.com/problems/same-tree/)|[python](./src/main/python/same_tree.py), [java](./src/main/java/com/martinliu/isSameTree/Solution.java) |Easy|
 |101|[Symmetric Tree](https://oj.leetcode.com/problems/symmetric-tree/)    |[python](./src/main/python/symmetric_tree.py),[java](./src/main/java/com/martinliu/symmetric/Solution.java) |Easy|
-|102|[binary Tree Level Order Traversal](https://oj.leetcode.com/problems/binary-tree-level-order-traversal/) |[python](./src/main/python/binary_tree_level_order_traversal.py),[java](./src/main/java/com/martinliu/binary-tree-level-order-traversal/Solution.java) |Easy|
+|102|[binary Tree Level Order Traversal](https://oj.leetcode.com/problems/binary-tree-level-order-traversal/) |[python](./src/main/python/binary_tree_level_order_traversal.py),[java](./src/main/java/com/martinliu/binary-tree-level-order-traversal/Solution.java) |Medium|P:BFS|
 |103|[Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal) |[python](./src/main/python/binary_tree_zigzag_level_order_traversal.py) |Medium|Stack, Tree, BFS|
 |104|[Maximum Depth of Binary Tree](https://oj.leetcode.com/problems/maximum-depth-of-binary-tree/)|[python](./src/main/python/maximum_depth_of_binary_tree.py),[java](./src/main/java/com/martinliu/maxDepth/Solution.java) |Easy|
 |105|[Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal)|[python](./src/main/python/construct_binary_tree_from_preorder_and_inorder.py) |Medium|Array, Tree, DFS|
 |106|[Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal)|[python](./src/main/python/construct_binary_tree_from_inorder_and_postorder.py) |Medium|Array, Tree, DFS|
-|107|[Binary Tree Level Order Traversal II](https://oj.leetcode.com/problems/binary-tree-level-order-traversal-ii/)    |[python](./src/main/python/binary_tree_level_order_traversal_ii.py),[java](./src/main/java/com/martinliu/levelOrderBottom/Solution.java) |Easy|
+|107|[Binary Tree Level Order Traversal II](https://oj.leetcode.com/problems/binary-tree-level-order-traversal-ii/)    |[python](./src/main/python/binary_tree_level_order_traversal_ii.py),[java](./src/main/java/com/martinliu/levelOrderBottom/Solution.java) |Easy|P:BFS|
 |108|[Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree) |[python](./src/main/python/convert_sorted_array_to_binary_search_tree.py) |Easy|
 |109|[Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) |[python](./src/main/python/convert_sorted_list_to_binary_search_tree.py) |Medium|
 |110|[Balanced Binary Tree](https://oj.leetcode.com/problems/balanced-binary-tree/)    |[python](./src/main/python/balanced_binary_tree.py),[java](./src/main/java/com/martinliu/isBalanced/Solution.java) |Easy|
-|111|[Minimum Depth of Binary Tree](https://oj.leetcode.com/problems/minimum-depth-of-binary-tree/)    |[python](./src/main/python/minimum_depth_of_binary_tree.py),[java](./src/main/java/com/martinliu/minimum-depth-of-binary-tree/Solution.java) |Easy|
+|111|[Minimum Depth of Binary Tree](https://oj.leetcode.com/problems/minimum-depth-of-binary-tree/)    |[python](./src/main/python/minimum_depth_of_binary_tree.py),[java](./src/main/java/com/martinliu/minimum-depth-of-binary-tree/Solution.java) |Easy|P:BFS|
 |112|[Path Sum](https://oj.leetcode.com/problems/path-sum/)    |[python](./src/main/python/path_sum.py),[java](./src/main/java/com/martinliu/path-sum/Solution.java) |Easy|
 |113|[Path Sum II](https://oj.leetcode.com/problems/path-sum-ii/) |[python](./src/main/python/path_sum_ii.py) |Medium|Tree, DFS|
 |114|[Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list) |[python](./src/main/python/flatten-binary-tree-to-linked-list.py) |Medium|Tree, DFS|
 |115|[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences) |[python](./src/main/python/distinct_subsequences.py) |Hard|String, DP|
-|116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node) |[python](./src/main/python/populating_next_right_pointers_in_each_node.py) |Medium|Tree, DFS|
-|117|[Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii) |[python](./src/main/python/populating_next_right_pointers_in_each_node_ii.py) |Medium|Tree, DFS|
+|116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node) |[python](./src/main/python/populating_next_right_pointers_in_each_node.py) |Medium|Tree, P:BFS, DFS|
+|117|[Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii) |[python](./src/main/python/populating_next_right_pointers_in_each_node_ii.py) |Medium|Tree, P:BFS, DFS|
 |118|[Pascal's Triangle](https://oj.leetcode.com/problems/pascals-triangle/)    |[python](./src/main/python/pascals_triangle.py),[java](./src/main/java/com/martinliu/pascals-triangle/Solution.java) |Easy|
 |119|[Pascal's Triangle II](https://oj.leetcode.com/problems/pascals-triangle-ii/)    |[python](./src/main/python/pascals_triangle_ii.py),[java](./src/main/java/com/martinliu/pascals-triangle-ii/Solution.java) |Easy|
 |120|[Triangle](https://leetcode.com/problems/triangle) |[python](./src/main/python/triangle.py) |Medium|Array, DP|
@@ -191,7 +191,7 @@ Useful resourecs:
 |190|[Reverse Bits](https://leetcode.com/problems/reverse-bits/) |[python](./src/main/python/reverse_bits.py) |EasyBit Manipulation|
 |191|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) |[python](./src/main/python/number_of_one_bits.py) |Easy|Bit Manipulation|
 |198|[House Robber](https://leetcode.com/problems/house-robber/) |[python](./src/main/python/house_robber.py) |Easy|DP|
-|199|[Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) |[python](./src/main/python/binary_tree_right_side_view.py) |Medium|Tree, DFS, BFS|
+|199|[Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) |[python](./src/main/python/binary_tree_right_side_view.py) |Medium|Tree, DFS, P:BFS|
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/) |[python](./src/main/python/number_of_islands.py) |Medium|Union Find, DFS, BFS|
 |203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) |[python](./src/main/python/remove_linked_list_elements.py) |Easy|P:Fast & Slow Pointers|
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) |[python](./src/main/python/reverse_linked_list.py) |Easy|P:Reverse Linked List|
@@ -211,9 +211,11 @@ Useful resourecs:
 |452|[Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) |[python](./src/main/python/minimum_number_of_arrows_to_burst_balloons.py) |Medium|P:Merge Intervals|
 |567|[Permutation in String](https://leetcode.com/problems/permutation-in-string/) |[python](./src/main/python/permutation_in_string.py) |Medium|P:Sliding Window|
 |621|[Task Scheduler](https://leetcode.com/problems/task-scheduler/) |[python](./src/main/python/task_scheduler.py) |Medium|P:Merge Intervals|
+|637|[Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/) |[python](./src/main/python/average_of_levels_in_binary_tree.py) |Easy|P:BFS|
 |713|[Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/) |[python](./src/main/python/subarray_product_less_than_k.py) |Medium|P:Two Pointers|
 |828|[Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/) |[python](./src/main/python/count_unique_characters_of_all_substrings_of_a_given_string.py) |Hard|P:Sliding Windows, Two Pointers, DP|
 |844|[Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) |[python](./src/main/python/backspace_string_compare.py) |Easy|P:Two Pointers|
+|863|[All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) |[python](./src/main/python/all_nodes_distance_k_in_binary_tree.py) |Medium|P:BFS|
 |876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) |[python](./src/main/python/middle_of_the_linked_list.py) |Easy|P:Fast & Slow Pointers|
 |904|[Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/) |[python](./src/main/python/fruit_into_baskets.py) |Medium|P:Sliding Window|
 |977|[Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) |[python](./src/main/python/squares_of_a_sorted_array.py) |Easy|Array, P:Two Pointers|

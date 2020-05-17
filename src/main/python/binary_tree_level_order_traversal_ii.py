@@ -1,6 +1,7 @@
 import unittest
 from typing import List
 from .ds import TreeNode
+from queue import Queue
 
 class Solution(unittest.TestCase):
     def levelOrderBottom(self, root: TreeNode) -> List[List[int]]:
@@ -25,6 +26,27 @@ return its bottom-up level order traversal as:
 """
         if not root:
             return []
+        res = [[]]
+        queue = Queue()
+        queue.put((root, 1))
+        currLevel = 1
+        while not queue.empty():
+            node, level = queue.get()
+            if level != currLevel:
+                currLevel = level
+                res.append([])
+            res[-1].append(node.val)
+
+            if node.left:
+                queue.put((node.left, level+1))
+            if node.right:
+                queue.put((node.right, level+1))
+
+        return res[::-1]
+
+    def levelOrderBottom2(self, root: TreeNode) -> List[List[int]]:
+        if not root:
+            return []
 
         def levelBottom(nodes):
             if not nodes:
@@ -41,3 +63,4 @@ return its bottom-up level order traversal as:
 
     def testLevelOrderBottom(self):
         self.assertEqual(self.levelOrderBottom(TreeNode.fromList([3,9,20,None,None,15,7])), [[15,7], [9,20], [3]])
+        self.assertEqual(self.levelOrderBottom2(TreeNode.fromList([3,9,20,None,None,15,7])), [[15,7], [9,20], [3]])

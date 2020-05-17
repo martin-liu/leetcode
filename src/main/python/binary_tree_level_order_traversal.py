@@ -1,5 +1,6 @@
 import unittest
 from typing import List
+from queue import Queue
 from .ds import TreeNode
 
 class Solution(unittest.TestCase):
@@ -25,20 +26,33 @@ return its level order traversal as:
         """
         if not root:
             return []
-        ret = []
-        level = [root]
-        while level:
-            ret.append([t.val for t in level])
-            newLevel = []
-            for t in level:
-                if t.left:
-                    newLevel.append(t.left)
-                if t.right:
-                    newLevel.append(t.right)
+        q, l, res = Queue(), 1, [[]]
+        q.put((root,1))
+        while not q.empty():
+            node, lvl = q.get()
+            if l != lvl:
+                l = lvl
+                res.append([])
+            res[-1].append(node.val)
+            if node.left:
+                q.put((node.left, lvl+1))
+            if node.right:
+                q.put((node.right, lvl+1))
+        return res
 
-            level = newLevel
-        return ret
-
+    def levelOrder2(self, root: TreeNode) -> List[List[int]]:
+        res = []
+        def dfs(node, lvl):
+            if not node:
+                return
+            if len(res) <= lvl:
+                res.append([])
+            res[lvl].append(node.val)
+            dfs(node.left, lvl+1)
+            dfs(node.right, lvl+1)
+        dfs(root, 0)
+        return res
 
     def testlevelOrder(self):
         self.assertEqual(self.levelOrder(TreeNode.fromList([3,9,20,None,None,15,7])), [[3], [9,20], [15,7]])
+        self.assertEqual(self.levelOrder2(TreeNode.fromList([3,9,20,None,None,15,7])), [[3], [9,20], [15,7]])
