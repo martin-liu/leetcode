@@ -46,11 +46,10 @@ class TreeNode:
                 queue.put(tree.left)
                 queue.put(tree.right)
 
-        i = 1
-        while not ret[-i]:
-            i += 1
+        while ret and ret[-1] is None:
+            ret.pop()
 
-        return ret[:-i+1]
+        return ret
 
     @staticmethod
     def fromList(l):

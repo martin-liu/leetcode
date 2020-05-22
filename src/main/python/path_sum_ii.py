@@ -3,7 +3,7 @@ from typing import List
 from .ds import TreeNode
 
 class Solution(unittest.TestCase):
-    def pathSum(self, root: TreeNode, sum: int) -> List[List[int]]:
+    def pathSum(self, root: TreeNode, s: int) -> List[List[int]]:
         """
 Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum.
 
@@ -27,6 +27,21 @@ Return:
    [5,8,4,5]
 ]
 """
+        res = []
+        def dfs(node: TreeNode, path: List[int]):
+            if not node:
+                return
+            elif not node.left and not node.right and sum(path) + node.val == s:
+                res.append(path + [node.val])
+            else:
+                nextPath = path + [node.val]
+                dfs(node.left, nextPath)
+                dfs(node.right, nextPath)
+
+        dfs(root, [])
+        return res
+
+    def pathSum2(self, root: TreeNode, sum: int) -> List[List[int]]:
         if not root:
             return []
         elif not root.left and not root.right:
@@ -35,8 +50,8 @@ Return:
             else:
                 return []
         nextSum = sum - root.val
-        left = [[root.val] + path for path in self.pathSum(root.left, nextSum)]
-        right = [[root.val] + path for path in self.pathSum(root.right, nextSum)]
+        left = [[root.val] + path for path in self.pathSum2(root.left, nextSum)]
+        right = [[root.val] + path for path in self.pathSum2(root.right, nextSum)]
         return left + right
 
     def testPathSum(self):

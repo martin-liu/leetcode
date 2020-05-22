@@ -1,7 +1,7 @@
 import unittest
 from typing import List
 
-class Solutoin(unittest.TestCase):
+class Solution(unittest.TestCase):
     def spiralOrder2(self, matrix: List[List[int]]) -> List[int]:
         """
 Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.
@@ -70,7 +70,7 @@ vector rotate 90 deg `(x,y) -> (y,-x)`: (0, 1) -> (1, 0) -> (0, -1) -> (-1, 0)
 
         return ret
 
-    def spiralOrder2(self, matrix: List[List[int]]) -> List[int]:
+    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
         # pop first row, rotate matrix. zip([1,2],[3,4]) => [[1,3],[2,4]]
         return matrix and [*matrix.pop(0)] + self.spiralOrder([*zip(*matrix)][::-1])
 
