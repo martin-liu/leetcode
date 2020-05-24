@@ -197,6 +197,7 @@ Useful resourecs:
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) |[python](./src/main/python/reverse_linked_list.py) |Easy|P:Reverse Linked List|
 |208|[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) |[python](./src/main/python/implement_trie.py) |Medium|P:DFS|
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) |[python](./src/main/python/minimum_size_subarray_sum.py) |Medium|Array, P:Sliding Window, Binary Search|
+|212|[Word Search II](https://leetcode.com/problems/word-search-ii/) |[python](./src/main/python/word_search_ii.py) |Hard|P:DFS|
 |217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) |[python](./src/main/python/contains_duplicate.py) |Easy|P:Arrays|
 |226|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) |[python](./src/main/python/invert_binary_tree.py) |Easy|P:DFS|
 |230|[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) |[python](./src/main/python/kth_smallest_element_in_a_bst.py) |Medium|P:DFS|
@@ -207,6 +208,7 @@ Useful resourecs:
 |239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) |[python](./src/main/python/sliding_window_maximum.py) |Hard|Heap, P:Sliding Window|
 |268|[Missing Number](https://leetcode.com/problems/missing-number/) |[python](./src/main/python/missing_number.py) |Medium|P:Arrays|
 |287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) |[python](./src/main/python/find_the_duplicate_number.py) |Medium|P:Arrays|
+|295|[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) |[python](./src/main/python/find_median_from_data_stream.py) |Hard|P:Two Heaps|
 |297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) |[python](./src/main/python/serialize_and_deserialize_binary_tree.py) |Hard|P:DFS|
 |328|[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) |[python](./src/main/python/odd_even_linked_list.py) |Medium|P:Reverse Linked List|
 |344|[Reverse String](https://oj.leetcode.com/problems/reverse-string/)|[python](./src/main/python/reverse_string.py)       |Easy|
@@ -216,6 +218,7 @@ Useful resourecs:
 |442|[Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) |[python](./src/main/python/find_all_duplicates_in_an_array.py) |Medium|P:Arrays|
 |448|[Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) |[python](./src/main/python/find_all_numbers_disappeared_in_an_array.py) |Easy|P:Arrays|
 |452|[Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) |[python](./src/main/python/minimum_number_of_arrows_to_burst_balloons.py) |Medium|P:Merge Intervals|
+|480|[Sliding Window Median](https://leetcode.com/problems/sliding-window-median/) |[python](./src/main/python/sliding_window_median.py) |Hard|P:Two Heaps|
 |543|[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) |[python](./src/main/python/diameter_of_binary_tree.py) |Easy|P:DFS|
 |567|[Permutation in String](https://leetcode.com/problems/permutation-in-string/) |[python](./src/main/python/permutation_in_string.py) |Medium|P:Sliding Window|
 |572|[Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) |[python](./src/main/python/subtree_of_another_tree.py) |Easy|P:DFS|
