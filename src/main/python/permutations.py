@@ -1,4 +1,8 @@
-"""
+import unittest
+
+class Solution(unittest.TestCase):
+    def permute(self, nums):
+        """
 Given a collection of distinct integers, return all possible permutations.
 
 Example:
@@ -13,16 +17,24 @@ Output:
   [3,1,2],
   [3,2,1]
 ]
+---
+Basic idea: Backtracking
 """
+        res, L = [], len(nums)
+        def backtrack(path):
+            if len(path) == L:
+                res.append(path)
+            else:
+                for n in nums:
+                    if n not in path:
+                        backtrack(path + [n])
+        backtrack([])
+        return res
 
-# Basic idea: each round, insert n to each position of each array
-class Solution(object):
-    def permute(self, nums):
+    def permute2(self, nums):
         """
-        :type nums: List[int]
-        :rtype: List[List[int]]
+        Basic idea: each round, insert n to each position of each array
         """
-
         if not nums:
             return []
 
@@ -35,15 +47,7 @@ class Solution(object):
             ret = ls
         return ret
 
-
-
-# -----------------------------
-import unittest
-
-class Test(unittest.TestCase):
     def test(self):
-        s = Solution()
-
         ar = [
             [1,2,3],
             [1,3,2],
@@ -53,4 +57,4 @@ class Test(unittest.TestCase):
             [3,2,1]
         ]
 
-        self.assertEqual(sorted(s.permute([1,2,3])), sorted(ar))
+        self.assertCountEqual(self.permute([1,2,3]), ar)

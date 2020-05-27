@@ -24,12 +24,25 @@ Output:
 ]
 
 ---
-Basic idea: f([first, *rest]) = f(rest) + [[first] + a for a in f(rest)]
+Basic idea: backtracking, for each subset end with nums[i], can append with any of nums[i+1] to nums[-1]
         """
+        res, L = [], len(nums)
+        def backtrack(index, path):
+            res.append(path)
+            # choices
+            for i in range(index, L):
+                backtrack(i+1, path + [nums[i]])
 
+        backtrack(0, [])
+        return res
+
+    def subsets2(self, nums: List[int]) -> List[List[int]]:
+        """
+        Basic idea: f([first, *rest]) = f(rest) + [[first] + a for a in f(rest)]
+        """
         if not nums:
             return [[]]
-        rest = self.subsets(nums[1:])
+        rest = self.subsets2(nums[1:])
         return rest + [[nums[0]] + a for a in rest]
 
     def testSubsets(self):

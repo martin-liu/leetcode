@@ -18,8 +18,25 @@ Output:
  [1,3],
  [1,4],
 ]
-
 ---
+Basic Idea: backtracking, take care start position
+"""
+        if n <= 0 or k <= 0 or n < k:
+            return []
+        res = []
+        def backtrack(path, start, k):
+            if 0 == k:
+                res.append(path)
+            else:
+                # start inc, k dec, so that choices are limited
+                for i in range(start, n-k+2):
+                    backtrack(path + [i], i+1, k-1)
+
+        backtrack([], 1, k)
+        return res
+
+    def combine2(self, n: int, k: int) -> List[List[int]]:
+        """
 Basic idea: f(n,k) = f(n-1,k) + [a + [n] for a in f(n-1,k-1)]
         """
         if n <= 0 or k <= 0 or n < k:
@@ -27,9 +44,9 @@ Basic idea: f(n,k) = f(n-1,k) + [a + [n] for a in f(n-1,k-1)]
         if k == 1:
             return [[i+1] for i in range(n)]
         else:
-            return self.combine(n-1, k) + [a + [n] for a in self.combine(n-1, k-1)]
+            return self.combine2(n-1, k) + [a + [n] for a in self.combine2(n-1, k-1)]
 
-    def combine2(self, n: int, k: int) -> List[List[int]]:
+    def combine3(self, n: int, k: int) -> List[List[int]]:
         if n <= 0 or k <= 0 or n < k:
             return []
 
@@ -51,3 +68,5 @@ Basic idea: f(n,k) = f(n-1,k) + [a + [n] for a in f(n-1,k-1)]
         self.assertCountEqual(self.combine(4, 1), [[1], [2], [3], [4]])
         self.assertCountEqual(self.combine(4, 2), [[2,4], [3,4], [2,3], [1,2], [1,3], [1,4]])
         self.assertCountEqual(self.combine(4, 3), [[1,2,3], [1,2,4], [1,3,4], [2,3,4]])
+        self.assertCountEqual(self.combine2(4, 3), [[1,2,3], [1,2,4], [1,3,4], [2,3,4]])
+        self.assertCountEqual(self.combine3(4, 3), [[1,2,3], [1,2,4], [1,3,4], [2,3,4]])

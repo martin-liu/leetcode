@@ -1,4 +1,9 @@
-"""
+import unittest
+from collections import Counter
+
+class Solution(unittest.TestCase):
+    def permuteUnique(self, nums):
+        """
 Given a collection of numbers that might contain duplicates, return all possible unique permutations.
 
 Example:
@@ -10,15 +15,24 @@ Output:
   [1,2,1],
   [2,1,1]
 ]
+---
+Basic Idea: Backtracking, use a counter to determine choices (count > 0)
 """
+        res, L = [], len(nums)
+        def backtrack(path, counter):
+            if len(path) == L:
+                res.append(path)
+            else:
+                for n in counter:
+                    if counter[n] > 0:
+                        counter[n] -= 1
+                        # duplicated ones still have counter[n] > 0
+                        backtrack(path + [n], counter)
+                        counter[n] += 1
+        backtrack([], Counter(nums))
+        return res
 
-class Solution(object):
-    def permuteUnique(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
-
+    def permuteUnique2(self, nums):
         if not nums:
             return []
 
@@ -36,18 +50,9 @@ class Solution(object):
             ret = ls
         return ret
 
-
-
-
-# -----------------------------
-import unittest
-
-class Test(unittest.TestCase):
     def test(self):
-        s = Solution()
-
-        self.assertEqual(sorted(s.permuteUnique([1,1,2])), sorted([
+        self.assertCountEqual(self.permuteUnique([1,1,2]), [
             [1,1,2],
             [1,2,1],
             [2,1,1]
-        ]))
+        ])

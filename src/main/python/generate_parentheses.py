@@ -1,24 +1,42 @@
-# Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+import unittest
 
-# For example, given n = 3, a solution set is:
-
-# [
-#   "((()))",
-#   "(()())",
-#   "(())()",
-#   "()(())",
-#   "()()()"
-# ]
-
-# Basic idea: to get f(n), need find all pairs of f(i) and f(n - i - 1), denote as [x, y], then combine them together with another `()`, using `(x)y` style
-# e.g. f2 -> (f0)f1 | f1(f0)
-# e.g. f3 -> (f0)f2 | (f1)f1 | (f2)f0
-# e.g. fn -> (f0)fn-1 | (f1)fn-2 | ... | (fn-1)f0
-class Solution(object):
+class Solution(unittest.TestCase):
     def generateParenthesis(self, n):
         """
-        :type n: int
-        :rtype: List[str]
+Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+
+For example, given n = 3, a solution set is:
+
+[
+  "((()))",
+  "(()())",
+  "(())()",
+  "()(())",
+  "()()()"
+]
+---
+Basic Idea: Backtracking. Find each `(` in path, add '()' after it.
+        """
+        res = set()
+        def backtrack(path):
+            if len(path) == n * 2:
+                res.add("".join(path))
+            else:
+                # always add one parenthesis
+                backtrack(path + ['(',')'])
+                for i, c in enumerate(path):
+                    # add parenthesis after each `(`
+                    if c == '(':
+                        backtrack(path[:i+1] + ['(',')'] + path[i+1:])
+        backtrack([])
+        return list(res)
+
+    def generateParenthesis2(self, n):
+        """
+Basic idea: to get f(n), need find all pairs of f(i) and f(n - i - 1), denote as [x, y], then combine them together with another `()`, using `(x)y` style
+e.g. f2 -> (f0)f1 | f1(f0)
+e.g. f3 -> (f0)f2 | (f1)f1 | (f2)f0
+e.g. fn -> (f0)fn-1 | (f1)fn-2 | ... | (fn-1)f0
         """
         if n <= 0:
             return []
@@ -39,19 +57,11 @@ class Solution(object):
                         dp[i].append('(' + x + ')' + y)
         return dp[-1]
 
-
-
-
-# -----------------------------
-import unittest
-
-class Test(unittest.TestCase):
     def test(self):
-        s = Solution()
-        self.assertEqual(sorted(s.generateParenthesis(3)), sorted([
+        self.assertCountEqual(self.generateParenthesis(3), [
             "((()))",
             "(()())",
             "(())()",
             "()(())",
             "()()()"
-        ]))
+        ])

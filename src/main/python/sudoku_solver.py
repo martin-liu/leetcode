@@ -1,22 +1,31 @@
-# Write a program to solve a Sudoku puzzle by filling the empty cells.
+import unittest
 
-# Empty cells are indicated by the character '.'.
-
-# You may assume that there will be only one unique solution.
-
-# Basic idea: recursively update and check, if next cells have conflict, revert the update
-class Solution(object):
+class Solution(unittest.TestCase):
     def solveSudoku(self, board):
         """
-        :type board: List[List[str]]
-        :rtype: void Do not return anything, modify board in-place instead.
-        """
-        self.recursive(0, 0, board)
+Write a program to solve a Sudoku puzzle by filling the empty cells.
 
-    def recursive(self, i, j, board):
+A sudoku solution must satisfy all of the following rules:
+
+   Each of the digits 1-9 must occur exactly once in each row.
+   Each of the digits 1-9 must occur exactly once in each column.
+   Each of the the digits 1-9 must occur exactly once in each of the 9 3x3 sub-boxes of the grid.
+   Empty cells are indicated by the character '.'.
+
+Note:
+   The given board contain only digits 1-9 and the character '.'.
+   You may assume that the given Sudoku puzzle will have a single unique solution.
+   The given board size is always 9x9.
+  """
+
+    def solveSudoku(self, board):
+        self.travel(0, 0, board)
+
+    # Basic idea: recursively update and check, if next cells have conflict, revert the update
+    def travel(self, i, j, board):
         if j >= 9:
             # next line
-            return self.recursive(i + 1, 0, board)
+            return self.travel(i + 1, 0, board)
         if i == 9:
             # finish
             return True
@@ -37,22 +46,18 @@ class Solution(object):
                     # update num to board
                     board[i][j] = num_str
                     # check next cells
-                    if not self.recursive(i, j + 1, board):
+                    if not self.travel(i, j + 1, board):
                         # revert if next cells found conflict
-                        # recursive changes will recursively revert
+                        # travel changes will recursively revert
                         board[i][j] = "."
                     else:
                         return True
         else:
             # skip current cell
-            return self.recursive(i, j + 1, board)
+            return self.travel(i, j + 1, board)
 
         return False
 
-# -----------------------------
-import unittest
-
-class Test(unittest.TestCase):
     def test(self):
         s = Solution()
         board = [

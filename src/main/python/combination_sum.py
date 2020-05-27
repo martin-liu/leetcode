@@ -1,4 +1,9 @@
-"""
+import unittest
+from typing import List
+
+class Solution(unittest.TestCase):
+    def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
+        """
 Given a set of candidate numbers (C) (without duplicates) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
 
 The same repeated number may be chosen from C unlimited number of times.
@@ -13,14 +18,22 @@ A solution set is:
   [2, 2, 3]
 ]
 """
+        if not candidates:
+            return []
 
-# Basic idea: sort first (so that can easily filter out bigger numbers), then recursively generate combination
-class Solution(object):
-    def combinationSum(self, candidates, target):
+        res, L = [], len(candidates)
+        def backtrack(path, start, t):
+            if t == 0:
+                res.append(path)
+            elif t > 0:
+                for i in range(start, L):
+                    backtrack(path + [candidates[i]], i, t-candidates[i])
+        backtrack([], 0, target)
+        return res
+
+    def combinationSum2(self, candidates, target):
         """
-        :type candidates: List[int]
-        :type target: int
-        :rtype: List[List[int]]
+        Basic idea: sort first (so that can easily filter out bigger numbers), then recursively generate combination
         """
 
         if not candidates:
@@ -52,13 +65,7 @@ class Solution(object):
                 ret.append([head] * i + c)
         return ret
 
-
-# -----------------------------
-import unittest
-
-class Test(unittest.TestCase):
     def test(self):
-        s = Solution()
-
-        self.assertEqual(s.combinationSum([1, 2], 2), [[1, 1], [2]])
-        self.assertEqual(s.combinationSum([2, 3, 6, 7], 7), [[7], [2, 2, 3]])
+        self.assertCountEqual(self.combinationSum([1, 2], 2), [[1, 1], [2]])
+        self.assertCountEqual(self.combinationSum([2, 3, 6, 7], 7), [[7], [2, 2, 3]])
+        self.assertCountEqual(self.combinationSum2([2, 3, 6, 7], 7), [[7], [2, 2, 3]])

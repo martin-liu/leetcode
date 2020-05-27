@@ -22,7 +22,22 @@ Output:
 ]
 
 ---
-Basic idea: f([first, *rest]) = f(rest) + [[first] + a for a in f(rest)], only need to deal with duplication
+Basic idea: backtracking.
+        """
+        res, L, nums = [], len(nums), sorted(nums)
+        def backtrack(index, path):
+            if path not in res:
+                res.append(path)
+            # choices
+            for i in range(index, L):
+                backtrack(i+1, path + [nums[i]])
+
+        backtrack(0, [])
+        return res
+
+    def subsetsWithDup2(self, nums: List[int]) -> List[List[int]]:
+        """
+        Basic idea: f([first, *rest]) = f(rest) + [[first] + a for a in f(rest)], only need to deal with duplication
         """
         def doSubsets(nums):
             if not nums:

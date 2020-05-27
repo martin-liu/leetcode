@@ -1,4 +1,9 @@
-"""
+import unittest
+from typing import List
+
+class Solution(unittest.TestCase):
+    def solveNQueens(self, n) -> List[List[str]]:
+        """
 The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other.
 
 Given an integer n, return all distinct solutions to the n-queens puzzle.
@@ -21,14 +26,24 @@ Output: [
 ]
 Explanation: There exist two distinct solutions to the 4-queens puzzle as shown above.
 """
+        if n <= 0:
+            return []
+        res = []
+        def backtrack(path):
+            L = len(path)
+            if L == n:
+                queen = ["".join(['Q' if i == p else '.' for i in range(n)]) for p in path]
+                res.append(queen)
+            else:
+                for i in range(n):
+                    # no same column and same cross line
+                    if i not in path and all(abs(L-x) != abs(i-y) for x, y in enumerate(path)):
+                        backtrack(path + [i])
 
-class Solution(object):
-    def solveNQueens(self, n):
-        """
-        :type n: int
-        :rtype: List[List[str]]
-        """
+        backtrack([])
+        return res
 
+    def solveNQueens2(self, n):
         ret = []
         for queens in self.doNQueens(n, n):
             board = [['.'] * n for _ in range(n)]
@@ -63,34 +78,21 @@ class Solution(object):
 
 ####----------Solution 2-----------#####
 
-    def solveNQueens2(self, n):
-        """
-        :type n: int
-        :rtype: List[List[str]]
-        """
+    def solveNQueens3(self, n):
         res = []
-        self.dfs([], [], [], res, n)
+        def dfs(rows, diag, r_diag, res, n):
+            if len(rows) == n:
+                res.append(rows)
+                return
+            n_r = len(rows)
+            for i in range(n):
+                if i not in rows and (n_r + i) not in r_diag and (n_r - i) not in diag:
+                    dfs(rows+[i], diag+[n_r - i], r_diag+[n_r + i], res, n)
+
+        dfs([], [], [], res, n)
         return [['.'* i + 'Q' + '.'*(n-i-1) for i in sol] for sol in res]
 
-    def dfs(self, rows, diag, r_diag, res, n):
-        if len(rows) == n:
-            res.append(rows)
-            return
-        n_r = len(rows)
-        for i in range(n):
-            if i not in rows and (n_r + i) not in r_diag and (n_r - i) not in diag:
-                self.dfs(rows+[i], diag+[n_r - i], r_diag+[n_r + i], res, n)
-
-
-
-
-# -----------------------------
-import unittest
-
-class Test(unittest.TestCase):
     def test(self):
-        s = Solution()
-
-        self.assertEqual(s.solveNQueens(1), [['Q']])
-        self.assertEqual(s.solveNQueens(2), [])
-        self.assertEqual(s.solveNQueens(4), [['.Q..', '...Q', 'Q...', '..Q.'], ['..Q.', 'Q...', '...Q', '.Q..']])
+        self.assertEqual(self.solveNQueens(1), [['Q']])
+        self.assertEqual(self.solveNQueens(2), [])
+        self.assertEqual(self.solveNQueens(4), [['.Q..', '...Q', 'Q...', '..Q.'], ['..Q.', 'Q...', '...Q', '.Q..']])
