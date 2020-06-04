@@ -198,10 +198,11 @@ Useful resourecs:
 |208|[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) |[python](./src/main/python/implement_trie.py) |Medium|P:DFS|
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) |[python](./src/main/python/minimum_size_subarray_sum.py) |Medium|Array, P:Sliding Window, Binary Search|
 |212|[Word Search II](https://leetcode.com/problems/word-search-ii/) |[python](./src/main/python/word_search_ii.py) |Hard|P:DFS|
+|215|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) |[python](./src/main/python/kth_largest_element_in_an_array.py) |Medium|P:Top K|
 |216 |[Combination Sum III](https://leetcode.com/problems/combination-sum-iii) |[python](./src/main/python/combination_sum_iii.py) |Medium|P:Backtracking|
 |217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) |[python](./src/main/python/contains_duplicate.py) |Easy|P:Arrays|
 |226|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) |[python](./src/main/python/invert_binary_tree.py) |Easy|P:DFS|
-|230|[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) |[python](./src/main/python/kth_smallest_element_in_a_bst.py) |Medium|P:DFS|
+|230|[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) |[python](./src/main/python/kth_smallest_element_in_a_bst.py) |Medium|P:DFS,P:Top K|
 |234|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) |[python](./src/main/python/palindrome_linked_list.py) |Easy|P:Fast & Slow Pointers|
 |235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) |[python](./src/main/python/lowest_common_ancestor_of_a_binary_search_tree.py) |Easy|P:DFS|
 |236|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) |[python](./src/main/python/lowest_common_ancestor_of_a_binary_tree.py) |Medium|P:DFS|
@@ -213,11 +214,13 @@ Useful resourecs:
 |297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) |[python](./src/main/python/serialize_and_deserialize_binary_tree.py) |Hard|P:DFS|
 |328|[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) |[python](./src/main/python/odd_even_linked_list.py) |Medium|P:Reverse Linked List|
 |344|[Reverse String](https://oj.leetcode.com/problems/reverse-string/)|[python](./src/main/python/reverse_string.py)       |Easy|
+|347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) |[python](./src/main/python/top_k_frequent_elements.py) |Medium|P:Top K|
 |424|[Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) |[python](./src/main/python/longest-repeating-character-replacement.py) |Medium|P:Sliding Window|
 |435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) |[python](./src/main/python/non_overlapping_intervals.py) |Medium|P:Merge Intervals|
 |437|[Path Sum III](https://leetcode.com/problems/path-sum-iii) |[python](./src/main/python/path_sum_iii.py) |Easy|P:DFS|
 |442|[Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) |[python](./src/main/python/find_all_duplicates_in_an_array.py) |Medium|P:Arrays|
 |448|[Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) |[python](./src/main/python/find_all_numbers_disappeared_in_an_array.py) |Easy|P:Arrays|
+|451|[Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/) |[python](./src/main/python/sort_characters_by_frequency.py) |Medium|P:Top K|
 |452|[Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) |[python](./src/main/python/minimum_number_of_arrows_to_burst_balloons.py) |Medium|P:Merge Intervals|
 |480|[Sliding Window Median](https://leetcode.com/problems/sliding-window-median/) |[python](./src/main/python/sliding_window_median.py) |Hard|P:Two Heaps|
 |494|[Target Sum](https://leetcode.com/problems/target-sum/) |[python](./src/main/python/target_sum.py) |Medium|P:DP|
@@ -226,16 +229,20 @@ Useful resourecs:
 |572|[Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) |[python](./src/main/python/subtree_of_another_tree.py) |Easy|P:DFS|
 |617|[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/) |[python](./src/main/python/merge_two_binary_trees.py) |Easy|P:DFS|
 |621|[Task Scheduler](https://leetcode.com/problems/task-scheduler/) |[python](./src/main/python/task_scheduler.py) |Medium|P:Merge Intervals|
+|630|[Course Schedule III](https://leetcode.com/problems/course-schedule-iii/) |[python](./src/main/python/course_schedule_iii.py) |Hard|P:Top K|
 |637|[Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/) |[python](./src/main/python/average_of_levels_in_binary_tree.py) |Easy|P:BFS|
 |654|[Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) |[python](./src/main/python/maximum_binary_tree.py) |Medium|P:DFS|
 |662|[Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/) |[python](./src/main/python/maximum_width_of_binary_tree.py) |Medium|P:DFS|
 |713|[Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/) |[python](./src/main/python/subarray_product_less_than_k.py) |Medium|P:Two Pointers|
+|767|[Reorganize String](https://leetcode.com/problems/reorganize-string/) |[python](./src/main/python/reorganize_string.py) |Medium|P:Top K|
 |784|[Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation/) |[python](./src/main/python/letter_case_permutation.py) |Easy|P:Backtracking|
 |828|[Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/) |[python](./src/main/python/count_unique_characters_of_all_substrings_of_a_given_string.py) |Hard|P:Sliding Windows, Two Pointers, DP|
 |844|[Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) |[python](./src/main/python/backspace_string_compare.py) |Easy|P:Two Pointers|
 |863|[All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) |[python](./src/main/python/all_nodes_distance_k_in_binary_tree.py) |Medium|P:BFS|
 |876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) |[python](./src/main/python/middle_of_the_linked_list.py) |Easy|P:Fast & Slow Pointers|
+|895|[Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack/) |[python](./src/main/python/maximum_frequency_stack.py) |Hard|P:Top K|
 |904|[Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/) |[python](./src/main/python/fruit_into_baskets.py) |Medium|P:Sliding Window|
+|973|[K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/) |[python](./src/main/python/k_closest_points_to_origin.py) |Medium|P:Top K|
 |977|[Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) |[python](./src/main/python/squares_of_a_sorted_array.py) |Easy|Array, P:Two Pointers|
 |986|[Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) |[python](./src/main/python/interval_list_intersections.py) |Medium|P:Merge Intervals|
 |995|[Minimum Number of K Consecutive Bit Flips](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/) |[python](./src/main/python/minimum_number_of_k_consecutive_bit_flips.py) |Hard|Greedy, P:Sliding Window|
