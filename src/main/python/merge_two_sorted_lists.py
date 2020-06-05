@@ -1,8 +1,9 @@
+import unittest
 from .ds import ListNode
 # Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
 
 # Basic idea: travel both and generate a new list
-class Solution(object):
+class Solution(unittest.TestCase):
     def mergeTwoLists(self, l1, l2):
         """
         :type l1: ListNode
@@ -10,16 +11,13 @@ class Solution(object):
         :rtype: ListNode
         """
 
-        head = ListNode(0)
-        cur = head
+        cur = head = ListNode(None)
 
         while l1 != None and l2 != None:
             if l1.val < l2.val:
-                cur.next = l1
-                l1 = l1.next
+                cur.next, l1 = l1, l1.next
             else:
-                cur.next = l2
-                l2 = l2.next
+                cur.next, l2 = l2, l2.next
             cur = cur.next
 
         if l1 == None:
@@ -29,13 +27,6 @@ class Solution(object):
 
         return head.next
 
-
-
-
-# -----------------------------
-import unittest
-
-class Test(unittest.TestCase):
     def test(self):
         s = Solution()
 

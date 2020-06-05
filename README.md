@@ -34,9 +34,9 @@ Useful resourecs:
 |18|[4Sum](https://oj.leetcode.com/problems/4sum/)|[python](./src/main/python/4sum.py) |Medium|
 |19|[Remove Nth Node From End of List](https://oj.leetcode.com/problems/remove-nth-node-from-end-of-list/)    |[python](./src/main/python/remove_nth_node_from_end_of_list.py), [java](./src/main/java/com/martinliu/remove-nth-node-from-end-of-list/Solution.java) |Easy|P:Fast & Slow Pointers|
 |20|[Valid Parentheses](https://oj.leetcode.com/problems/valid-parentheses/)    |[python](./src/main/python/valid_parentheses.py), [java](./src/main/java/com/martinliu/valid-parentheses/Solution.java) |Easy|
-|21|[Merge Two Sorted Lists](https://oj.leetcode.com/problems/merge-two-sorted-lists/)    |[python](./src/main/python/merge_two_sorted_lists.py), [java](./src/main/java/com/martinliu/mergeTwoLists/Solution.java) |Easy|
+|21|[Merge Two Sorted Lists](https://oj.leetcode.com/problems/merge-two-sorted-lists/)    |[python](./src/main/python/merge_two_sorted_lists.py), [java](./src/main/java/com/martinliu/mergeTwoLists/Solution.java) |Easy|P:K-Way Merge|
 |22|[Generate Parentheses](https://oj.leetcode.com/problems/generate-parentheses/)    |[python](./src/main/python/generate_parentheses.py) | Medium |P:Backtracking|
-|23|[Merge k Sorted Lists](https://oj.leetcode.com/problems/merge-k-sorted-lists/)    |[python](./src/main/python/merge_k_sorted_lists.py) | Hard |
+|23|[Merge k Sorted Lists](https://oj.leetcode.com/problems/merge-k-sorted-lists/)    |[python](./src/main/python/merge_k_sorted_lists.py) |Hard|P:K-Way Merge|
 |24|[Swap Nodes in Pairs](https://oj.leetcode.com/problems/swap-nodes-in-pairs/)    |[python](./src/main/python/swap_nodes_in_pairs.py) | Medium  |P:Reverse Linked List|
 |25|[Reverse Nodes in k-Group](https://oj.leetcode.com/problems/reverse-nodes-in-k-group/)    |[python](./src/main/python/reverse_nodes_in_k_group.py) |Hard|P:Reverse Linked List|
 |26|[Remove Duplicates from Sorted Array](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array/)|[python](./src/main/python/remove_duplicates_from_sorted_array.py), [java](./src/main/java/com/martinliu/removeDuplicates/Solution.java) |Easy|
@@ -215,6 +215,9 @@ Useful resourecs:
 |328|[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) |[python](./src/main/python/odd_even_linked_list.py) |Medium|P:Reverse Linked List|
 |344|[Reverse String](https://oj.leetcode.com/problems/reverse-string/)|[python](./src/main/python/reverse_string.py)       |Easy|
 |347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) |[python](./src/main/python/top_k_frequent_elements.py) |Medium|P:Top K|
+|373|[Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/) |[python](./src/main/python/find_k_pairs_with_smallest_sums.py) |Medium|P:K-Way Merge|
+|378|[Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) |[python](./src/main/python/kth_smallest_element_in_a_sorted_matrix.py) |Medium|P:K-Way Merge|
+|424|[Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) |[python](./src/main/python/longest-repeating-character-replacement.py) |Medium|P:Sliding Window|
 |424|[Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) |[python](./src/main/python/longest-repeating-character-replacement.py) |Medium|P:Sliding Window|
 |435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) |[python](./src/main/python/non_overlapping_intervals.py) |Medium|P:Merge Intervals|
 |437|[Path Sum III](https://leetcode.com/problems/path-sum-iii) |[python](./src/main/python/path_sum_iii.py) |Easy|P:DFS|
@@ -230,6 +233,7 @@ Useful resourecs:
 |617|[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/) |[python](./src/main/python/merge_two_binary_trees.py) |Easy|P:DFS|
 |621|[Task Scheduler](https://leetcode.com/problems/task-scheduler/) |[python](./src/main/python/task_scheduler.py) |Medium|P:Merge Intervals|
 |630|[Course Schedule III](https://leetcode.com/problems/course-schedule-iii/) |[python](./src/main/python/course_schedule_iii.py) |Hard|P:Top K|
+|632|[Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/) |[python](./src/main/python/smallest_range_covering_elements_from_k_lists.py) |Hard|P:K-Way Merge|
 |637|[Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/) |[python](./src/main/python/average_of_levels_in_binary_tree.py) |Easy|P:BFS|
 |654|[Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) |[python](./src/main/python/maximum_binary_tree.py) |Medium|P:DFS|
 |662|[Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/) |[python](./src/main/python/maximum_width_of_binary_tree.py) |Medium|P:DFS|

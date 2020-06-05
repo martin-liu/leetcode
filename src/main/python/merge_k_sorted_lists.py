@@ -1,8 +1,30 @@
+import unittest
+from heapq import heappush, heappop
 from .ds import ListNode
-# Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
 
-# Basic idea: based on mergeTwoLists, divide and conquer to merge one by one
-class Solution(object):
+class Solution(unittest.TestCase):
+    def mergeKLists(self, lists):
+        """
+Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
+
+Basic idea: k-way merge, min heap
+        """
+        if not lists:
+            return None
+        heap = []
+        for i, head in enumerate(lists):
+            if head:
+                heappush(heap, (head.val, i, head))
+
+        curr = head = ListNode(None)
+        while heap:
+            v, i, node = heappop(heap)
+            curr.next, curr = node, node
+            if node.next:
+                heappush(heap, (node.next.val, i, node.next))
+
+        return head.next
+
     def mergeTwoLists(self, l1, l2):
         """
         :type l1: ListNode
@@ -29,7 +51,7 @@ class Solution(object):
 
         return head.next
 
-    def mergeKLists(self, lists):
+    def mergeKLists2(self, lists):
         """
         :type lists: List[ListNode]
         :rtype: ListNode
@@ -47,32 +69,9 @@ class Solution(object):
             interval *= 2
         return lists[0]
 
-
-# -----------------------------
-import unittest
-
-class Test(unittest.TestCase):
     def test(self):
-        s = Solution()
+        l1 = ListNode.fromList([1,3,7])
+        l2 = ListNode.fromList([1,4,6])
+        l3 = ListNode.fromList([5,8,9])
 
-        l1 = ListNode(2)
-        l1.next = ListNode(3)
-        l1.next.next = ListNode(7)
-
-        l2 = ListNode(1)
-        l2.next = ListNode(4)
-        l2.next.next = ListNode(6)
-
-        l3 = ListNode(5)
-        l3.next = ListNode(8)
-        l3.next.next = ListNode(9)
-
-        ll = s.mergeKLists([l1, l2, l3])
-        arr = []
-        while (ll != None):
-            arr.append(ll.val)
-            ll = ll.next
-
-        self.assertEqual(arr, [1, 2, 3, 4, 5, 6, 7, 8, 9])
-
-        self.assertEqual(s.mergeKLists([None]), None)
+        self.assertEqual([1, 1, 3, 4, 5, 6, 7, 8, 9], self.mergeKLists([l1,l2,l3]).toList())

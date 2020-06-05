@@ -53,12 +53,10 @@ The total number of FreqStack.push and FreqStack.pop calls will not exceed 15000
     def push(self, x: int) -> None:
         self.offset += 1
         self.counter[x] += 1
-        # priority (x.y) = count - 1/offset, which determined by count then offset
-        priority = self.counter[x] - 1/self.offset
-        heappush(self.maxHeap, (-priority, x))
+        heappush(self.maxHeap, (-self.counter[x], -self.offset, x))
 
     def pop(self) -> int:
-        _, x = heappop(self.maxHeap)
+        _, _, x = heappop(self.maxHeap)
         self.counter[x] -= 1
         return x
 
