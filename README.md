@@ -195,8 +195,10 @@ Useful resourecs:
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/) |[python](./src/main/python/number_of_islands.py) |Medium|Union Find, DFS, BFS|
 |203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) |[python](./src/main/python/remove_linked_list_elements.py) |Easy|P:Fast & Slow Pointers|
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) |[python](./src/main/python/reverse_linked_list.py) |Easy|P:Reverse Linked List|
+|207|[Course Schedule](https://leetcode.com/problems/course-schedule/) |[python](./src/main/python/course_schedule.py) |Medium|P:Topological Sort|
 |208|[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) |[python](./src/main/python/implement_trie.py) |Medium|P:DFS|
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) |[python](./src/main/python/minimum_size_subarray_sum.py) |Medium|Array, P:Sliding Window, Binary Search|
+|210|[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) |[python](./src/main/python/course_schedule_ii.py) |Medium|P:Topological Sort|
 |212|[Word Search II](https://leetcode.com/problems/word-search-ii/) |[python](./src/main/python/word_search_ii.py) |Hard|P:DFS|
 |215|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) |[python](./src/main/python/kth_largest_element_in_an_array.py) |Medium|P:Top K|
 |216 |[Combination Sum III](https://leetcode.com/problems/combination-sum-iii) |[python](./src/main/python/combination_sum_iii.py) |Medium|P:Backtracking|
@@ -212,6 +214,7 @@ Useful resourecs:
 |287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) |[python](./src/main/python/find_the_duplicate_number.py) |Medium|P:Arrays|
 |295|[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) |[python](./src/main/python/find_median_from_data_stream.py) |Hard|P:Two Heaps|
 |297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) |[python](./src/main/python/serialize_and_deserialize_binary_tree.py) |Hard|P:DFS|
+|310|[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/) |[python](./src/main/python/minimum_height_trees.py) |Medium|P:Topological Sort|
 |328|[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) |[python](./src/main/python/odd_even_linked_list.py) |Medium|P:Reverse Linked List|
 |344|[Reverse String](https://oj.leetcode.com/problems/reverse-string/)|[python](./src/main/python/reverse_string.py)       |Easy|
 |347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) |[python](./src/main/python/top_k_frequent_elements.py) |Medium|P:Top K|
