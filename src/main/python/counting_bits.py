@@ -25,13 +25,32 @@ Basic Idea: DP.
         f(i) = f(i>>1) + i&1
         f(i) is number of 1 for i, which equals number of 1 for i without last number + 1 in last number
 """
+        cache = {}
         def count(n):
             if n < 1:
                 return 0
-            return count(n>>1) + (n&1)
+            if n in cache:
+                return cache[n]
+            res = count(n>>1) + (n&1)
+            cache[n] = res
+            return res
+
+        return [count(n) for n in range(num+1)]
+
+    def countBits2(self, num: int) -> List[int]:
+        """
+        n & (n-1) will remove last 1
+        """
+        def count(n):
+            c = 0
+            while n != 0:
+                n = n & (n-1)
+                c += 1
+            return c
 
         return [count(n) for n in range(num+1)]
 
     def test(self):
         self.assertEqual([0,1,1], self.countBits(2))
         self.assertEqual([0,1,1,2,1,2], self.countBits(5))
+        self.assertEqual([0,1,1,2,1,2], self.countBits2(5))
