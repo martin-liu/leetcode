@@ -23,32 +23,33 @@ Output: 3
 Explanation: It could be decoded as "BZ" (2 26), "VF" (22 6), or "BBF" (2 2 6).
 
 ----
-Basic idea: when s[i] == 0, nums[i] == nums[i-2] if s[i-1:i+1] is valid; when s[i] == 1, if s[i-1] == '0' or s[i-1:i+1] > 26, nums[i] = nums[i-1], else nums[i] = nums[i-2] + nums[i-1]
+Basic idea: DP. Consider char is 0 and 2 char > 26 case.
+        when s[i] == 0, dp[i] == dp[i-2] if s[i-1:i+1] is valid; when s[i] == 1, if s[i-1] == '0' or s[i-1:i+1] > 26, dp[i] = dp[i-1], else dp[i] = dp[i-2] + dp[i-1]
         """
         if not s or s[0] == '0':
             return 0
 
-        nums = [0] * len(s)
+        dp = [0] * len(s)
         for i in range(len(s)):
             if i == 0:
-                nums[i] = 1
+                dp[i] = 1
             else:
                 n2 = int(s[i-1:i+1])
                 if n2 == 0 or (n2 > 26 and s[i] == '0'):
                     return 0
                 # pre of pre, when i == 1, use 1 because there's one way
-                pree = nums[i-2] if i > 1 else 1
+                pree = dp[i-2] if i > 1 else 1
                 if s[i] == '0':
                     # if curr is 0, only way is jump from pree + x0
-                    nums[i] = pree
+                    dp[i] = pree
                 elif s[i-1] == '0' or n2 > 26:
                     # if pre is 0 or n2 is invalid, only way is jump from pre
-                    nums[i] = nums[i-1]
+                    dp[i] = dp[i-1]
                 else:
                     # can jump from both pree or pre
-                    nums[i] = pree + nums[i-1]
+                    dp[i] = pree + dp[i-1]
 
-        return nums[-1]
+        return dp[-1]
 
     def testNumDecodings(self):
         self.assertEqual(self.numDecodings(""), 0)

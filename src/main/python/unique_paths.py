@@ -36,15 +36,15 @@ Output: 28
         if m == 1 or n == 1:
             return 1
 
-        nums = [[-1 for _ in range(n)] for _ in range(m)]
+        dp = [[-1 for _ in range(n)] for _ in range(m)]
         for i in range(m):
             for j in range(n):
                 if i == 0 or j == 0:
-                    nums[i][j] = 1
+                    dp[i][j] = 1
                 else:
-                    nums[i][j] = nums[i-1][j] + nums[i][j-1]
+                    dp[i][j] = dp[i-1][j] + dp[i][j-1]
 
-        return nums[m-1][n-1]
+        return dp[m-1][n-1]
 
     def testUniquePaths(self):
         self.assertEqual(self.uniquePaths(3, 2), 3)

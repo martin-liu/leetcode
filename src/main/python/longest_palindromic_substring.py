@@ -1,26 +1,50 @@
-# Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
+import unittest
 
-# Example:
-
-# Input: "babad"
-
-# Output: "bab"
-
-# Note: "aba" is also a valid answer.
-
-# Example:
-
-# Input: "cbbd"
-
-# Output: "bb"
-
-
-# Basic idea: insert `#` between each char, so that `bb` -> `#b#b#`, now there's only one pattern of palindrome
-class Solution(object):
+class Solution(unittest.TestCase):
     def longestPalindrome(self, s):
         """
-        :type s: str
-        :rtype: str
+ Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
+
+ Example:
+
+ Input: "babad"
+
+ Output: "bab"
+
+ Note: "aba" is also a valid answer.
+
+ Example:
+
+ Input: "cbbd"
+
+ Output: "bb"
+----
+ Basic Idea: DP.
+        State: start index; end index
+        Output: isPal?
+        Choice: f(i,j) = True if s[i] == s[j] and f(i+1,j-1) == True
+        Direction: i--, j++
+        """
+        if not s:
+            return ""
+        L = len(s)
+        dp = [[False for i in range(L)] for j in range(L)]
+
+        l, r = 0, 0
+        # i from L-1 to 0, because f(i, j) depends on f(i+1, j-1)
+        for i in range(L-1, -1, -1):
+            # j from 0 to L+1, because f(i, j) depends on f(i+1, j-1)
+            for j in range(i, L):
+                dp[i][j] = s[i] == s[j] and (True if j-i < 2 else dp[i+1][j-1])
+
+                if dp[i][j] and j-i >= r-l:
+                    l, r = i, j
+
+        return s[l:r+1]
+
+    def longestPalindrome2(self, s):
+        """
+        Basic idea: insert `#` between each char, so that `bb` -> `#b#b#`, now there's only one pattern of palindrome
         """
         length = len(s)
         if s == None or length == 1:
@@ -56,11 +80,7 @@ class Solution(object):
 
         return ret
 
-# -----------------------------
-import unittest
-
-class Test(unittest.TestCase):
     def test(self):
-        s = Solution()
-        self.assertEqual(s.longestPalindrome("babad"), "bab")
-        self.assertEqual(s.longestPalindrome("cbbd"), "bb")
+        self.assertEqual(self.longestPalindrome("babad"), "bab")
+        self.assertEqual(self.longestPalindrome("cbbd"), "bb")
+        self.assertEqual(self.longestPalindrome("aaaa"), "aaaa")
