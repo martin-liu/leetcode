@@ -34,25 +34,26 @@ What if the BST is modified (insert/delete operations) often and you need to fin
 
 
 """
-        self.found = False
-        self.k = k
-        self.res = None
+        found = False
+        k = k
+        res = None
 
         def inorder(node):
+            nonlocal found, k, res
             if not node:
                 return
             inorder(node.left)
-            if self.found:
+            if found:
                 return
-            self.k -= 1
-            if self.k == 0:
-                self.found = True
-                self.res = node.val
+            k -= 1
+            if k == 0:
+                found = True
+                res = node.val
                 return
             inorder(node.right)
 
         inorder(root)
-        return self.res
+        return res
 
     def test(self):
         self.assertEqual(1, self.kthSmallest(TreeNode.fromList([3,1,4,None,2]), 1))

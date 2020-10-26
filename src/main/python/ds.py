@@ -3,6 +3,7 @@
 from queue import Queue
 
 class ListNode:
+    """ListNode(val).next = ListNode(nextVal)"""
     def __init__(self, x):
         self.val = x
         self.next = None
