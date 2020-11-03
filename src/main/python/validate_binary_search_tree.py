@@ -41,17 +41,18 @@ Basic idea: inorder dfs should return sorted elements
         if not root:
             return True
 
-        state = {'pre': None}
+        pre = None
         def inorder(tree):
+            nonlocal pre
             if tree:
                 if not inorder(tree.left):
                     return False
 
-                if not state['pre']:
-                    state['pre'] = tree
-                elif tree.val <= state['pre'].val:
+                if not pre:
+                    pre = tree
+                elif tree.val <= pre.val:
                     return False
-                state['pre'] = tree
+                pre = tree
 
                 if not inorder(tree.right):
                     return False
