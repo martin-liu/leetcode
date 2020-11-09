@@ -191,7 +191,6 @@ Useful resourecs:
 |190|[Reverse Bits](https://leetcode.com/problems/reverse-bits/) |[python](./src/main/python/reverse_bits.py) |EasyBit Manipulation|
 |191|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) |[python](./src/main/python/number_of_one_bits.py) |Easy|Bit Manipulation|
 |198|[House Robber](https://leetcode.com/problems/house-robber/) |[python](./src/main/python/house_robber.py) |Easy|P:DP|
-|213|[House Robber II](https://leetcode.com/problems/house-robber-ii/) |[python](./src/main/python/house_robber_ii.py) |Medium|P:DP|
 |199|[Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) |[python](./src/main/python/binary_tree_right_side_view.py) |Medium|Tree, DFS, P:BFS|
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/) |[python](./src/main/python/number_of_islands.py) |Medium|Union Find, DFS, P:BFS|
 |203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) |[python](./src/main/python/remove_linked_list_elements.py) |Easy|P:Fast & Slow Pointers|
@@ -201,6 +200,7 @@ Useful resourecs:
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) |[python](./src/main/python/minimum_size_subarray_sum.py) |Medium|Array, P:Sliding Window, Binary Search|
 |210|[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) |[python](./src/main/python/course_schedule_ii.py) |Medium|P:Topological Sort|
 |212|[Word Search II](https://leetcode.com/problems/word-search-ii/) |[python](./src/main/python/word_search_ii.py) |Hard|P:DFS|
+|213|[House Robber II](https://leetcode.com/problems/house-robber-ii/) |[python](./src/main/python/house_robber_ii.py) |Medium|P:DP|
 |215|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) |[python](./src/main/python/kth_largest_element_in_an_array.py) |Medium|P:Top K|
 |216 |[Combination Sum III](https://leetcode.com/problems/combination-sum-iii) |[python](./src/main/python/combination_sum_iii.py) |Medium|P:Backtracking|
 |217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) |[python](./src/main/python/contains_duplicate.py) |Easy|P:Arrays|
@@ -262,6 +262,7 @@ Useful resourecs:
 |844|[Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) |[python](./src/main/python/backspace_string_compare.py) |Easy|P:Two Pointers|
 |863|[All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) |[python](./src/main/python/all_nodes_distance_k_in_binary_tree.py) |Medium|P:BFS|
 |876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) |[python](./src/main/python/middle_of_the_linked_list.py) |Easy|P:Fast & Slow Pointers|
+|887|[Super Egg Drop](https://leetcode.com/problems/super-egg-drop/) |[python](./src/main/python/super_egg_drop.py) |Hard|P:DP|
 |895|[Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack/) |[python](./src/main/python/maximum_frequency_stack.py) |Hard|P:Top K|
 |904|[Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/) |[python](./src/main/python/fruit_into_baskets.py) |Medium|P:Sliding Window|
 |973|[K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/) |[python](./src/main/python/k_closest_points_to_origin.py) |Medium|P:Top K|
