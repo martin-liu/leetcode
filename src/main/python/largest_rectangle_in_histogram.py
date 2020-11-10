@@ -19,18 +19,21 @@ Output: 10
 
 ---
 Basic idea: lagest rectangle depends on smallest height in a range. So for each height x, check the range that x is smallest.
-Use a stack to only push index when meet bigger, and pop when meet smaller. So that when pop, `heights[stack[-1]] < heights[poppedIndex] < heights[i]`, the largestRectangleArea of poppedIndex will be `heights[poppedIndex] * (i - stack[-1] -1)`
+Use a Monotonic stack to only push index when meet bigger, and pop when meet smaller. So that when pop, `heights[stack[-1]] < heights[poppedIndex] < heights[i]`, the largestRectangleArea of poppedIndex will be `heights[poppedIndex] * (i - stack[-1] -1)`
         """
         if not heights:
             return 0
 
+        # add 2 sentries to make logic simpler/cleaner
+        # first sentry is used to avoid index out bound
+        # second sentry is used to clear stack to ensure all the bars are checked/calculated
         heights = [-1] + heights + [-1]
         ret = 0
         stack = []
         for i, h in enumerate(heights):
-            # for every h, check the range that x is smallest
+            # for every h, check the range that h is smallest
             while stack and h < heights[stack[-1]]:
-                # pop when
+                # check until h is not smallest
                 ret = max(ret, heights[stack.pop()] * (i - stack[-1] - 1))
             # append every index of h, so that we keep data in stack in small
             # -> big order that means, every `popped height index` will have
