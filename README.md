@@ -221,6 +221,7 @@ Useful resourecs:
 |310|[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/) |[python](./src/main/python/minimum_height_trees.py) |Medium|P:Topological Sort|
 |322|[Coin Change](https://leetcode.com/problems/coin-change/) |[python](./src/main/python/coin_change.py) |Medium|P:DP|
 |328|[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) |[python](./src/main/python/odd_even_linked_list.py) |Medium|P:Reverse Linked List|
+|329|[Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) |[python](./src/main/python/longest_increasing_path_in_a_matrix.py) |Hard|P:DP, Google|
 |336|[Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/) |[python](./src/main/python/palindrome_pairs.py) |Hard|P:Trie|
 |338|[Counting Bits](https://leetcode.com/problems/counting-bits/) |[python](./src/main/python/counting_bits.py) |Medium|P:DP|
 |344|[Reverse String](https://oj.leetcode.com/problems/reverse-string/)|[python](./src/main/python/reverse_string.py)       |Easy|
@@ -255,6 +256,7 @@ Useful resourecs:
 |698|[Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/) |[python](./src/main/python/partition_to_k_equal_sum_subsets.py) |Medium|P:DP|
 |713|[Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/) |[python](./src/main/python/subarray_product_less_than_k.py) |Medium|P:Two Pointers|
 |720|[Longest Word In Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/) |[python](./src/main/python/longest_word_in_dictionary.py) |Easy|P:Trie|
+|743|[Network Delay Time](https://leetcode.com/problems/network-delay-time/) |[python](./src/main/python/network_delay_time.py) |Medium|P:BFS|
 |745|[Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search/) |[python](./src/main/python/prefix_and_suffix_search.py) |Hard|P:Trie|
 |767|[Reorganize String](https://leetcode.com/problems/reorganize-string/) |[python](./src/main/python/reorganize_string.py) |Medium|P:Top K|
 |784|[Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation/) |[python](./src/main/python/letter_case_permutation.py) |Easy|P:Backtracking|

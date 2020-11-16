@@ -21,7 +21,7 @@ class Solution(object):
             return - self.reverse(-x)
         else:
             while x > 0:
-                (x, r) = divmod(x, 10)
+                x, r = divmod(x, 10)
                 # check overflow
                 if (maxInt - r) / 10 < ret:
                     return 0
