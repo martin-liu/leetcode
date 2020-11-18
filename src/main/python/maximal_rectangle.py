@@ -18,7 +18,9 @@ Input:
 Output: 6
 
 ---
-Basic idea: for each row, build a histogram of number of 1. Then for each row, use monotonic stack to calculate max.
+Basic idea: for each row, build a histogram of number of 1. Then for each row, use increasing monotonic stack to calculate max.
+        When found decrease one, e.g. [1,2,4,5] <- 3, need to calculate [4,5] -> max(4 * 2, 5) = 8
+        Next round [1,2,3] <- -1 will calculate all [1,2,3] -> max(1*3, 2*2, 3) = 4
 e.g.
 [['1','0']
  ['1','1']
@@ -41,6 +43,7 @@ Will be
                 # (x[0]+x[1])*x[1], so that if x[1] is 0, then 0, otherwise plus
                 curr = [(x[0]+x[1])*x[1] for x in zip(curr, ar)]
 
+            # add -1 as sentry to avoid if/else check
             heights = [-1] + curr + [-1]
             stack = []
             for i, d in enumerate(heights):
