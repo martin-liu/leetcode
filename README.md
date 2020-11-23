@@ -212,6 +212,7 @@ Useful resourecs:
 |238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) |[python](./src/main/python/product_of_array_except_self.py) |Easy|P:Arrays|
 |239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) |[python](./src/main/python/sliding_window_maximum.py) |Hard|Heap, P:Sliding Window|
 |268|[Missing Number](https://leetcode.com/problems/missing-number/) |[python](./src/main/python/missing_number.py) |Medium|P:Arrays|
+|282|[Expression Add Operators](https://leetcode.com/problems/expression-add-operators/) |[python](./src/main/python/expression_add_operators.py) |Hard|P:Backtracking|
 |287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) |[python](./src/main/python/find_the_duplicate_number.py) |Medium|P:Arrays|
 |295|[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) |[python](./src/main/python/find_median_from_data_stream.py) |Hard|P:Two Heaps|
 |297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) |[python](./src/main/python/serialize_and_deserialize_binary_tree.py) |Hard|P:DFS|
