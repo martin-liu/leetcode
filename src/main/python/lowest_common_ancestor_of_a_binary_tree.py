@@ -37,7 +37,8 @@ Basic Idea: Recursive function `lca` will return LCA or p or q.
         if both left and right is not null, means one return p one return q, so that `node` is LCA
         if one of left and right is null, means the other one is LCA, return it
 """
-        # return p or q or None(not found)
+        # for real root, if it's p or q, means other one must be it's children, so that root is LCA
+        # for non root node, if it's p or q, just return it, the following logic will check left/right
         if root in (None, p, q):
             return root
         # find LCA in left and right subtree

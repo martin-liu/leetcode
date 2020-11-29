@@ -84,3 +84,4 @@ class Solution(unittest.TestCase):
         self.assertEqual(self.longestPalindrome("babad"), "bab")
         self.assertEqual(self.longestPalindrome("cbbd"), "bb")
         self.assertEqual(self.longestPalindrome("aaaa"), "aaaa")
+        self.assertEqual(self.longestPalindrome("abac"), "aba")

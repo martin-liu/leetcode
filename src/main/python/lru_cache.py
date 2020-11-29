@@ -46,11 +46,13 @@ Basic Idea: double linked hash map
 """
 
     def __init__(self, capacity: int):
+        assert capacity > 0
         self.store = {}
         self.capacity = capacity
         self.count = 0
-        self.head = None
-        self.tail = None
+        self.head = DoubleLinkedNode(None, None)
+        self.tail = DoubleLinkedNode(None, None)
+        self.head.next, self.tail.prev = self.tail, self.head
 
     def get(self, key: int) -> int:
         cache = self.updateLRU(self.store.get(key))
@@ -61,40 +63,33 @@ Basic Idea: double linked hash map
         node.val = value
         self.store[key] = self.updateLRU(node)
 
+    def insertAfter(self, node, after):
+        # `after.next.prev` must before `after.next`, otherwise `after.next` already changed
+        after.next.prev, after.next, node.prev, node.next = node, node, after, after.next
+
+    def cut(self, node):
+        if node and node.prev and node.next:
+            node.prev.next, node.next.prev = node.next, node.prev
+
     # make latest node as head
     def updateLRU(self, node):
         # ignore if change head
-        if not node or node == self.head:
+        if not node:
             return node
 
-        # if change tail, need to update tail node
-        if node == self.tail and self.count > 1:
-            self.tail = self.tail.prev
+        # try cut node (if need)
+        self.cut(node)
 
-        # if cut node, need to connect prev and next
-        if node.prev:
-            node.prev.next = node.next
-            if node.next:
-                node.next.prev = node.prev
-            node.prev = None
-
-        # make node as head
-        node.next = self.head
-        if self.head:
-            self.head.prev = node
-        self.head = node
-
-        if not self.tail:
-            self.tail = self.head
+        # connect node to head
+        self.insertAfter(node, self.head)
 
         # remove old node if exceed capacity
         if node.key not in self.store:
             # new node
             self.count += 1
             if self.count > self.capacity:
-                del self.store[self.tail.key]
-                self.tail = self.tail.prev
-                self.tail.next = None
+                del self.store[self.tail.prev.key]
+                self.cut(self.tail.prev)
                 self.count -= 1
 
         return node

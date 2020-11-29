@@ -262,6 +262,7 @@ Useful resourecs:
 |767|[Reorganize String](https://leetcode.com/problems/reorganize-string/) |[python](./src/main/python/reorganize_string.py) |Medium|P:Top K|
 |784|[Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation/) |[python](./src/main/python/letter_case_permutation.py) |Easy|P:Backtracking|
 |828|[Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/) |[python](./src/main/python/count_unique_characters_of_all_substrings_of_a_given_string.py) |Hard|P:Sliding Window, Two Pointers, DP|
+|829|[Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum/) |[python](./src/main/python/consecutive_numbers_sum.py) |Hard|P:Math|
 |844|[Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) |[python](./src/main/python/backspace_string_compare.py) |Easy|P:Two Pointers|
 |863|[All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) |[python](./src/main/python/all_nodes_distance_k_in_binary_tree.py) |Medium|P:BFS|
 |876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) |[python](./src/main/python/middle_of_the_linked_list.py) |Easy|P:Fast & Slow Pointers|

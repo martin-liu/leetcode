@@ -5,8 +5,6 @@ For example,
 Given [0,1,0,2,1,0,1,3,2,1,2,1], return 6.
 """
 
-# Basic idea: trap determine by the lower side, so that move & calculate from lower side (l or r), approaching to middle
-# when meet bigger one, trap break and bigger one is new boundary
 class Solution(object):
     def trap(self, height):
         """
@@ -37,6 +35,9 @@ class Solution(object):
         """
         :type height: List[int]
         :rtype: int
+
+ Basic idea: trap determine by the lower side, so that move & calculate from lower side (l or r), approaching to middle
+ when meet bigger one, trap break and bigger one is new boundary
         """
 
         if not height:

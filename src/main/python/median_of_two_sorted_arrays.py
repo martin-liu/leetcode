@@ -16,8 +16,35 @@
 
 
 # Basic idea: Create an union array and then calculate the median
+from heapq import heappush, heappop
 class Solution(object):
     def findMedianSortedArrays(self, nums1, nums2):
+        """
+        2 heaps, one min heap store greater values, one max heap store smaller values
+        keep length diff <= 1
+        """
+        if not nums1 and not nums2:
+            return 0
+        l1, l2, minH, maxH = len(nums1), len(nums2), [], []
+        isOdd = (l1 + l2) & 1 == 1
+
+        for n in nums1 + nums2:
+            if not minH or n > minH[0]:
+                heappush(minH, n)
+            else:
+                heappush(maxH, -n)
+
+            if len(minH) - len(maxH) > 1:
+                heappush(maxH, - heappop(minH))
+            elif len(maxH) - len(minH) > 1:
+                heappush(minH, - heappop(maxH))
+
+        if isOdd:
+            return minH[0] if len(minH) > len(maxH) else -maxH[0]
+        else:
+            return (minH[0] - maxH[0]) / 2
+
+    def findMedianSortedArrays2(self, nums1, nums2):
         """
         :type nums1: List[int]
         :type nums2: List[int]
