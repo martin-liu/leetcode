@@ -38,17 +38,14 @@ Output: -1->0->3->4->5
         while curr:
             p, c = head, head.next
             # find insert point
-            while curr != c and curr.val > c.val:
+            while curr.val > c.val:
                 p, c = c, c.next
             if c == curr:
                 # insert point is current one, means no need to change
                 pre, curr = curr, curr.next
             else:
                 # cut curr and insert between p and c
-                pre.next = curr.next
-                curr.next = c
-                p.next = curr
-                curr = pre.next
+                pre.next, curr.next, p.next, curr = curr.next, c, curr, pre.next
 
         return head.next
 

@@ -26,7 +26,23 @@ Example 3:
 Input: s = "catsandog", wordDict = ["cats", "dog", "sand", "and", "cat"]
 Output: false
 
+---
+Basic Idea: DP, `f(i) = any( f(i-len(word)) and for word in dict )`
 """
+        dp = [False] * len(s)
+        for i in range(len(s)):
+            dp[i] = any(
+                s[:i+1] == word or
+                (
+                    i >= len(word) and
+                    dp[i-len(word)] and
+                    s[i-len(word)+1:i+1] == word
+                )
+                for word in wordDict
+            )
+        return dp[-1]
+
+    def wordBreak2(self, s: str, wordDict: List[str]) -> bool:
         if not s or not wordDict:
             return False
 

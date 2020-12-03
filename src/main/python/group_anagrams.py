@@ -15,11 +15,25 @@ Note:
 All inputs will be in lowercase.
 The order of your output does not matter.
 """
-
+from collections import defaultdict
 # Basic idea: sort string, then use a map to collect group
 class Solution(object):
     def groupAnagrams(self, strs):
+        """Use char array, o(n * k), n = len(strs), k = avg(len(str))"""
+        m = defaultdict(lambda:[])
+        for s in strs:
+            ar = [0] * 26
+            for c in s:
+                ar[ord(c)-ord('a')] += 1
+            m[tuple(ar)].append(s)
+
+        return list(m.values())
+
+
+    def groupAnagrams2(self, strs):
         """
+        O(n * k * logk), n = len(strs), k = avg(len(str))
+
         :type strs: List[str]
         :rtype: List[List[str]]
         """

@@ -23,6 +23,22 @@ n is a 32-bit signed integer, within the range [−2^31, 2^31 − 1]
 # Basic idea: recursively do `n / 2`
 class Solution(object):
     def myPow(self, x, n):
+        if n < 0:
+            return self.myPow(1/x , -n)
+
+        res = 1
+        # treat n as binary number
+        while n > 0:
+            # if last one is 1, means need multiply
+            if n & 1:
+                res *= x
+            # x increase
+            x *= x
+            # n decrease
+            n >>= 1
+        return round(res, 5)
+
+    def myPow2(self, x, n):
         """
         :type x: float
         :type n: int

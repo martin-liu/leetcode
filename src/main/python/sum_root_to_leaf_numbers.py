@@ -41,22 +41,18 @@ The root-to-leaf path 4->0 represents the number 40.
 Therefore, sum = 495 + 491 + 40 = 1026.
 
 """
-        ret = 0
         def dfs(tree, parentNum):
-            nonlocal ret
             if not tree:
-                return
-            num = parentNum * 10 + tree.val
-            if tree.left:
-                dfs(tree.left, num)
-            if tree.right:
-                dfs(tree.right, num)
-            if not tree.left and not tree.right:
-                # leaf
-                ret += num
+                return 0
 
-        dfs(root, 0)
-        return ret
+            num = parentNum * 10 + tree.val
+
+            if not tree.left and not tree.right:
+                return num
+
+            return dfs(tree.left, num) + dfs(tree.right, num)
+
+        return dfs(root, 0)
 
     def testSumNumbers(self):
         self.assertEqual(25, self.sumNumbers(TreeNode.fromList([1,2,3])))

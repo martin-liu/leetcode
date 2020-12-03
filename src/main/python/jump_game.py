@@ -3,6 +3,21 @@ from typing import List
 
 class Solution(unittest.TestCase):
     def canJump(self, nums: List[int]) -> bool:
+        """Greedy"""
+        # max index that can reach
+        M, L = 0, len(nums)
+        for i, n in enumerate(nums):
+            # if current max cannot reach i, means fail
+            if M < i:
+                return False
+
+            M = max(M, n + i)
+            # if current max can reach last one, return true
+            if M >= L-1:
+                return True
+        return False
+
+    def canJump2(self, nums: List[int]) -> bool:
         """
 Given an array of non-negative integers, you are initially positioned at the first index of the array.
 

@@ -33,17 +33,15 @@ class Solution(object):
         else:
             j = i + 1
 
-            # find j that s[j] > s[i] >= s[j+1]
+            # find j that s[j] > s[i] >= s[j+1], i.e. next bigger one than s[i]
             while j < length and nums[j] > nums[i]:
                 j += 1
             j -= 1
 
             # swap j (the least greater one) with i
-            tmp = nums[j]
-            nums[j] = nums[i]
-            nums[i] = tmp
+            nums[i], nums[j] = nums[j], nums[i]
 
-            # sort tail nums
+            # sort tail nums to ensure small enough
             nums[i+1:] = sorted(nums[i+1:])
 
 

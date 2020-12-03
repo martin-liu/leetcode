@@ -19,7 +19,7 @@ Output: 0
 Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
 
 ---
-Basic Idea: Either positive * positive, or negative * negative.
+Basic Idea: DP. Either positive * positive, or negative * negative.
         Maintain subMax and subMin to check both case.
         subMax = max(subMax * n, n, subMin * n)
         subMin = min(subMin * n, n, subMax * n)
