@@ -4,12 +4,14 @@
 
 # Another example is ")()())", where the longest valid parentheses substring is "()()", which has length = 4.
 
-# Basic idea: store index of `(` in stack, so that when pop, we can use index deduction to get length
 class Solution(object):
     def longestValidParentheses(self, s):
         """
-        :type s: str
-        :rtype: int
+        Basic idea:
+        1. store index of `(` in stack
+        2. use a `last` varible to store index when stack is empty
+        so that when pop, we can use index deduction to get length
+        i.e. ether `i - stack[-1]` or `i - last`
         """
         ret = 0
         stack = []

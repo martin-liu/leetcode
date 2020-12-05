@@ -43,7 +43,7 @@ Will be
                 # (x[0]+x[1])*x[1], so that if x[1] is 0, then 0, otherwise plus
                 curr = [(x[0]+x[1])*x[1] for x in zip(curr, ar)]
 
-            # add -1 as sentry to avoid if/else check
+            # add -1 as sentry to avoid if/else check and clear stack eventually
             heights = [-1] + curr + [-1]
             stack = []
             for i, d in enumerate(heights):

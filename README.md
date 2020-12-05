@@ -262,6 +262,7 @@ Useful resourecs:
 |745|[Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search/) |[python](./src/main/python/prefix_and_suffix_search.py) |Hard|P:Trie|
 |767|[Reorganize String](https://leetcode.com/problems/reorganize-string/) |[python](./src/main/python/reorganize_string.py) |Medium|P:Top K|
 |784|[Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation/) |[python](./src/main/python/letter_case_permutation.py) |Easy|P:Backtracking|
+|785|[Is Graph Bipartite](https://leetcode.com/problems/is-graph-bipartite/) |[python](./src/main/python/is_graph_bipartite.py) |Medium|P:DFS, Graph|
 |828|[Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/) |[python](./src/main/python/count_unique_characters_of_all_substrings_of_a_given_string.py) |Hard|P:Sliding Window, Two Pointers, DP|
 |829|[Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum/) |[python](./src/main/python/consecutive_numbers_sum.py) |Hard|P:Math|
 |844|[Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) |[python](./src/main/python/backspace_string_compare.py) |Easy|P:Two Pointers|

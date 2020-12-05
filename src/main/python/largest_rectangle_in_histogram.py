@@ -18,8 +18,10 @@ Input: [2,1,5,6,2,3]
 Output: 10
 
 ---
-Basic idea: lagest rectangle depends on smallest height in a range. So for each height x, check the range that x is smallest.
-Use a Monotonic stack to only push index when meet bigger, and pop when meet smaller. So that when pop, `heights[stack[-1]] < heights[poppedIndex] < heights[i]`, the largestRectangleArea of poppedIndex will be `heights[poppedIndex] * (i - stack[-1] -1)`
+Basic idea: lagest rectangle needs to calculate when meet smaller height, because bigger one always have bigger value.
+Use a increase Monotonic stack:
+        1. when increasing, keep append
+        2. when meet smaller one, needs to calculate. Do pop, `heights[stack[-1]] < heights[poppedIndex] > heights[i]`, then we check `heights[poppedIndex] * (i - stack[-1] -1)` and keep pop until heights[i] is not smaller one.
         """
         if not heights:
             return 0
@@ -31,13 +33,13 @@ Use a Monotonic stack to only push index when meet bigger, and pop when meet sma
         ret = 0
         stack = []
         for i, h in enumerate(heights):
-            # for every h, check the range that h is smallest
+            # for every h, check the range before h if h is smaller than stack[-1]
             while stack and h < heights[stack[-1]]:
-                # check until h is not smallest
+                # check until h is not smaller one
                 ret = max(ret, heights[stack.pop()] * (i - stack[-1] - 1))
             # append every index of h, so that we keep data in stack in small
-            # -> big order that means, every `popped height index` will have
-            # `heights[stack[-1]] < heights[poped index] < heights[i]`
+            # -> big order. that means, every `popped height index` will have
+            # `heights[stack[-1]] < heights[poped index] > heights[i]`
             stack.append(i)
         return ret
 
