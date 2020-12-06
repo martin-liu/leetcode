@@ -47,7 +47,7 @@ Basic idea: essentially shortest path of Graph, use Dijkstra
                 for adj, adj_dis in graph[node].items():
                     dist = dis + adj_dis
                     # only when found shorter distance
-                    if dist < distance[adj]:
+                    if adj not in visited and dist < distance[adj]:
                         # update distance with shorter one
                         distance[adj] = dist
                         # track shorter adj for each node
