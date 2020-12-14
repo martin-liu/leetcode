@@ -3,6 +3,44 @@ from typing import List
 
 class Solution(unittest.TestCase):
     def longestIncreasingPath(self, matrix: List[List[int]]) -> int:
+        if not matrix or not matrix[0]:
+            return 0
+
+        row, col = len(matrix), len(matrix[0])
+
+        # find asc adj
+        def adj(x, y):
+            res = []
+            if x > 0:
+                res.append((x-1, y))
+            if x < row-1:
+                res.append((x+1, y))
+            if y > 0:
+                res.append((x, y-1))
+            if y < col-1:
+                res.append((x, y+1))
+            return [p for p in res if matrix[p[0]][p[1]] > matrix[x][y]]
+
+        cache = {}
+        def dp(x, y):
+            if (x,y) in cache:
+                return cache[(x,y)]
+
+            res = 1
+            for pos in adj(x, y):
+                res = max(res, dp(pos[0], pos[1]) + 1)
+
+            cache[(x,y)] = res
+            return res
+
+        res = 0
+        for i in range(row):
+            for j in range(col):
+                res = max(res, dp(i, j))
+
+        return res
+
+    def longestIncreasingPath2(self, matrix: List[List[int]]) -> int:
         """
 Given an integer matrix, find the length of the longest increasing path.
 
