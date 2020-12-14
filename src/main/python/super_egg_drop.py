@@ -54,6 +54,7 @@ Basic idea: DP
         min of *worst case*
         if broken in floor j, then only need to consider N-j floors; otherwise only need to consider j-1 floors
         state: egg num K, floor num N
+        choices: broken or not
         base: f(0,N) = f(K,0) = 0
         definition:
           f(K,N) = max(f(K,N-j), f(K-1, j-1))

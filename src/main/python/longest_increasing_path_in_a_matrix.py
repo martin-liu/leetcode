@@ -31,6 +31,37 @@ Output: 4
 Explanation: The longest increasing path is [3, 4, 5, 6]. Moving diagonally is not allowed.
 
 ---
+"""
+        if not matrix or not matrix[0]:
+            return 0
+
+        row, col = len(matrix), len(matrix[0])
+        cache = {}
+        def dfs(x, y, n=None):
+            if x < 0 or x >= row or y < 0 or y >= col:
+                return 0
+            if n is not None and matrix[x][y] <= n:
+                return 0
+
+            if (x,y) not in cache:
+                n = matrix[x][y]
+
+                cache[(x,y)] = 1 + max(
+                    dfs(x+1, y, n),
+                    dfs(x-1, y, n),
+                    dfs(x, y+1, n),
+                    dfs(x, y-1, n)
+                )
+            return cache[(x,y)]
+
+        res = 0
+        for i in range(row):
+            for j in range(col):
+                res = max(res, dfs(i, j))
+        return res
+
+    def longestIncreasingPath2(self, matrix: List[List[int]]) -> int:
+        """
 Basic Idea: DP. f(pos) means longest length which start at position pos, this need position with bigger numbers to calculate first.
         One trick to reduce dimention from 2D to 1D is using complex number, i.e. `x + y*1j`, and dict
 """
@@ -52,3 +83,4 @@ Basic Idea: DP. f(pos) means longest length which start at position pos, this ne
     def test(self):
         self.assertEqual(4, self.longestIncreasingPath([[9,9,4], [6,6,8], [2,1,1]]))
         self.assertEqual(4, self.longestIncreasingPath([[3,4,5], [3,2,6], [2,2,1]]))
+        self.assertEqual(4, self.longestIncreasingPath2([[3,4,5], [3,2,6], [2,2,1]]))

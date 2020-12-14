@@ -26,6 +26,21 @@ Note:
 The input string length won't exceed 1000.
 
 ----
+"""
+        if not s:
+            return 0
+
+        L = len(s)
+        dp = [[False for _ in range(L)] for _ in range(L)]
+        res = 0
+        for i in range(L-1, -1, -1):
+            for j in range(i, L):
+                dp[i][j] = s[i] == s[j] and (True if j-i < 2 else dp[i+1][j-1])
+                res += dp[i][j]
+        return res
+
+    def countSubstrings2(self, s: str) -> int:
+        """
 Basic Idea: pal have 2 cases, even or odd, `aa`, `aba`. So for each index, try to extend left/right for both even and odd
 """
         if not s:

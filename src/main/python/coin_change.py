@@ -22,7 +22,7 @@ You may assume that you have an infinite number of each kind of coin.
 Basic Idea: DP. `f(c, n) = min([f(c,n-c1), f(c, n-c2), ...]) + 1`
         State: current coin; amount
         Choice: use or not
-        Transform: for each coin, dp[n] = min(dp[n], dp[n-coin] + 1)
+        Definition: for each coin, dp[n] = min(dp[n], dp[n-coin] + 1)
 """
         INF = float('inf')
         dp = [0] + [INF] * amount

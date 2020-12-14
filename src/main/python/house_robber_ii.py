@@ -30,30 +30,14 @@ Basic Idea: DP. Do 2 times, check rob first case, and not rob first case
         if L < 3:
             return max(nums or [0])
 
-        dp = [[0, 0] for _ in range(L)]
-        # case 1: rob first one
-        for i in range(L):
-            if i == 0:
-                dp[i][0] = -float('inf')
-                dp[i][1] = nums[i]
-            else:
-                dp[i][0] = max(dp[i-1][0],dp[i-1][1])
-                dp[i][1] = dp[i-1][0] + nums[i]
+        def robRange(start, end):
+            res, pre, pree = 0, 0, 0
+            for i in range(start, end+1):
+                res = max(pre, pree + nums[i])
+                pre, pree = res, pre
+            return res
 
-        # when rob first, last one will not rob, so only choose dp[-1][0]
-        res = dp[-1][0]
-
-        # case 2: don't rob first one
-        for i in range(L):
-            if i == 0:
-                dp[i][0] = 0
-                dp[i][1] = -float('inf')
-            else:
-                dp[i][0] = max(dp[i-1][0],dp[i-1][1])
-                dp[i][1] = dp[i-1][0] + nums[i]
-
-        # when not rob first, last one can rob but may not rob
-        return max(res, dp[-1][0], dp[-1][1])
+        return max(robRange(0, L-2), robRange(1, L-1))
 
     def test(self):
         self.assertEqual(self.rob([]), 0)
