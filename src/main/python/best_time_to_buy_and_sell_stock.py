@@ -43,4 +43,4 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
     def testMaxProfix(self):
         self.assertEqual(5, self.maxProfit([7,1,5,3,6,4]))
-        self.assertEqual(0, self.maxProfit([7,6,4,3,1]))
+k       self.assertEqual(0, self.maxProfit([7,6,4,3,1]))

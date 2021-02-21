@@ -55,7 +55,7 @@ Useful resourecs:
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum/)    |[python](./src/main/python/combination_sum.py) |Medium|P:Backtracking|
 |40 |[Combination Sum II](https://leetcode.com/problems/combination-sum-ii) |[python](./src/main/python/combination_sum_ii.py) |Medium|P:Backtracking|
 |41 |[First Missing Positive](https://leetcode.com/problems/first-missing-positive) |[python](./src/main/python/first_missing_positive.py) |Hard|
-|42 |[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) |[python](./src/main/python/trapping_rain_water.py) |Hard|P:Two Pointers|
+|42 |[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) |[python](./src/main/python/trapping_rain_water.py) |Hard|P:Two Pointers, Monotonic Stack|
 |43 |[Multiply Strings](https://leetcode.com/problems/multiply-strings) |[python](./src/main/python/multiply_strings.py) |Medium|
 |44 |[Wildcard Matching](https://leetcode.com/problems/wildcard-matching) |[python](./src/main/python/wildcard_matching.py) |Hard|
 |45 |[Jump Game II](https://leetcode.com/problems/jump-game-ii) |[python](./src/main/python/jump_game_ii.py) |Hard|
